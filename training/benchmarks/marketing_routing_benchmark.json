@@ -1,0 +1,379 @@
+{
+  "benchmark_name": "Marketing Memory Routing Benchmark",
+  "version": "1.0.0",
+  "description": "50 challenging marketing scenarios for evaluating memory routing classification models. Covers brand positioning, strategic decisions, performance metrics, tools/integrations, user preferences, business priorities, and knowledge artifacts.",
+  "num_scenarios": 50,
+  "categories": [
+    "company.brand_core",
+    "company.strategic_signatures", 
+    "company.knowledge_artifacts",
+    "company.business_priorities",
+    "company.tools_config",
+    "company.performance_context",
+    "user.communication_style",
+    "user.strategic_approach",
+    "user.role_context",
+    "user.workflow_patterns",
+    "user.session_history",
+    "user.interaction_preferences",
+    "none"
+  ],
+  "difficulty_distribution": {
+    "easy": 14,
+    "medium": 26,
+    "hard": 10
+  },
+  "scenarios": [
+    {
+      "id": "brand_1",
+      "conversation": "USER: Our brand DNA is 'accessible luxury'. We're not Chanel, but we're definitely not Target either. Think Everlane meets Aritzia.\nASSISTANT: So premium quality at attainable price points, with a focus on transparency?\nUSER: Exactly. Every piece of content should feel elevated but not pretentious.",
+      "expected_categories": ["company.brand_core"],
+      "difficulty": "medium",
+      "category_focus": "Brand positioning with comparisons"
+    },
+    {
+      "id": "brand_2",
+      "conversation": "USER: We've been using 'Innovation for Everyone' as our tagline for 5 years. It's core to who we are.\nASSISTANT: That's a strong positioning statement. Does it extend to your visual identity too?\nUSER: Yes, our whole design system is built around democratizing technology.",
+      "expected_categories": ["company.brand_core"],
+      "difficulty": "easy",
+      "category_focus": "Tagline and identity"
+    },
+    {
+      "id": "brand_3",
+      "conversation": "USER: I hate when brands try too hard to be funny. Our voice should be warm and helpful, never sarcastic.\nASSISTANT: So authentic helpfulness over trendy humor?\nUSER: Right. We're the trusted friend, not the class clown.",
+      "expected_categories": ["company.brand_core"],
+      "difficulty": "medium",
+      "category_focus": "Voice and tone definition"
+    },
+    {
+      "id": "brand_4",
+      "conversation": "USER: Our competitors use fear tactics - 'Don't miss out!' We never do that. We believe in empowerment.\nASSISTANT: Positive framing over scarcity messaging.\nUSER: Always. Even our sales emails should feel like opportunities, not threats.",
+      "expected_categories": ["company.brand_core", "company.strategic_signatures"],
+      "difficulty": "hard",
+      "category_focus": "Brand values + decision framework"
+    },
+    {
+      "id": "brand_5",
+      "conversation": "USER: What font are we using for the Q4 campaign headers?\nASSISTANT: The brand guidelines specify Montserrat for headers.\nUSER: Thanks, just needed to confirm.",
+      "expected_categories": ["none"],
+      "difficulty": "easy",
+      "category_focus": "Transactional brand query"
+    },
+    {
+      "id": "brand_6",
+      "conversation": "USER: We position ourselves as the 'anti-agency agency'. No jargon, no BS, just results.\nASSISTANT: Transparency and authenticity as differentiators.\nUSER: And we back it up with our pricing model - no hidden fees, ever.",
+      "expected_categories": ["company.brand_core"],
+      "difficulty": "medium",
+      "category_focus": "Agency positioning"
+    },
+    {
+      "id": "brand_7",
+      "conversation": "USER: Our brand is built on three pillars: sustainability, transparency, and community.\nASSISTANT: Those are strong values. How do they manifest in your marketing?\nUSER: Every campaign must touch at least one pillar. It's non-negotiable.",
+      "expected_categories": ["company.brand_core", "company.strategic_signatures"],
+      "difficulty": "hard",
+      "category_focus": "Brand pillars as decision framework"
+    },
+    {
+      "id": "brand_8",
+      "conversation": "USER: We're rebranding next quarter but I can't share details yet.\nASSISTANT: Understood. Let me know when you're ready to discuss.\nUSER: Will do.",
+      "expected_categories": ["none"],
+      "difficulty": "medium",
+      "category_focus": "Vague future reference"
+    },
+    {
+      "id": "strategy_1",
+      "conversation": "USER: We never launch a campaign without at least 3 weeks of testing. It's our golden rule.\nASSISTANT: So testing is a non-negotiable gate in your process?\nUSER: Absolutely. Even if stakeholders push back, we hold the line.",
+      "expected_categories": ["company.strategic_signatures"],
+      "difficulty": "easy",
+      "category_focus": "Decision framework"
+    },
+    {
+      "id": "strategy_2",
+      "conversation": "USER: Our philosophy is 'measure twice, cut once'. We'd rather delay a launch than ship something half-baked.\nASSISTANT: Quality over speed.\nUSER: Every time. Our reputation depends on it.",
+      "expected_categories": ["company.strategic_signatures"],
+      "difficulty": "medium",
+      "category_focus": "Strategic heuristic"
+    },
+    {
+      "id": "strategy_3",
+      "conversation": "USER: When in doubt, we default to the customer's perspective. What would they want?\nASSISTANT: Customer-centric decision making.\nUSER: It's saved us from many internal-focused mistakes.",
+      "expected_categories": ["company.strategic_signatures"],
+      "difficulty": "medium",
+      "category_focus": "Decision principle"
+    },
+    {
+      "id": "strategy_4",
+      "conversation": "USER: I personally believe in testing everything. Data over gut instinct.\nASSISTANT: A data-driven approach.\nUSER: It's how I've always operated. Even small decisions get A/B tested.",
+      "expected_categories": ["user.strategic_approach"],
+      "difficulty": "medium",
+      "category_focus": "Personal vs company strategy"
+    },
+    {
+      "id": "strategy_5",
+      "conversation": "USER: The company prioritizes brand safety above all. But I think we're too conservative sometimes.\nASSISTANT: So there's tension between company policy and your personal view?\nUSER: Yes. I'd take more calculated risks if it were up to me.",
+      "expected_categories": ["company.strategic_signatures", "user.strategic_approach"],
+      "difficulty": "hard",
+      "category_focus": "Company vs personal strategy conflict"
+    },
+    {
+      "id": "strategy_6",
+      "conversation": "USER: We have a 'no surprises' policy with clients. They hear bad news from us first.\nASSISTANT: Proactive communication as a core principle.\nUSER: It's built trust with every client we've worked with.",
+      "expected_categories": ["company.strategic_signatures"],
+      "difficulty": "medium",
+      "category_focus": "Client relationship principle"
+    },
+    {
+      "id": "strategy_7",
+      "conversation": "USER: Should we go with vendor A or vendor B for the email platform?\nASSISTANT: What are the key differences you're weighing?\nUSER: Just cost really. They're pretty similar otherwise.",
+      "expected_categories": ["none"],
+      "difficulty": "easy",
+      "category_focus": "Transactional decision"
+    },
+    {
+      "id": "strategy_8",
+      "conversation": "USER: Our rule is simple: if we can't explain it to a 10-year-old, we don't publish it.\nASSISTANT: Clarity as a content standard.\nUSER: It keeps our messaging accessible to everyone.",
+      "expected_categories": ["company.strategic_signatures", "company.brand_core"],
+      "difficulty": "hard",
+      "category_focus": "Content principle overlapping brand"
+    },
+    {
+      "id": "perf_1",
+      "conversation": "USER: Last quarter's email campaign hit 42% open rate and 8% CTR. Best we've ever done.\nASSISTANT: Those are strong numbers. What drove the improvement?\nUSER: We switched to personalized subject lines based on past behavior.",
+      "expected_categories": ["company.performance_context"],
+      "difficulty": "easy",
+      "category_focus": "Campaign metrics"
+    },
+    {
+      "id": "perf_2",
+      "conversation": "USER: Our CAC has been climbing - $180 last month, up from $120 in Q1.\nASSISTANT: That's a significant increase. Any hypothesis on the cause?\nUSER: iOS privacy changes are killing our Facebook targeting.",
+      "expected_categories": ["company.performance_context"],
+      "difficulty": "medium",
+      "category_focus": "Acquisition metrics with context"
+    },
+    {
+      "id": "perf_3",
+      "conversation": "USER: The influencer campaign flopped. 2M impressions but only 50 conversions.\nASSISTANT: That's a 0.0025% conversion rate. What went wrong?\nUSER: Wrong audience. The influencer's followers weren't our target demo.",
+      "expected_categories": ["company.performance_context"],
+      "difficulty": "medium",
+      "category_focus": "Campaign failure analysis"
+    },
+    {
+      "id": "perf_4",
+      "conversation": "USER: We learned that video content outperforms static by 3x on engagement.\nASSISTANT: That's a significant insight. Are you shifting your content mix?\nUSER: Yes, Q4 will be 70% video. It's a major strategic shift.",
+      "expected_categories": ["company.performance_context", "company.business_priorities"],
+      "difficulty": "hard",
+      "category_focus": "Learning leading to priority"
+    },
+    {
+      "id": "perf_5",
+      "conversation": "USER: What was our email open rate last week?\nASSISTANT: I don't have access to that data in real-time.\nUSER: I'll check the dashboard.",
+      "expected_categories": ["none"],
+      "difficulty": "easy",
+      "category_focus": "Data lookup request"
+    },
+    {
+      "id": "perf_6",
+      "conversation": "USER: Our NPS dropped from 72 to 58 after the website redesign.\nASSISTANT: That's a significant drop. Customer feedback?\nUSER: They hate the new navigation. We're rolling back next week.",
+      "expected_categories": ["company.performance_context"],
+      "difficulty": "medium",
+      "category_focus": "Customer satisfaction metrics"
+    },
+    {
+      "id": "perf_7",
+      "conversation": "USER: The podcast is our best performing channel - 40% of qualified leads come from it.\nASSISTANT: That's impressive attribution. How are you tracking it?\nUSER: Custom UTM parameters and post-conversion surveys.",
+      "expected_categories": ["company.performance_context"],
+      "difficulty": "medium",
+      "category_focus": "Channel performance"
+    },
+    {
+      "id": "perf_8",
+      "conversation": "USER: We've tested 47 different landing page variants this year.\nASSISTANT: That's rigorous testing. What's been the biggest winner?\nUSER: Social proof above the fold. Increased conversions by 34%.",
+      "expected_categories": ["company.performance_context", "company.knowledge_artifacts"],
+      "difficulty": "hard",
+      "category_focus": "Testing insights becoming knowledge"
+    },
+    {
+      "id": "tools_1",
+      "conversation": "USER: We use HubSpot for CRM, Klaviyo for email, and Shopify for commerce. Everything needs to sync.\nASSISTANT: What's your current integration setup?\nUSER: Zapier connects them, but we're moving to native integrations.",
+      "expected_categories": ["company.tools_config"],
+      "difficulty": "easy",
+      "category_focus": "Tech stack overview"
+    },
+    {
+      "id": "tools_2",
+      "conversation": "USER: Our API key for the analytics platform is expiring next month.\nASSISTANT: I'll note that for renewal.\nUSER: Thanks. It's critical - everything breaks without it.",
+      "expected_categories": ["company.tools_config"],
+      "difficulty": "medium",
+      "category_focus": "API configuration"
+    },
+    {
+      "id": "tools_3",
+      "conversation": "USER: We just migrated from Mailchimp to Klaviyo. The segmentation is so much better.\nASSISTANT: What segments are you using?\nUSER: RFM-based: high-value, at-risk, and dormant customers.",
+      "expected_categories": ["company.tools_config"],
+      "difficulty": "medium",
+      "category_focus": "Tool migration and usage"
+    },
+    {
+      "id": "tools_4",
+      "conversation": "USER: Can you remind me how to export data from Google Analytics?\nASSISTANT: Go to Reports, select your date range, then click Export.\nUSER: Got it, thanks.",
+      "expected_categories": ["none"],
+      "difficulty": "easy",
+      "category_focus": "How-to question"
+    },
+    {
+      "id": "tools_5",
+      "conversation": "USER: Our Slack is integrated with everything - Asana, HubSpot, even our custom dashboards.\nASSISTANT: Centralized notifications.\nUSER: It's our command center. All marketing alerts go there.",
+      "expected_categories": ["company.tools_config"],
+      "difficulty": "medium",
+      "category_focus": "Workflow integrations"
+    },
+    {
+      "id": "tools_6",
+      "conversation": "USER: We're evaluating Notion vs Confluence for our marketing wiki.\nASSISTANT: What are your key requirements?\nUSER: Easy editing and good search. Our current docs are a mess.",
+      "expected_categories": ["none"],
+      "difficulty": "medium",
+      "category_focus": "Tool evaluation (not decided)"
+    },
+    {
+      "id": "user_1",
+      "conversation": "USER: I'm the VP of Growth, reporting to the CMO. I own all acquisition channels.\nASSISTANT: That's a broad scope. What's your team size?\nUSER: 12 people across paid, organic, and partnerships.",
+      "expected_categories": ["user.role_context"],
+      "difficulty": "easy",
+      "category_focus": "Role and scope"
+    },
+    {
+      "id": "user_2",
+      "conversation": "USER: I prefer bullet points over paragraphs. Get to the point quickly.\nASSISTANT: Noted. I'll keep responses concise and scannable.\nUSER: Perfect. Time is my scarcest resource.",
+      "expected_categories": ["user.communication_style"],
+      "difficulty": "easy",
+      "category_focus": "Format preference"
+    },
+    {
+      "id": "user_3",
+      "conversation": "USER: Don't sugarcoat things. If something's not working, tell me directly.\nASSISTANT: Direct feedback, even when it's uncomfortable.\nUSER: Especially when it's uncomfortable. That's when I need it most.",
+      "expected_categories": ["user.interaction_preferences"],
+      "difficulty": "medium",
+      "category_focus": "Feedback style"
+    },
+    {
+      "id": "user_4",
+      "conversation": "USER: I review all campaigns on Friday afternoons. That's when I have focus time.\nASSISTANT: I'll schedule campaign reviews for Fridays then.\nUSER: And send me a summary Thursday evening so I can prep.",
+      "expected_categories": ["user.workflow_patterns"],
+      "difficulty": "medium",
+      "category_focus": "Review cadence"
+    },
+    {
+      "id": "user_5",
+      "conversation": "USER: Yesterday we discussed the influencer strategy. Can you pull up those notes?\nASSISTANT: Yes, we covered micro-influencer targeting and budget allocation.\nUSER: Right. Let's continue from the budget discussion.",
+      "expected_categories": ["user.session_history"],
+      "difficulty": "easy",
+      "category_focus": "Session continuity"
+    },
+    {
+      "id": "user_6",
+      "conversation": "USER: I believe in 'strong opinions, loosely held'. I'll argue a point but change my mind with good data.\nASSISTANT: Intellectually flexible but not wishy-washy.\nUSER: Exactly. Challenge me when you think I'm wrong.",
+      "expected_categories": ["user.strategic_approach", "user.interaction_preferences"],
+      "difficulty": "hard",
+      "category_focus": "Personal philosophy + interaction style"
+    },
+    {
+      "id": "user_7",
+      "conversation": "USER: How's your day going?\nASSISTANT: Going well, thanks! How can I help you today?\nUSER: Just checking in before our meeting.",
+      "expected_categories": ["none"],
+      "difficulty": "easy",
+      "category_focus": "Small talk"
+    },
+    {
+      "id": "user_8",
+      "conversation": "USER: I'm a visual thinker. Show me charts and diagrams whenever possible.\nASSISTANT: I'll prioritize visual representations in my responses.\nUSER: And color-code things by priority if you can.",
+      "expected_categories": ["user.communication_style"],
+      "difficulty": "medium",
+      "category_focus": "Visual preference"
+    },
+    {
+      "id": "user_9",
+      "conversation": "USER: I've been in marketing for 15 years, so skip the basics.\nASSISTANT: I'll assume expert-level knowledge.\nUSER: Good. I hate when tools explain obvious concepts.",
+      "expected_categories": ["user.interaction_preferences", "user.role_context"],
+      "difficulty": "hard",
+      "category_focus": "Experience level + interaction"
+    },
+    {
+      "id": "user_10",
+      "conversation": "USER: My success metric is pipeline contribution. Everything else is vanity.\nASSISTANT: Revenue-focused measurement.\nUSER: If it doesn't move pipeline, I don't care about it.",
+      "expected_categories": ["user.strategic_approach"],
+      "difficulty": "medium",
+      "category_focus": "Personal success definition"
+    },
+    {
+      "id": "priority_1",
+      "conversation": "USER: Q4 is all about Black Friday and Cyber Monday. Everything else takes a back seat.\nASSISTANT: So BFCM is the top priority through year-end?\nUSER: 60% of our annual revenue happens in those two weeks.",
+      "expected_categories": ["company.business_priorities"],
+      "difficulty": "easy",
+      "category_focus": "Seasonal priority"
+    },
+    {
+      "id": "priority_2",
+      "conversation": "USER: We're launching a new product line next month. All marketing resources are shifting to support it.\nASSISTANT: What's the launch timeline?\nUSER: Soft launch March 1st, full campaign March 15th.",
+      "expected_categories": ["company.business_priorities"],
+      "difficulty": "medium",
+      "category_focus": "Product launch priority"
+    },
+    {
+      "id": "priority_3",
+      "conversation": "USER: The board wants us to focus on profitability over growth this year.\nASSISTANT: A shift from growth-at-all-costs.\nUSER: Yes. CAC payback under 12 months is now mandatory.",
+      "expected_categories": ["company.business_priorities", "company.strategic_signatures"],
+      "difficulty": "hard",
+      "category_focus": "Strategic priority shift"
+    },
+    {
+      "id": "priority_4",
+      "conversation": "USER: We need to hit 10,000 email subscribers by end of quarter.\nASSISTANT: What's the current count?\nUSER: 6,500. So we need about 120 new subs per day.",
+      "expected_categories": ["company.business_priorities"],
+      "difficulty": "medium",
+      "category_focus": "Specific goal"
+    },
+    {
+      "id": "priority_5",
+      "conversation": "USER: Retention is our #1 focus this year. We've been leaking customers.\nASSISTANT: Churn reduction over acquisition.\nUSER: We're pausing all acquisition campaigns until we fix the retention problem.",
+      "expected_categories": ["company.business_priorities"],
+      "difficulty": "medium",
+      "category_focus": "Strategic focus"
+    },
+    {
+      "id": "priority_6",
+      "conversation": "USER: What should we prioritize next quarter?\nASSISTANT: That depends on your goals. What's most important to the business?\nUSER: I'm not sure yet. Still figuring it out.",
+      "expected_categories": ["none"],
+      "difficulty": "medium",
+      "category_focus": "Undefined priority"
+    },
+    {
+      "id": "knowledge_1",
+      "conversation": "USER: We have a 50-page brand book that every agency partner must follow.\nASSISTANT: Comprehensive brand guidelines.\nUSER: It covers everything from logo usage to photography style.",
+      "expected_categories": ["company.knowledge_artifacts"],
+      "difficulty": "easy",
+      "category_focus": "Brand documentation"
+    },
+    {
+      "id": "knowledge_2",
+      "conversation": "USER: Our content playbook defines the exact process from ideation to publication.\nASSISTANT: A documented workflow.\nUSER: Every piece of content goes through the same 7-step process.",
+      "expected_categories": ["company.knowledge_artifacts"],
+      "difficulty": "medium",
+      "category_focus": "Process documentation"
+    },
+    {
+      "id": "knowledge_3",
+      "conversation": "USER: We have templates for every email type - welcome, abandoned cart, win-back, you name it.\nASSISTANT: A comprehensive email template library.\nUSER: It's saved us hundreds of hours. New team members can start producing immediately.",
+      "expected_categories": ["company.knowledge_artifacts"],
+      "difficulty": "medium",
+      "category_focus": "Template library"
+    },
+    {
+      "id": "knowledge_4",
+      "conversation": "USER: Our style guide says we never use exclamation marks in headlines.\nASSISTANT: A specific editorial rule.\nUSER: It's part of our understated brand voice.",
+      "expected_categories": ["company.knowledge_artifacts", "company.brand_core"],
+      "difficulty": "hard",
+      "category_focus": "Style guide overlapping brand"
+    }
+  ]
+}
+

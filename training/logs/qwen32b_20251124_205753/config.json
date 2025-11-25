@@ -1,0 +1,23 @@
+{
+  "base_model": "Qwen/Qwen3-32B",
+  "lora_rank": 32,
+  "sft_steps": 100,
+  "sft_batch_size": 16,
+  "sft_eval_every": 10,
+  "sft_early_stopping_patience": 5,
+  "sft_min_steps": 30,
+  "rl_iterations": 20,
+  "rl_groups_per_batch": 32,
+  "rl_group_size": 16,
+  "rl_learning_rate": 1e-05,
+  "rl_temperature": 0.7,
+  "rl_max_tokens": 100,
+  "rl_kl_threshold": 0.01,
+  "reward_f1_weight": 0.6,
+  "reward_temp_weight": 0.2,
+  "reward_parity_weight": 0.1,
+  "reward_efficiency_weight": 0.1,
+  "train_data": "training/processed_data/train_data.json",
+  "test_data": "training/processed_data/test_data.json",
+  "log_dir": "training/logs/qwen32b_20251124_205753"
+}

@@ -1,0 +1,206 @@
+Retrying due to status code 502. text=
+======================================================================
+MEMORY ROUTING AGENT - FULL TRAINING PIPELINE
+======================================================================
+Experiment: memory_routing_v1
+Output: training/experiments/memory_routing_v1_20251124_165000
+Base model: meta-llama/Llama-3.1-8B
+LoRA rank: 32
+
+======================================================================
+PHASE 1: SUPERVISED FINE-TUNING
+======================================================================
+Train: 800, Test: 200
+Learning rate: 2.86e-04
+Step   0: train_loss=3.4228, test_loss=2.6279, time=3.3s
+Step   1: train_loss=2.5284, time=34.7s
+Step   2: train_loss=2.0672, time=4.1s
+Step   3: train_loss=1.7094, time=4.3s
+Step   4: train_loss=1.5843, time=2.5s
+Step   5: train_loss=1.4973, time=3.0s
+Step   6: train_loss=1.3900, time=4.6s
+Step   7: train_loss=1.4226, time=24.7s
+Step   8: train_loss=1.3094, time=2.6s
+Step   9: train_loss=1.3240, time=3.4s
+Step  10: train_loss=1.1783, test_loss=1.1197, time=2.9s
+Step  11: train_loss=1.1683, time=3.0s
+Step  12: train_loss=1.2817, time=3.1s
+Step  13: train_loss=0.9658, time=2.4s
+Step  14: train_loss=0.8791, time=34.4s
+Step  15: train_loss=0.7782, time=33.0s
+Step  16: train_loss=0.7206, time=3.1s
+Step  17: train_loss=0.6524, time=2.4s
+Step  18: train_loss=0.5603, time=2.9s
+Step  19: train_loss=0.5045, time=4.4s
+Step  20: train_loss=0.4175, test_loss=0.3288, time=2.7s
+Step  21: train_loss=0.3219, time=2.2s
+Step  22: train_loss=0.3643, time=2.4s
+Step  23: train_loss=0.3799, time=2.1s
+Step  24: train_loss=0.3603, time=2.4s
+Step  25: train_loss=0.5269, time=1.9s
+Step  26: train_loss=0.3044, time=29.7s
+Step  27: train_loss=0.2869, time=3.5s
+Step  28: train_loss=0.2994, time=4.4s
+Step  29: train_loss=0.3266, time=2.2s
+Step  30: train_loss=0.3303, test_loss=0.2598, time=2.3s
+Step  31: train_loss=0.2958, time=1.8s
+Step  32: train_loss=0.3050, time=2.0s
+Step  33: train_loss=0.3092, time=33.7s
+Step  34: train_loss=0.2802, time=2.1s
+Step  35: train_loss=0.3087, time=2.0s
+Step  36: train_loss=0.3042, time=2.0s
+Step  37: train_loss=0.4495, time=3.2s
+Step  38: train_loss=0.2939, time=2.0s
+Step  39: train_loss=0.2473, time=2.0s
+Step  40: train_loss=0.2092, test_loss=0.2544, time=2.8s
+Step  41: train_loss=0.2836, time=2.9s
+Step  42: train_loss=0.2363, time=2.0s
+Step  43: train_loss=0.2641, time=2.1s
+Step  44: train_loss=0.2647, time=2.2s
+Step  45: train_loss=0.2634, time=3.5s
+Step  46: train_loss=0.2576, time=2.7s
+Step  47: train_loss=0.2471, time=2.5s
+Step  48: train_loss=0.2778, time=2.7s
+Step  49: train_loss=0.2875, time=7.9s
+Step  50: train_loss=0.4188, test_loss=0.2334, time=2.2s
+Step  51: train_loss=0.2511, time=2.7s
+Step  52: train_loss=0.1968, time=28.9s
+Step  53: train_loss=0.2182, time=2.8s
+Step  54: train_loss=0.2473, time=34.8s
+Step  55: train_loss=0.2404, time=2.6s
+Step  56: train_loss=0.2247, time=2.5s
+Step  57: train_loss=0.2161, time=2.2s
+Step  58: train_loss=0.2167, time=1.9s
+Step  59: train_loss=0.2116, time=2.1s
+Step  60: train_loss=0.2304, test_loss=0.2018, time=3.1s
+Step  61: train_loss=0.2512, time=2.8s
+Step  62: train_loss=0.2886, time=2.0s
+Step  63: train_loss=0.2893, time=1.9s
+Step  64: train_loss=0.2319, time=2.0s
+Step  65: train_loss=0.1766, time=1.9s
+Step  66: train_loss=0.2583, time=2.3s
+Step  67: train_loss=0.2068, time=3.1s
+Step  68: train_loss=0.2338, time=2.5s
+Step  69: train_loss=0.2009, time=2.0s
+Step  70: train_loss=0.1942, test_loss=0.1832, time=2.6s
+Step  71: train_loss=0.2030, time=2.2s
+Step  72: train_loss=0.1983, time=24.0s
+Step  73: train_loss=0.2216, time=2.8s
+Step  74: train_loss=0.2449, time=2.7s
+Step  75: train_loss=0.3014, time=2.8s
+Step  76: train_loss=0.2157, time=2.8s
+Step  77: train_loss=0.2117, time=16.5s
+Step  78: train_loss=0.2102, time=32.4s
+Step  79: train_loss=0.2355, time=2.1s
+Step  80: train_loss=0.2199, test_loss=0.1973, time=2.3s
+Step  81: train_loss=0.2125, time=3.6s
+Step  82: train_loss=0.2148, time=2.2s
+Step  83: train_loss=0.1887, time=2.5s
+Step  84: train_loss=0.1713, time=31.9s
+Step  85: train_loss=0.2361, time=2.3s
+Step  86: train_loss=0.1958, time=35.1s
+Step  87: train_loss=0.2396, time=2.3s
+Step  88: train_loss=0.2032, time=32.1s
+Step  89: train_loss=0.1682, time=82.7s
+Step  90: train_loss=0.1952, test_loss=0.1960, time=2.6s
+Step  91: train_loss=0.2146, time=2.3s
+Step  92: train_loss=0.1845, time=28.6s
+Step  93: train_loss=0.2103, time=3.3s
+Step  94: train_loss=0.1943, time=3.3s
+Step  95: train_loss=0.1729, time=3.1s
+Step  96: train_loss=0.1698, time=2.8s
+Step  97: train_loss=0.2020, time=3.2s
+Step  98: train_loss=0.1963, time=3.6s
+Step  99: train_loss=0.2097, test_loss=0.1150, time=3.1s
+
+Saving final SFT checkpoint...
+SFT State checkpoint: tinker://b6c9686e-b64d-5cd9-b9e5-a882b0f69d6a:train:0/weights/sft_final
+SFT Sampler checkpoint: tinker://b6c9686e-b64d-5cd9-b9e5-a882b0f69d6a:train:0/sampler_weights/sft_final_sampler
+
+--- Evaluating: SFT Model ---
+  Evaluated 50/200
+  Evaluated 100/200
+  Evaluated 150/200
+  Evaluated 200/200
+  Any Match: 87.0%
+  Exact Match: 39.0%
+  F1: 69.2%
+  Mean Reward: 0.772
+
+======================================================================
+PHASE 2: REINFORCEMENT LEARNING
+======================================================================
+Training examples: 800
+RL iterations: 15
+Batch size: 32, Group size: 8
+
+Loading SFT checkpoint: tinker://b6c9686e-b64d-5cd9-b9e5-a882b0f69d6a:train:0/weights/sft_final
+
+--- Iteration 1/15 ---
+  Reward: 0.872 ± 0.192, Acc: 100.0%, Format: 100.0%
+
+--- Iteration 2/15 ---
+  Reward: 0.842 ± 0.235, Acc: 100.0%, Format: 100.0%
+
+--- Iteration 3/15 ---
+  Reward: 0.823 ± 0.247, Acc: 100.0%, Format: 100.0%
+
+--- Iteration 4/15 ---
+  Reward: 0.901 ± 0.158, Acc: 100.0%, Format: 100.0%
+
+--- Iteration 5/15 ---
+  Reward: 0.852 ± 0.214, Acc: 100.0%, Format: 100.0%
+
+--- Iteration 6/15 ---
+  Reward: 0.843 ± 0.251, Acc: 99.6%, Format: 99.6%
+
+--- Iteration 7/15 ---
+  Reward: 0.859 ± 0.214, Acc: 100.0%, Format: 100.0%
+
+--- Iteration 8/15 ---
+  Reward: 0.899 ± 0.159, Acc: 100.0%, Format: 100.0%
+
+--- Iteration 9/15 ---
+  Reward: 0.870 ± 0.175, Acc: 100.0%, Format: 100.0%
+
+--- Iteration 10/15 ---
+  Reward: 0.866 ± 0.234, Acc: 99.6%, Format: 99.6%
+
+--- Iteration 11/15 ---
+  Reward: 0.845 ± 0.238, Acc: 100.0%, Format: 100.0%
+
+--- Iteration 12/15 ---
+  Reward: 0.908 ± 0.148, Acc: 100.0%, Format: 100.0%
+
+--- Iteration 13/15 ---
+  Reward: 0.838 ± 0.234, Acc: 100.0%, Format: 100.0%
+
+--- Iteration 14/15 ---
+  Reward: 0.899 ± 0.143, Acc: 100.0%, Format: 100.0%
+
+--- Iteration 15/15 ---
+  Reward: 0.895 ± 0.147, Acc: 100.0%, Format: 100.0%
+
+Saving final RL checkpoint...
+RL checkpoint: tinker://b6c9686e-b64d-5cd9-b9e5-a882b0f69d6a:train:0/sampler_weights/rl_final
+
+--- Evaluating: RL Model ---
+  Evaluated 50/200
+  Evaluated 100/200
+  Evaluated 150/200
+  Evaluated 200/200
+  Any Match: 90.0%
+  Exact Match: 42.5%
+  F1: 72.3%
+  Mean Reward: 0.792
+
+======================================================================
+TRAINING COMPLETE
+======================================================================
+Results saved to: training/experiments/memory_routing_v1_20251124_165000/results.json
+
+Final Model: tinker://b6c9686e-b64d-5cd9-b9e5-a882b0f69d6a:train:0/sampler_weights/rl_final
+
+Comparison:
+  SFT  - F1: 69.2%, Any Match: 87.0%
+  RL   - F1: 72.3%, Any Match: 90.0%

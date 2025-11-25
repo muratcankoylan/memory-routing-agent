@@ -1,0 +1,5246 @@
+Starting CONCURRENT generation of 1000 items in 100 batches...
+Batch size: 10 items (generated in parallel)
+Batch 1 already exists (synthetic_data/batch_01.jsonl). Skipping generation...
+Loaded 10 items so far.
+Batch 2 already exists (synthetic_data/batch_02.jsonl). Skipping generation...
+Loaded 20 items so far.
+Batch 3 already exists (synthetic_data/batch_03.jsonl). Skipping generation...
+Loaded 30 items so far.
+Batch 4 already exists (synthetic_data/batch_04.jsonl). Skipping generation...
+Loaded 40 items so far.
+
+=== Processing Batch 5 (Concurrent) ===
+  Launch 10 concurrent tasks...
+  Starting item 1 (Target: company.brand_core)...
+  Starting item 2 (Target: user.interaction_preferences)...
+  Starting item 3 (Target: company.brand_core)...
+  Starting item 4 (Target: company.knowledge_artifacts)...
+  Starting item 5 (Target: company.strategic_signatures)...
+  Starting item 6 (Target: company.strategic_signatures)...
+  Starting item 7 (Target: none)...
+  Starting item 8 (Target: company.tools_config)...
+  Starting item 9 (Target: user.workflow_patterns)...
+  Starting item 10 (Target: user.interaction_preferences)...
+  Completed item 7: none_transactional_521
+  Completed item 1: user_special_072
+  Completed item 10: user_marketing_followup_783
+  Completed item 8: user.workflow_patterns_user.interaction_preferences_user.session_history_123
+  Completed item 3: user_memory_gaming_324
+  Completed item 9: user_marketing_assistant_015
+  Completed item 5: user_marketing_assistant_762
+  Completed item 4: user.communication_style_marketing_123
+  Completed item 6: user.strategic_approach_034
+  Completed item 2: user_marketing_assistant_043
+Batch 5 complete: 10/10 items generated
+Saved batch to synthetic_data/batch_05.jsonl
+Validating batch...
+{
+  "total_examples": 10,
+  "category_distribution": {
+    "user.strategic_approach": 7,
+    "user.role_context": 3,
+    "user.interaction_preferences": 2,
+    "user.communication_style": 4,
+    "none": 1,
+    "user.workflow_patterns": 1,
+    "user.session_history": 1
+  },
+  "multi_label_frequency": 0.7,
+  "avg_turns_per_conversation": 6.0,
+  "persistence_distribution": {
+    "long": 6,
+    "medium": 3,
+    "short": 1
+  },
+  "scope_distribution": {
+    "user": 9,
+    "none": 1
+  },
+  "warnings": []
+}
+Waiting 5 seconds before next batch...
+
+=== Processing Batch 6 (Concurrent) ===
+  Launch 10 concurrent tasks...
+  Starting item 1 (Target: company.performance_context)...
+  Starting item 2 (Target: user.session_history)...
+  Starting item 3 (Target: user.workflow_patterns)...
+  Starting item 4 (Target: company.business_priorities)...
+  Starting item 5 (Target: user.strategic_approach)...
+  Starting item 6 (Target: user.strategic_approach)...
+  Starting item 7 (Target: company.tools_config)...
+  Starting item 8 (Target: none)...
+  Starting item 9 (Target: company.knowledge_artifacts)...
+  Starting item 10 (Target: company.knowledge_artifacts)...
+  Completed item 1: user_marketing_assistant_021
+  Completed item 6: user_learning_0824
+  Completed item 8: none_transactional_165
+  Completed item 4: user_marketing_conversation_036
+  Completed item 7: user_strategic_approach_001
+  Completed item 5: user_strategic_approach_082
+  Completed item 3: user.communication_style_marketing_assistant_773
+  Completed item 2: user_learning_431
+  Completed item 9: user_learning_018
+  Completed item 10: user.strategic_approach_059
+Batch 6 complete: 10/10 items generated
+Saved batch to synthetic_data/batch_06.jsonl
+Validating batch...
+{
+  "total_examples": 10,
+  "category_distribution": {
+    "user.strategic_approach": 9,
+    "user.role_context": 5,
+    "user.communication_style": 2,
+    "user.workflow_patterns": 2,
+    "none": 1
+  },
+  "multi_label_frequency": 0.6,
+  "avg_turns_per_conversation": 6.4,
+  "persistence_distribution": {
+    "medium": 4,
+    "long": 5,
+    "short": 1
+  },
+  "scope_distribution": {
+    "user": 9,
+    "none": 1
+  },
+  "warnings": []
+}
+Waiting 5 seconds before next batch...
+
+=== Processing Batch 7 (Concurrent) ===
+  Launch 10 concurrent tasks...
+  Starting item 1 (Target: user.communication_style)...
+  Starting item 2 (Target: company.tools_config)...
+  Starting item 3 (Target: user.session_history)...
+  Starting item 4 (Target: company.business_priorities)...
+  Starting item 5 (Target: company.knowledge_artifacts)...
+  Starting item 6 (Target: none)...
+  Starting item 7 (Target: user.interaction_preferences)...
+  Starting item 8 (Target: company.knowledge_artifacts)...
+  Starting item 9 (Target: user.communication_style)...
+  Starting item 10 (Target: user.workflow_patterns)...
+  Completed item 6: none_transactional_698
+  Completed item 1: user_marketing_conversation_029
+  Completed item 2: user.workflow_patterns_049
+  Completed item 7: user_interaction_preferences_148
+  Completed item 5: user_marketing_assistant_987
+  Completed item 10: user.communication_style_descriptive_label_692
+  Completed item 3: user_marketing_strategist_682
+  Completed item 8: user_special_784
+  Completed item 9: user_marketing_assistant_872
+  Completed item 4: user_scenario_872
+Batch 7 complete: 10/10 items generated
+Saved batch to synthetic_data/batch_07.jsonl
+Validating batch...
+{
+  "total_examples": 10,
+  "category_distribution": {
+    "user.interaction_preferences": 2,
+    "user.communication_style": 5,
+    "user.strategic_approach": 5,
+    "user.workflow_patterns": 2,
+    "user.role_context": 2,
+    "none": 1
+  },
+  "multi_label_frequency": 0.6,
+  "avg_turns_per_conversation": 6.0,
+  "persistence_distribution": {
+    "long": 7,
+    "medium": 1,
+    "short": 1,
+    "evolving": 1
+  },
+  "scope_distribution": {
+    "user": 9,
+    "none": 1
+  },
+  "warnings": []
+}
+Waiting 5 seconds before next batch...
+
+=== Processing Batch 8 (Concurrent) ===
+  Launch 10 concurrent tasks...
+  Starting item 1 (Target: company.brand_core)...
+  Starting item 2 (Target: user.interaction_preferences)...
+  Starting item 3 (Target: company.performance_context)...
+  Starting item 4 (Target: company.brand_core)...
+  Starting item 5 (Target: company.strategic_signatures)...
+  Starting item 6 (Target: user.interaction_preferences)...
+  Starting item 7 (Target: company.business_priorities)...
+  Starting item 8 (Target: user.interaction_preferences)...
+  Starting item 9 (Target: user.session_history)...
+  Starting item 10 (Target: none)...
+  Completed item 10: none_transactional_527
+  Completed item 8: user_marketing_analyst_478
+  Completed item 6: user_marketing_assistant_777
+  Completed item 2: user_special_082
+  Completed item 7: user_mixed_012
+  Completed item 9: user_security_analyst_942
+  Completed item 5: user_marketing_assistant_062
+  Completed item 1: user_marketing_conversation_010
+  Completed item 4: user_mixed_015
+  Completed item 3: user.strategic_approach_123
+Batch 8 complete: 10/10 items generated
+Saved batch to synthetic_data/batch_08.jsonl
+Validating batch...
+{
+  "total_examples": 10,
+  "category_distribution": {
+    "user.strategic_approach": 8,
+    "user.workflow_patterns": 2,
+    "user.communication_style": 1,
+    "company.brand_core": 1,
+    "user.role_context": 3,
+    "user.session_history": 2,
+    "none": 1
+  },
+  "multi_label_frequency": 0.7,
+  "avg_turns_per_conversation": 7.0,
+  "persistence_distribution": {
+    "long": 6,
+    "medium": 1,
+    "short": 3
+  },
+  "scope_distribution": {
+    "user": 8,
+    "mixed": 1,
+    "none": 1
+  },
+  "warnings": []
+}
+Waiting 5 seconds before next batch...
+
+=== Processing Batch 9 (Concurrent) ===
+  Launch 10 concurrent tasks...
+  Starting item 1 (Target: user.session_history)...
+  Starting item 2 (Target: user.workflow_patterns)...
+  Starting item 3 (Target: user.strategic_approach)...
+  Starting item 4 (Target: company.brand_core)...
+  Starting item 5 (Target: company.strategic_signatures)...
+  Starting item 6 (Target: none)...
+  Starting item 7 (Target: company.knowledge_artifacts)...
+  Starting item 8 (Target: none)...
+  Starting item 9 (Target: user.interaction_preferences)...
+  Starting item 10 (Target: user.session_history)...
+  Completed item 4: company_memory_integration_001
+  Completed item 2: user_marketing_strategy_789
+  Completed item 8: none_transactional_584
+  Completed item 6: none_transactional_458
+  Completed item 1: user_special_923
+  Completed item 10: user_engagement_strategy_836
+  Completed item 3: user_marketing_project_042
+  Completed item 7: user_assistant_015
+  Completed item 9: user_specialist_973
+  Completed item 5: company_strategic_signatures_workflow_174
+Batch 9 complete: 10/10 items generated
+Saved batch to synthetic_data/batch_09.jsonl
+Validating batch...
+{
+  "total_examples": 10,
+  "category_distribution": {
+    "user.interaction_preferences": 1,
+    "user.session_history": 1,
+    "user.strategic_approach": 5,
+    "user.role_context": 5,
+    "company.knowledge_artifacts": 1,
+    "company.brand_core": 1,
+    "company.strategic_signatures": 1,
+    "none": 2,
+    "user.communication_style": 1
+  },
+  "multi_label_frequency": 0.7,
+  "avg_turns_per_conversation": 7.7,
+  "persistence_distribution": {
+    "short": 3,
+    "long": 7
+  },
+  "scope_distribution": {
+    "user": 6,
+    "company": 2,
+    "none": 2
+  },
+  "warnings": []
+}
+Waiting 5 seconds before next batch...
+
+=== Processing Batch 10 (Concurrent) ===
+  Launch 10 concurrent tasks...
+  Starting item 1 (Target: company.business_priorities)...
+  Starting item 2 (Target: company.brand_core)...
+  Starting item 3 (Target: company.brand_core)...
+  Starting item 4 (Target: user.communication_style)...
+  Starting item 5 (Target: company.performance_context)...
+  Starting item 6 (Target: user.session_history)...
+  Starting item 7 (Target: none)...
+  Starting item 8 (Target: user.session_history)...
+  Starting item 9 (Target: company.brand_core)...
+  Starting item 10 (Target: user.strategic_approach)...
+  Completed item 8: user_marketing_conversation_015
+  Completed item 4: user_marketing_assistant_867
+  Completed item 9: company_knowledge_artifact_045
+  Completed item 7: none_transactional_623
+  Completed item 5: user_special_049
+  Completed item 6: user.communication_style_342
+  Completed item 3: company_strategic_signatures_147
+  Completed item 10: user_real_estate_905
+  Completed item 2: user_special_047
+  Completed item 1: user_marketing_conversation_028
+Batch 10 complete: 10/10 items generated
+Saved batch to synthetic_data/batch_10.jsonl
+Validating batch...
+{
+  "total_examples": 10,
+  "category_distribution": {
+    "user.strategic_approach": 6,
+    "user.workflow_patterns": 3,
+    "user.role_context": 2,
+    "company.strategic_signatures": 1,
+    "company.brand_core": 1,
+    "user.communication_style": 2,
+    "none": 1,
+    "company.knowledge_artifacts": 1
+  },
+  "multi_label_frequency": 0.7,
+  "avg_turns_per_conversation": 5.7,
+  "persistence_distribution": {
+    "long": 9,
+    "short": 1
+  },
+  "scope_distribution": {
+    "user": 7,
+    "company": 2,
+    "none": 1
+  },
+  "warnings": []
+}
+Waiting 5 seconds before next batch...
+
+=== Processing Batch 11 (Concurrent) ===
+  Launch 10 concurrent tasks...
+  Starting item 1 (Target: company.strategic_signatures)...
+  Starting item 2 (Target: none)...
+  Starting item 3 (Target: user.workflow_patterns)...
+  Starting item 4 (Target: company.knowledge_artifacts)...
+  Starting item 5 (Target: user.session_history)...
+  Starting item 6 (Target: user.interaction_preferences)...
+  Starting item 7 (Target: user.workflow_patterns)...
+  Starting item 8 (Target: company.knowledge_artifacts)...
+  Starting item 9 (Target: company.strategic_signatures)...
+  Starting item 10 (Target: user.session_history)...
+  Completed item 2: none_transactional_745
+  Completed item 7: user_marketing_assistant_064
+  Completed item 4: company_marketing_conversation_842
+  Completed item 9: user_sales_conversation_774
+  Completed item 6: user_marketing_conversation_029
+  Completed item 1: user_special_034
+  Completed item 3: user_special_061
+  Completed item 5: user_marketing_538
+  Completed item 10: user_marketing_723
+  Completed item 8: user_marketing_assistant_789
+Batch 11 complete: 10/10 items generated
+Saved batch to synthetic_data/batch_11.jsonl
+Validating batch...
+{
+  "total_examples": 10,
+  "category_distribution": {
+    "user.session_history": 1,
+    "none": 1,
+    "user.strategic_approach": 7,
+    "user.role_context": 4,
+    "company.business_priorities": 1,
+    "company.performance_context": 1,
+    "user.communication_style": 3,
+    "user.interaction_preferences": 1,
+    "user.workflow_patterns": 1
+  },
+  "multi_label_frequency": 0.8,
+  "avg_turns_per_conversation": 5.4,
+  "persistence_distribution": {
+    "short": 3,
+    "long": 4,
+    "medium": 3
+  },
+  "scope_distribution": {
+    "user": 8,
+    "none": 1,
+    "company": 1
+  },
+  "warnings": []
+}
+Waiting 5 seconds before next batch...
+
+=== Processing Batch 12 (Concurrent) ===
+  Launch 10 concurrent tasks...
+  Starting item 1 (Target: company.brand_core)...
+  Starting item 2 (Target: company.strategic_signatures)...
+  Starting item 3 (Target: company.performance_context)...
+  Starting item 4 (Target: user.interaction_preferences)...
+  Starting item 5 (Target: user.interaction_preferences)...
+  Starting item 6 (Target: user.interaction_preferences)...
+  Starting item 7 (Target: none)...
+  Starting item 8 (Target: company.brand_core)...
+  Starting item 9 (Target: company.tools_config)...
+  Starting item 10 (Target: company.tools_config)...
+  Completed item 7: none_transactional_059
+  Completed item 6: user.communication_style_user.strategic_approach_142
+  Completed item 8: user_marketing_259
+  Completed item 9: user.strategic_approach_152
+  Completed item 1: user.communication_style_348
+  Completed item 3: user_marketing_369
+  Completed item 10: user.communication_style_special_892
+  Completed item 4: user.strategic_approach_user_feedback_698
+  Completed item 5: user_security_analyst_048
+  Completed item 2: user_special_775
+Batch 12 complete: 10/10 items generated
+Saved batch to synthetic_data/batch_12.jsonl
+Validating batch...
+{
+  "total_examples": 10,
+  "category_distribution": {
+    "user.strategic_approach": 9,
+    "user.communication_style": 4,
+    "user.role_context": 4,
+    "none": 1
+  },
+  "multi_label_frequency": 0.7,
+  "avg_turns_per_conversation": 6.7,
+  "persistence_distribution": {
+    "long": 8,
+    "short": 1,
+    "medium": 1
+  },
+  "scope_distribution": {
+    "user": 9,
+    "none": 1
+  },
+  "warnings": []
+}
+Waiting 5 seconds before next batch...
+
+=== Processing Batch 13 (Concurrent) ===
+  Launch 10 concurrent tasks...
+  Starting item 1 (Target: user.session_history)...
+  Starting item 2 (Target: company.knowledge_artifacts)...
+  Starting item 3 (Target: company.brand_core)...
+  Starting item 4 (Target: none)...
+  Starting item 5 (Target: none)...
+  Starting item 6 (Target: company.strategic_signatures)...
+  Starting item 7 (Target: none)...
+  Starting item 8 (Target: user.workflow_patterns)...
+  Starting item 9 (Target: company.performance_context)...
+  Starting item 10 (Target: user.session_history)...
+  Completed item 5: none_transactional_712
+  Completed item 8: user.communication_style_user.strategic_approach_user.role_context_135
+  Completed item 7: none_transactional_372
+  Completed item 3: user_strategic_approach_783
+  Completed item 9: user_descriptive_label_046
+  Completed item 1: user_marketing_support_025
+  Completed item 2: user.communication_style_descriptive_label_823
+  Completed item 4: none_transactional_456
+  Completed item 6: user_marketing_assistant_654
+  Completed item 10: user.communication_style_user.role_context_214
+Batch 13 complete: 10/10 items generated
+Saved batch to synthetic_data/batch_13.jsonl
+Validating batch...
+{
+  "total_examples": 10,
+  "category_distribution": {
+    "user.workflow_patterns": 3,
+    "user.interaction_preferences": 1,
+    "user.strategic_approach": 5,
+    "user.communication_style": 3,
+    "none": 3,
+    "user.role_context": 2
+  },
+  "multi_label_frequency": 0.6,
+  "avg_turns_per_conversation": 6.7,
+  "persistence_distribution": {
+    "medium": 1,
+    "long": 6,
+    "short": 3
+  },
+  "scope_distribution": {
+    "user": 7,
+    "none": 3
+  },
+  "warnings": []
+}
+Waiting 5 seconds before next batch...
+
+=== Processing Batch 14 (Concurrent) ===
+  Launch 10 concurrent tasks...
+  Starting item 1 (Target: user.communication_style)...
+  Starting item 2 (Target: user.role_context)...
+  Starting item 3 (Target: company.brand_core)...
+  Starting item 4 (Target: user.session_history)...
+  Starting item 5 (Target: company.brand_core)...
+  Starting item 6 (Target: company.business_priorities)...
+  Starting item 7 (Target: user.strategic_approach)...
+  Starting item 8 (Target: company.strategic_signatures)...
+  Starting item 9 (Target: user.communication_style)...
+  Starting item 10 (Target: user.interaction_preferences)...
+  Completed item 7: company_memory_marketing_952
+  Completed item 5: company_marketing_330
+  Completed item 10: user_marketing_conversation_827
+  Completed item 2: user_special_061
+  Completed item 6: user_special_012
+  Completed item 9: user_marketing_strategy_856
+  Completed item 4: user_memory_258
+  Completed item 3: user_marketing_assistant_777
+  Completed item 1: user_mixed_089
+  Completed item 8: company_growth_strategy_001
+Batch 14 complete: 10/10 items generated
+Saved batch to synthetic_data/batch_14.jsonl
+Validating batch...
+{
+  "total_examples": 10,
+  "category_distribution": {
+    "user.strategic_approach": 7,
+    "user.communication_style": 2,
+    "user.role_context": 3,
+    "user.workflow_patterns": 2,
+    "company.strategic_signatures": 2,
+    "company.brand_core": 3,
+    "company.performance_context": 2
+  },
+  "multi_label_frequency": 0.9,
+  "avg_turns_per_conversation": 6.1,
+  "persistence_distribution": {
+    "long": 8,
+    "medium": 2
+  },
+  "scope_distribution": {
+    "user": 7,
+    "company": 3
+  },
+  "warnings": []
+}
+Waiting 5 seconds before next batch...
+
+=== Processing Batch 15 (Concurrent) ===
+  Launch 10 concurrent tasks...
+  Starting item 1 (Target: user.interaction_preferences)...
+  Starting item 2 (Target: user.workflow_patterns)...
+  Starting item 3 (Target: user.communication_style)...
+  Starting item 4 (Target: user.communication_style)...
+  Starting item 5 (Target: user.interaction_preferences)...
+  Starting item 6 (Target: user.session_history)...
+  Starting item 7 (Target: company.strategic_signatures)...
+  Starting item 8 (Target: none)...
+  Starting item 9 (Target: user.communication_style)...
+  Starting item 10 (Target: company.brand_core)...
+  Completed item 10: company_memory_enhancement_982
+  Completed item 4: user.strategic_approach_104
+  Completed item 8: none_transactional_717
+  Completed item 2: user_user_456
+  Completed item 3: user.communication_style_user.strategic_approach_user.role_context_195
+  Completed item 1: user_marketing_assistant_021
+  Completed item 7: user_descriptive_label_734
+  Completed item 6: user_marketing_478
+  Completed item 9: user_sales_strategy_039
+  Completed item 5: user_marketing_strategy_738
+Batch 15 complete: 10/10 items generated
+Saved batch to synthetic_data/batch_15.jsonl
+Validating batch...
+{
+  "total_examples": 10,
+  "category_distribution": {
+    "user.strategic_approach": 8,
+    "user.workflow_patterns": 1,
+    "user.communication_style": 5,
+    "user.role_context": 3,
+    "none": 1,
+    "company.performance_context": 1,
+    "company.brand_core": 1
+  },
+  "multi_label_frequency": 0.7,
+  "avg_turns_per_conversation": 6.6,
+  "persistence_distribution": {
+    "long": 9,
+    "short": 1
+  },
+  "scope_distribution": {
+    "user": 8,
+    "none": 1,
+    "company": 1
+  },
+  "warnings": []
+}
+Waiting 5 seconds before next batch...
+
+=== Processing Batch 16 (Concurrent) ===
+  Launch 10 concurrent tasks...
+  Starting item 1 (Target: company.brand_core)...
+  Starting item 2 (Target: user.strategic_approach)...
+  Starting item 3 (Target: user.interaction_preferences)...
+  Starting item 4 (Target: user.strategic_approach)...
+  Starting item 5 (Target: user.session_history)...
+  Starting item 6 (Target: user.interaction_preferences)...
+  Starting item 7 (Target: user.communication_style)...
+  Starting item 8 (Target: company.brand_core)...
+  Starting item 9 (Target: company.performance_context)...
+  Starting item 10 (Target: user.workflow_patterns)...
+  Completed item 9: user_marketing_assistant_019
+  Completed item 4: user_marketing_assistant_045
+  Completed item 10: user_marketing_coordination_452
+  Completed item 8: user.strategic_approach_554
+  Completed item 7: user_mixed_073
+  Completed item 6: user_marketing_387
+  Completed item 3: user.communication_style_user.strategic_approach_user.role_context_062
+  Completed item 1: user_conversation_647
+  Completed item 2: user_marketing_381
+  Completed item 5: user_special_982
+Batch 16 complete: 10/10 items generated
+Saved batch to synthetic_data/batch_16.jsonl
+Validating batch...
+{
+  "total_examples": 10,
+  "category_distribution": {
+    "user.strategic_approach": 10,
+    "user.role_context": 7,
+    "user.communication_style": 4,
+    "user.workflow_patterns": 1
+  },
+  "multi_label_frequency": 0.9,
+  "avg_turns_per_conversation": 6.4,
+  "persistence_distribution": {
+    "long": 6,
+    "medium": 4
+  },
+  "scope_distribution": {
+    "user": 10
+  },
+  "warnings": []
+}
+Waiting 5 seconds before next batch...
+
+=== Processing Batch 17 (Concurrent) ===
+  Launch 10 concurrent tasks...
+  Starting item 1 (Target: company.brand_core)...
+  Starting item 2 (Target: company.tools_config)...
+  Starting item 3 (Target: none)...
+  Starting item 4 (Target: none)...
+  Starting item 5 (Target: company.brand_core)...
+  Starting item 6 (Target: company.strategic_signatures)...
+  Starting item 7 (Target: user.session_history)...
+  Starting item 8 (Target: company.knowledge_artifacts)...
+  Starting item 9 (Target: user.role_context)...
+  Starting item 10 (Target: company.knowledge_artifacts)...
+  Completed item 10: user_marketing_conversation_019
+  Completed item 3: none_transactional_042
+  Completed item 4: none_transactional_092
+  Completed item 2: user_mixed_015
+  Completed item 9: user_special_856
+  Completed item 7: company_marketing_collaboration_001
+  Completed item 1: user_strategic_approach_001
+  Completed item 8: user.communication_style_descriptive_label_782
+  Completed item 6: user_marketing_conversation_024
+  Completed item 5: user.communication_style_descriptive_label_789
+Batch 17 complete: 10/10 items generated
+Saved batch to synthetic_data/batch_17.jsonl
+Validating batch...
+{
+  "total_examples": 10,
+  "category_distribution": {
+    "user.strategic_approach": 6,
+    "user.communication_style": 4,
+    "none": 2,
+    "user.role_context": 3,
+    "company.business_priorities": 1,
+    "company.strategic_signatures": 1
+  },
+  "multi_label_frequency": 0.6,
+  "avg_turns_per_conversation": 7.1,
+  "persistence_distribution": {
+    "long": 6,
+    "short": 2,
+    "medium": 2
+  },
+  "scope_distribution": {
+    "user": 7,
+    "none": 2,
+    "company": 1
+  },
+  "warnings": []
+}
+Waiting 5 seconds before next batch...
+
+=== Processing Batch 18 (Concurrent) ===
+  Launch 10 concurrent tasks...
+  Starting item 1 (Target: company.strategic_signatures)...
+  Starting item 2 (Target: none)...
+  Starting item 3 (Target: company.knowledge_artifacts)...
+  Starting item 4 (Target: none)...
+  Starting item 5 (Target: company.strategic_signatures)...
+  Starting item 6 (Target: user.role_context)...
+  Starting item 7 (Target: none)...
+  Starting item 8 (Target: company.strategic_signatures)...
+  Starting item 9 (Target: company.knowledge_artifacts)...
+  Starting item 10 (Target: none)...
+  Completed item 8: user_special_073
+  Completed item 10: none_transactional_098
+  Completed item 1: user.strategic_approach_081
+  Completed item 4: none_transactional_135
+  Completed item 2: none_transactional_452
+  Completed item 9: user_marketing_874
+  Completed item 7: none_transactional_435
+  Completed item 3: user.communication_style_marketing_assistant_782
+  Completed item 6: user_special_712
+  Completed item 5: user_marketing_strategy_458
+Batch 18 complete: 10/10 items generated
+Saved batch to synthetic_data/batch_18.jsonl
+Validating batch...
+{
+  "total_examples": 10,
+  "category_distribution": {
+    "user.strategic_approach": 6,
+    "none": 4,
+    "user.communication_style": 2,
+    "user.role_context": 2
+  },
+  "multi_label_frequency": 0.3,
+  "avg_turns_per_conversation": 7.1,
+  "persistence_distribution": {
+    "long": 5,
+    "short": 4,
+    "medium": 1
+  },
+  "scope_distribution": {
+    "user": 6,
+    "none": 4
+  },
+  "warnings": []
+}
+Waiting 5 seconds before next batch...
+
+=== Processing Batch 19 (Concurrent) ===
+  Launch 10 concurrent tasks...
+  Starting item 1 (Target: company.tools_config)...
+  Starting item 2 (Target: user.interaction_preferences)...
+  Starting item 3 (Target: company.performance_context)...
+  Starting item 4 (Target: none)...
+  Starting item 5 (Target: user.session_history)...
+  Starting item 6 (Target: none)...
+  Starting item 7 (Target: none)...
+  Starting item 8 (Target: company.brand_core)...
+  Starting item 9 (Target: user.communication_style)...
+  Starting item 10 (Target: company.business_priorities)...
+  Completed item 7: none_transactional_036
+  Completed item 4: none_transactional_048
+  Completed item 6: none_transactional_487
+  Completed item 5: user.strategic_approach_036
+  Completed item 2: user_marketing_823
+  Completed item 8: company_knowledge_artifacts_456
+  Completed item 3: user_marketing_assistant_782
+  Completed item 10: user_marketing_assistant_683
+  Completed item 1: user_strategic_approach_548
+Scenario generation failed (attempt 1/6): Unterminated string starting at: line 4 column 3 (char 529)
+Retrying in 10s...
+  Completed item 9: user_training_471
+Batch 19 complete: 10/10 items generated
+Saved batch to synthetic_data/batch_19.jsonl
+Validating batch...
+{
+  "total_examples": 10,
+  "category_distribution": {
+    "user.strategic_approach": 6,
+    "user.communication_style": 4,
+    "user.role_context": 2,
+    "none": 3,
+    "company.knowledge_artifacts": 1,
+    "company.brand_core": 1
+  },
+  "multi_label_frequency": 0.6,
+  "avg_turns_per_conversation": 8.0,
+  "persistence_distribution": {
+    "long": 5,
+    "medium": 2,
+    "short": 3
+  },
+  "scope_distribution": {
+    "user": 6,
+    "none": 3,
+    "company": 1
+  },
+  "warnings": []
+}
+Waiting 5 seconds before next batch...
+
+=== Processing Batch 20 (Concurrent) ===
+  Launch 10 concurrent tasks...
+  Starting item 1 (Target: company.knowledge_artifacts)...
+  Starting item 2 (Target: user.workflow_patterns)...
+  Starting item 3 (Target: user.workflow_patterns)...
+  Starting item 4 (Target: user.strategic_approach)...
+  Starting item 5 (Target: user.communication_style)...
+  Starting item 6 (Target: company.performance_context)...
+  Starting item 7 (Target: user.interaction_preferences)...
+  Starting item 8 (Target: company.business_priorities)...
+  Starting item 9 (Target: company.knowledge_artifacts)...
+  Starting item 10 (Target: company.brand_core)...
+  Completed item 7: user_special_082
+  Completed item 3: user_special_816
+  Completed item 9: user_mixed_019
+  Completed item 10: user_marketing_assistant_045
+  Completed item 6: user_strategic_approach_042
+  Completed item 8: user.communication_style_descriptive_label_053
+  Completed item 4: company_descriptive_label_012
+  Completed item 1: user.communication_style_descriptive_label_738
+  Completed item 5: user_incident_response_048
+  Completed item 2: user_marketing_321
+Batch 20 complete: 10/10 items generated
+Saved batch to synthetic_data/batch_20.jsonl
+Validating batch...
+{
+  "total_examples": 10,
+  "category_distribution": {
+    "user.strategic_approach": 8,
+    "user.communication_style": 6,
+    "user.role_context": 4,
+    "user.workflow_patterns": 1,
+    "company.business_priorities": 1,
+    "company.performance_context": 1,
+    "company.brand_core": 1
+  },
+  "multi_label_frequency": 0.8,
+  "avg_turns_per_conversation": 6.9,
+  "persistence_distribution": {
+    "long": 9,
+    "short": 1
+  },
+  "scope_distribution": {
+    "user": 8,
+    "company": 1,
+    "mixed": 1
+  },
+  "warnings": []
+}
+Waiting 5 seconds before next batch...
+
+=== Processing Batch 21 (Concurrent) ===
+  Launch 10 concurrent tasks...
+  Starting item 1 (Target: company.performance_context)...
+  Starting item 2 (Target: user.workflow_patterns)...
+  Starting item 3 (Target: company.strategic_signatures)...
+  Starting item 4 (Target: company.strategic_signatures)...
+  Starting item 5 (Target: user.interaction_preferences)...
+  Starting item 6 (Target: user.workflow_patterns)...
+  Starting item 7 (Target: none)...
+  Starting item 8 (Target: company.brand_core)...
+  Starting item 9 (Target: user.communication_style)...
+  Starting item 10 (Target: user.interaction_preferences)...
+Conversation generation failed (attempt 1/6): headers: {'content-type': 'text/html; charset=UTF-8', 'referrer-policy': 'no-referrer', 'content-length': '332', 'date': 'Mon, 24 Nov 2025 18:11:12 GMT', 'alt-svc': 'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000'}, status_code: 502, body: 
+<html><head>
+<meta http-equiv="content-type" content="text/html;charset=utf-8">
+<title>502 Server Error</title>
+</head>
+<body text=#000000 bgcolor=#ffffff>
+<h1>Error: Server Error</h1>
+<h2>The server encountered a temporary error and could not complete your request.<p>Please try again in 30 seconds.</h2>
+<h2></h2>
+</body></html>
+
+Retrying in 10s...Conversation generation failed (attempt 1/6): headers: {'content-type': 'text/html; charset=UTF-8', 'referrer-policy': 'no-referrer', 'content-length': '332', 'date': 'Mon, 24 Nov 2025 18:11:12 GMT', 'alt-svc': 'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000'}, status_code: 502, body: 
+<html><head>
+<meta http-equiv="content-type" content="text/html;charset=utf-8">
+<title>502 Server Error</title>
+</head>
+<body text=#000000 bgcolor=#ffffff>
+<h1>Error: Server Error</h1>
+<h2>The server encountered a temporary error and could not complete your request.<p>Please try again in 30 seconds.</h2>
+<h2></h2>
+</body></html>
+
+
+Retrying in 10s...
+Conversation generation failed (attempt 1/6): headers: {'content-type': 'text/html; charset=UTF-8', 'referrer-policy': 'no-referrer', 'content-length': '332', 'date': 'Mon, 24 Nov 2025 18:11:12 GMT', 'alt-svc': 'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000'}, status_code: 502, body: 
+<html><head>
+<meta http-equiv="content-type" content="text/html;charset=utf-8">
+<title>502 Server Error</title>
+</head>
+<body text=#000000 bgcolor=#ffffff>
+<h1>Error: Server Error</h1>
+<h2>The server encountered a temporary error and could not complete your request.<p>Please try again in 30 seconds.</h2>
+<h2></h2>
+</body></html>
+
+Retrying in 10s...
+Scenario generation failed (attempt 1/6): headers: {'content-type': 'text/html; charset=UTF-8', 'referrer-policy': 'no-referrer', 'content-length': '332', 'date': 'Mon, 24 Nov 2025 18:11:12 GMT', 'alt-svc': 'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000'}, status_code: 502, body: 
+<html><head>
+<meta http-equiv="content-type" content="text/html;charset=utf-8">
+<title>502 Server Error</title>
+</head>
+<body text=#000000 bgcolor=#ffffff>
+<h1>Error: Server Error</h1>
+<h2>The server encountered a temporary error and could not complete your request.<p>Please try again in 30 seconds.</h2>
+<h2></h2>
+</body></html>
+
+Retrying in 10s...
+Scenario generation failed (attempt 1/6): headers: {'content-type': 'text/html; charset=UTF-8', 'referrer-policy': 'no-referrer', 'content-length': '332', 'date': 'Mon, 24 Nov 2025 18:11:12 GMT', 'alt-svc': 'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000'}, status_code: 502, body: 
+<html><head>
+<meta http-equiv="content-type" content="text/html;charset=utf-8">
+<title>502 Server Error</title>
+</head>
+<body text=#000000 bgcolor=#ffffff>
+<h1>Error: Server Error</h1>
+<h2>The server encountered a temporary error and could not complete your request.<p>Please try again in 30 seconds.</h2>
+<h2></h2>
+</body></html>
+
+Retrying in 10s...
+  Completed item 10: user.communication_style_059
+  Completed item 1: user_special_054
+  Completed item 9: user_marketing_452
+  Completed item 3: company_marketing_strategy_032
+  Completed item 7: none_transactional_557
+  Completed item 5: user_special_094
+  Completed item 8: company_marketing_582
+  Completed item 4: user_marketing_conversation_014
+  Completed item 6: user_scenario_321
+  Completed item 2: user.strategic_approach_147
+Batch 21 complete: 10/10 items generated
+Saved batch to synthetic_data/batch_21.jsonl
+Validating batch...
+{
+  "total_examples": 10,
+  "category_distribution": {
+    "user.strategic_approach": 7,
+    "user.role_context": 3,
+    "company.strategic_signatures": 1,
+    "user.workflow_patterns": 1,
+    "none": 1,
+    "company.performance_context": 1,
+    "company.brand_core": 1,
+    "user.communication_style": 2
+  },
+  "multi_label_frequency": 0.7,
+  "avg_turns_per_conversation": 7.3,
+  "persistence_distribution": {
+    "long": 8,
+    "long|medium": 1,
+    "short": 1
+  },
+  "scope_distribution": {
+    "user": 7,
+    "company": 2,
+    "none": 1
+  },
+  "warnings": []
+}
+Waiting 5 seconds before next batch...
+
+=== Processing Batch 22 (Concurrent) ===
+  Launch 10 concurrent tasks...
+  Starting item 1 (Target: user.communication_style)...
+  Starting item 2 (Target: user.session_history)...
+  Starting item 3 (Target: company.tools_config)...
+  Starting item 4 (Target: company.brand_core)...
+  Starting item 5 (Target: none)...
+  Starting item 6 (Target: user.interaction_preferences)...
+  Starting item 7 (Target: user.communication_style)...
+  Starting item 8 (Target: user.communication_style)...
+  Starting item 9 (Target: user.session_history)...
+  Starting item 10 (Target: user.strategic_approach)...
+  Completed item 9: user_marketing_assistant_039
+  Completed item 4: company_marketing_discussion_010
+  Completed item 3: user_marketing_strategy_463
+  Completed item 6: user_engineer_338
+  Completed item 5: none_transactional_472
+  Completed item 8: user.communication_style_user.strategic_approach_user.role_context_214
+  Completed item 1: user_mixed_013
+  Completed item 2: user_marketing_strategy_031
+  Completed item 7: user_feedback_145
+  Completed item 10: user_marketing_assistant_014
+Batch 22 complete: 10/10 items generated
+Saved batch to synthetic_data/batch_22.jsonl
+Validating batch...
+{
+  "total_examples": 10,
+  "category_distribution": {
+    "user.workflow_patterns": 1,
+    "user.session_history": 1,
+    "user.role_context": 5,
+    "user.strategic_approach": 7,
+    "user.communication_style": 5,
+    "company.strategic_signatures": 1,
+    "company.brand_core": 1,
+    "none": 1
+  },
+  "multi_label_frequency": 0.8,
+  "avg_turns_per_conversation": 7.0,
+  "persistence_distribution": {
+    "medium": 2,
+    "long": 7,
+    "short": 1
+  },
+  "scope_distribution": {
+    "user": 8,
+    "company": 1,
+    "none": 1
+  },
+  "warnings": []
+}
+Waiting 5 seconds before next batch...
+
+=== Processing Batch 23 (Concurrent) ===
+  Launch 10 concurrent tasks...
+  Starting item 1 (Target: user.session_history)...
+  Starting item 2 (Target: user.interaction_preferences)...
+  Starting item 3 (Target: user.communication_style)...
+  Starting item 4 (Target: company.brand_core)...
+  Starting item 5 (Target: user.session_history)...
+  Starting item 6 (Target: none)...
+  Starting item 7 (Target: company.tools_config)...
+  Starting item 8 (Target: none)...
+  Starting item 9 (Target: none)...
+  Starting item 10 (Target: none)...
+  Completed item 10: none_transactional_736
+  Completed item 9: none_transactional_538
+  Completed item 4: user.communication_style_user.strategic_approach_user.role_context_234
+  Completed item 5: user_troubleshooting_023
+  Completed item 7: company_marketing_assistant_019
+  Completed item 1: user_marketing_338
+  Completed item 6: none_transactional_731
+  Completed item 2: user_marketing_specialist_452
+  Completed item 8: none_transactional_023
+  Completed item 3: user_marketing_conversation_845
+Batch 23 complete: 10/10 items generated
+Saved batch to synthetic_data/batch_23.jsonl
+Validating batch...
+{
+  "total_examples": 10,
+  "category_distribution": {
+    "user.strategic_approach": 5,
+    "user.role_context": 4,
+    "user.communication_style": 2,
+    "none": 4,
+    "company.strategic_signatures": 1,
+    "company.performance_context": 1
+  },
+  "multi_label_frequency": 0.5,
+  "avg_turns_per_conversation": 6.9,
+  "persistence_distribution": {
+    "long": 4,
+    "medium": 1,
+    "short": 4,
+    "rolling": 1
+  },
+  "scope_distribution": {
+    "user": 5,
+    "none": 4,
+    "company": 1
+  },
+  "warnings": []
+}
+Waiting 5 seconds before next batch...
+
+=== Processing Batch 24 (Concurrent) ===
+  Launch 10 concurrent tasks...
+  Starting item 1 (Target: none)...
+  Starting item 2 (Target: company.business_priorities)...
+  Starting item 3 (Target: user.workflow_patterns)...
+  Starting item 4 (Target: user.workflow_patterns)...
+  Starting item 5 (Target: user.session_history)...
+  Starting item 6 (Target: user.session_history)...
+  Starting item 7 (Target: user.session_history)...
+  Starting item 8 (Target: none)...
+  Starting item 9 (Target: user.strategic_approach)...
+  Starting item 10 (Target: user.interaction_preferences)...
+  Completed item 8: none_transactional_412
+  Completed item 1: none_transactional_657
+  Completed item 10: user_marketing_assistant_987
+  Completed item 5: user.session_history_user.interaction_preferences_user.workflow_patterns_033
+  Completed item 6: user_security_analyst_827
+  Completed item 4: user_strategic_approach_000
+  Completed item 7: user_mixed_782
+  Completed item 9: user.strategic_approach_143
+  Completed item 2: user_mixed_073
+  Completed item 3: user_memory_long_term_planning_729
+Batch 24 complete: 10/10 items generated
+Saved batch to synthetic_data/batch_24.jsonl
+Validating batch...
+{
+  "total_examples": 10,
+  "category_distribution": {
+    "none": 2,
+    "user.strategic_approach": 6,
+    "user.workflow_patterns": 5,
+    "user.interaction_preferences": 2,
+    "user.session_history": 2
+  },
+  "multi_label_frequency": 0.6,
+  "avg_turns_per_conversation": 6.4,
+  "persistence_distribution": {
+    "short": 3,
+    "long": 6,
+    "evolving": 1
+  },
+  "scope_distribution": {
+    "none": 2,
+    "user": 8
+  },
+  "warnings": []
+}
+Waiting 5 seconds before next batch...
+
+=== Processing Batch 25 (Concurrent) ===
+  Launch 10 concurrent tasks...
+  Starting item 1 (Target: none)...
+  Starting item 2 (Target: user.session_history)...
+  Starting item 3 (Target: company.knowledge_artifacts)...
+  Starting item 4 (Target: user.interaction_preferences)...
+  Starting item 5 (Target: company.knowledge_artifacts)...
+  Starting item 6 (Target: user.interaction_preferences)...
+  Starting item 7 (Target: none)...
+  Starting item 8 (Target: user.communication_style)...
+  Starting item 9 (Target: none)...
+  Starting item 10 (Target: user.interaction_preferences)...
+  Completed item 9: none_transactional_543
+  Completed item 10: user_communication_style_023
+  Completed item 5: user.communication_style_special_812
+  Completed item 1: none_transactional_689
+  Completed item 7: none_transactional_516
+  Completed item 6: user_interaction_preferences_536
+  Completed item 3: user.communication_style_397
+  Completed item 4: user_marketing_assistant_052
+  Completed item 2: user_special_024
+  Completed item 8: user_memory_none_921
+Batch 25 complete: 10/10 items generated
+Saved batch to synthetic_data/batch_25.jsonl
+Validating batch...
+{
+  "total_examples": 10,
+  "category_distribution": {
+    "none": 4,
+    "user.strategic_approach": 4,
+    "user.workflow_patterns": 1,
+    "user.communication_style": 4,
+    "user.role_context": 1,
+    "user.interaction_preferences": 1
+  },
+  "multi_label_frequency": 0.4,
+  "avg_turns_per_conversation": 7.2,
+  "persistence_distribution": {
+    "short": 3,
+    "long": 5,
+    "medium": 1,
+    "none": 1
+  },
+  "scope_distribution": {
+    "none": 4,
+    "user": 6
+  },
+  "warnings": []
+}
+Waiting 5 seconds before next batch...
+
+=== Processing Batch 26 (Concurrent) ===
+  Launch 10 concurrent tasks...
+  Starting item 1 (Target: user.interaction_preferences)...
+  Starting item 2 (Target: user.interaction_preferences)...
+  Starting item 3 (Target: user.workflow_patterns)...
+  Starting item 4 (Target: company.performance_context)...
+  Starting item 5 (Target: company.brand_core)...
+  Starting item 6 (Target: user.strategic_approach)...
+  Starting item 7 (Target: none)...
+  Starting item 8 (Target: company.brand_core)...
+  Starting item 9 (Target: company.strategic_signatures)...
+  Starting item 10 (Target: company.strategic_signatures)...
+  Completed item 7: none_transactional_739
+  Completed item 6: user_mixed_090
+  Completed item 5: user_memory_driven_367
+  Completed item 8: user_mixed_772
+  Completed item 4: user_marketing_assistant_048
+  Completed item 10: user_marketing_assistant_013
+  Completed item 2: user_marketing_conversation_048
+  Completed item 3: user_marketing_conversation_814
+  Completed item 1: user_memory_user_preferences_483
+  Completed item 9: company_memory_long_774
+Batch 26 complete: 10/10 items generated
+Saved batch to synthetic_data/batch_26.jsonl
+Validating batch...
+{
+  "total_examples": 10,
+  "category_distribution": {
+    "user.strategic_approach": 7,
+    "user.interaction_preferences": 1,
+    "user.workflow_patterns": 2,
+    "user.communication_style": 2,
+    "user.role_context": 4,
+    "company.knowledge_artifacts": 2,
+    "none": 1,
+    "company.brand_core": 2,
+    "company.strategic_signatures": 1
+  },
+  "multi_label_frequency": 0.9,
+  "avg_turns_per_conversation": 7.4,
+  "persistence_distribution": {
+    "long": 8,
+    "medium": 1,
+    "short": 1
+  },
+  "scope_distribution": {
+    "user": 6,
+    "mixed": 2,
+    "none": 1,
+    "company": 1
+  },
+  "warnings": []
+}
+Waiting 5 seconds before next batch...
+
+=== Processing Batch 27 (Concurrent) ===
+  Launch 10 concurrent tasks...
+  Starting item 1 (Target: company.business_priorities)...
+  Starting item 2 (Target: company.brand_core)...
+  Starting item 3 (Target: user.session_history)...
+  Starting item 4 (Target: user.session_history)...
+  Starting item 5 (Target: user.workflow_patterns)...
+  Starting item 6 (Target: user.workflow_patterns)...
+  Starting item 7 (Target: user.session_history)...
+  Starting item 8 (Target: user.strategic_approach)...
+  Starting item 9 (Target: user.workflow_patterns)...
+  Starting item 10 (Target: company.performance_context)...
+  Completed item 1: user_security_incident_response_452
+  Completed item 4: user_security_analyst_002
+  Completed item 3: user_special_834
+  Completed item 10: user.session_history_user.workflow_patterns_user.role_context_029
+  Completed item 9: user.strategic_approach_428
+  Completed item 5: user_marketing_483
+  Completed item 2: user.communication_style_user.strategic_approach_135
+  Completed item 8: user_special_024
+  Completed item 6: user_marketing_assistant_062
+  Completed item 7: user_memory_038
+Batch 27 complete: 10/10 items generated
+Saved batch to synthetic_data/batch_27.jsonl
+Validating batch...
+{
+  "total_examples": 10,
+  "category_distribution": {
+    "user.strategic_approach": 9,
+    "user.role_context": 6,
+    "user.communication_style": 3,
+    "user.workflow_patterns": 2,
+    "user.session_history": 1
+  },
+  "multi_label_frequency": 0.9,
+  "avg_turns_per_conversation": 7.2,
+  "persistence_distribution": {
+    "medium": 2,
+    "long": 7,
+    "short": 1
+  },
+  "scope_distribution": {
+    "user": 10
+  },
+  "warnings": []
+}
+Waiting 5 seconds before next batch...
+
+=== Processing Batch 28 (Concurrent) ===
+  Launch 10 concurrent tasks...
+  Starting item 1 (Target: none)...
+  Starting item 2 (Target: company.performance_context)...
+  Starting item 3 (Target: company.knowledge_artifacts)...
+  Starting item 4 (Target: company.performance_context)...
+  Starting item 5 (Target: user.workflow_patterns)...
+  Starting item 6 (Target: company.strategic_signatures)...
+  Starting item 7 (Target: user.session_history)...
+  Starting item 8 (Target: user.strategic_approach)...
+  Starting item 9 (Target: none)...
+  Starting item 10 (Target: company.knowledge_artifacts)...
+  Completed item 9: none_transactional_643
+  Completed item 1: none_transactional_439
+  Completed item 5: user_workflow_pattern_491
+  Completed item 8: user_strategic_approach_035
+  Completed item 6: company_strategic_signatures_967
+  Completed item 3: company_marketing_assistant_461
+  Completed item 4: user.communication_style_user.strategic_approach_782
+  Completed item 2: user.strategic_approach_005
+  Completed item 10: user_special_834
+  Completed item 7: user_special_123
+Batch 28 complete: 10/10 items generated
+Saved batch to synthetic_data/batch_28.jsonl
+Validating batch...
+{
+  "total_examples": 10,
+  "category_distribution": {
+    "none": 2,
+    "user.strategic_approach": 5,
+    "company.strategic_signatures": 2,
+    "company.performance_context": 1,
+    "user.communication_style": 2,
+    "user.workflow_patterns": 2,
+    "user.role_context": 2
+  },
+  "multi_label_frequency": 0.5,
+  "avg_turns_per_conversation": 7.0,
+  "persistence_distribution": {
+    "short": 2,
+    "long": 6,
+    "medium": 2
+  },
+  "scope_distribution": {
+    "none": 2,
+    "user": 6,
+    "company": 2
+  },
+  "warnings": []
+}
+Waiting 5 seconds before next batch...
+
+=== Processing Batch 29 (Concurrent) ===
+  Launch 10 concurrent tasks...
+  Starting item 1 (Target: user.interaction_preferences)...
+  Starting item 2 (Target: user.strategic_approach)...
+  Starting item 3 (Target: none)...
+  Starting item 4 (Target: company.strategic_signatures)...
+  Starting item 5 (Target: user.workflow_patterns)...
+  Starting item 6 (Target: company.brand_core)...
+  Starting item 7 (Target: company.strategic_signatures)...
+  Starting item 8 (Target: company.business_priorities)...
+  Starting item 9 (Target: company.tools_config)...
+  Starting item 10 (Target: user.strategic_approach)...
+  Completed item 3: none_transactional_407
+  Completed item 8: user_marketing_conversation_032
+  Completed item 4: user_marketing_assistant_024
+  Completed item 1: user_marketing_335
+  Completed item 10: user_marketing_conversation_014
+  Completed item 7: user_mixed_071
+  Completed item 5: user.strategic_approach_348
+  Completed item 9: user_marketing_conversation_023
+  Completed item 2: user_marketing_coordinator_873
+  Completed item 6: company_marketing_342
+Batch 29 complete: 10/10 items generated
+Saved batch to synthetic_data/batch_29.jsonl
+Validating batch...
+{
+  "total_examples": 10,
+  "category_distribution": {
+    "user.strategic_approach": 8,
+    "user.communication_style": 1,
+    "user.role_context": 2,
+    "none": 1,
+    "company.business_priorities": 1,
+    "company.brand_core": 1,
+    "company.strategic_signatures": 1,
+    "company.knowledge_artifacts": 1,
+    "user.workflow_patterns": 2
+  },
+  "multi_label_frequency": 0.7,
+  "avg_turns_per_conversation": 7.1,
+  "persistence_distribution": {
+    "long": 8,
+    "short": 1,
+    "medium": 1
+  },
+  "scope_distribution": {
+    "user": 6,
+    "none": 1,
+    "mixed": 2,
+    "company": 1
+  },
+  "warnings": []
+}
+Waiting 5 seconds before next batch...
+
+=== Processing Batch 30 (Concurrent) ===
+  Launch 10 concurrent tasks...
+  Starting item 1 (Target: user.communication_style)...
+  Starting item 2 (Target: company.strategic_signatures)...
+  Starting item 3 (Target: company.brand_core)...
+  Starting item 4 (Target: none)...
+  Starting item 5 (Target: company.knowledge_artifacts)...
+  Starting item 6 (Target: none)...
+  Starting item 7 (Target: company.performance_context)...
+  Starting item 8 (Target: none)...
+  Starting item 9 (Target: user.interaction_preferences)...
+  Starting item 10 (Target: company.brand_core)...
+  Completed item 8: none_transactional_579
+  Completed item 6: none_transactional_136
+  Completed item 2: user.communication_style_146
+  Completed item 4: none_transactional_339
+  Completed item 10: user_mixed_468
+  Completed item 5: user.session_history_user.interaction_preferences_user.workflow_patterns_924
+  Completed item 9: user_insurance_claim_059
+  Completed item 1: user_marketing_348
+  Completed item 3: company_descriptive_732
+  Completed item 7: user_marketing_specialist_915
+Batch 30 complete: 10/10 items generated
+Saved batch to synthetic_data/batch_30.jsonl
+Validating batch...
+{
+  "total_examples": 10,
+  "category_distribution": {
+    "user.strategic_approach": 5,
+    "user.communication_style": 2,
+    "company.strategic_signatures": 1,
+    "company.brand_core": 1,
+    "none": 3,
+    "user.interaction_preferences": 1,
+    "user.workflow_patterns": 1,
+    "user.session_history": 1,
+    "user.role_context": 3
+  },
+  "multi_label_frequency": 0.7,
+  "avg_turns_per_conversation": 6.1,
+  "persistence_distribution": {
+    "long": 5,
+    "short": 4,
+    "medium": 1
+  },
+  "scope_distribution": {
+    "user": 6,
+    "company": 1,
+    "none": 3
+  },
+  "warnings": []
+}
+Waiting 5 seconds before next batch...
+
+=== Processing Batch 31 (Concurrent) ===
+  Launch 10 concurrent tasks...
+  Starting item 1 (Target: none)...
+  Starting item 2 (Target: user.communication_style)...
+  Starting item 3 (Target: user.session_history)...
+  Starting item 4 (Target: user.role_context)...
+  Starting item 5 (Target: user.interaction_preferences)...
+  Starting item 6 (Target: user.role_context)...
+  Starting item 7 (Target: user.session_history)...
+  Starting item 8 (Target: company.tools_config)...
+  Starting item 9 (Target: user.session_history)...
+  Starting item 10 (Target: none)...
+  Completed item 10: none_transactional_013
+  Completed item 1: none_transactional_638
+  Completed item 9: user_workflow_001
+  Completed item 8: user_mixed_016
+  Completed item 7: user.communication_style_192
+  Completed item 5: user_marketing_assistant_048
+  Completed item 2: user_communication_style_773
+  Completed item 3: user_marketing_strategy_043
+  Completed item 4: user_marketing_assistant_874
+  Completed item 6: user_special_987
+Batch 31 complete: 10/10 items generated
+Saved batch to synthetic_data/batch_31.jsonl
+Validating batch...
+{
+  "total_examples": 10,
+  "category_distribution": {
+    "none": 2,
+    "user.communication_style": 4,
+    "user.strategic_approach": 6,
+    "user.workflow_patterns": 2,
+    "user.role_context": 2,
+    "user.interaction_preferences": 1
+  },
+  "multi_label_frequency": 0.6,
+  "avg_turns_per_conversation": 6.7,
+  "persistence_distribution": {
+    "short": 2,
+    "long": 6,
+    "medium": 2
+  },
+  "scope_distribution": {
+    "none": 2,
+    "user": 8
+  },
+  "warnings": []
+}
+Waiting 5 seconds before next batch...
+
+=== Processing Batch 32 (Concurrent) ===
+  Launch 10 concurrent tasks...
+  Starting item 1 (Target: company.brand_core)...
+  Starting item 2 (Target: company.business_priorities)...
+  Starting item 3 (Target: user.communication_style)...
+  Starting item 4 (Target: none)...
+  Starting item 5 (Target: company.tools_config)...
+  Starting item 6 (Target: user.role_context)...
+  Starting item 7 (Target: user.workflow_patterns)...
+  Starting item 8 (Target: company.business_priorities)...
+  Starting item 9 (Target: company.brand_core)...
+  Starting item 10 (Target: user.strategic_approach)...
+  Completed item 4: none_transactional_643
+  Completed item 9: company_marketing_consultation_783
+  Completed item 2: user_strategic_approach_778
+  Completed item 7: user_workflow_patterns_571
+  Completed item 10: user_marketing_strategy_023
+  Completed item 1: user_special_029
+  Completed item 5: company_tools_config_009
+  Completed item 3: user_security_analyst_942
+  Completed item 8: user_discussion_876
+  Completed item 6: user_descriptive_label_324
+Batch 32 complete: 10/10 items generated
+Saved batch to synthetic_data/batch_32.jsonl
+Validating batch...
+{
+  "total_examples": 10,
+  "category_distribution": {
+    "user.strategic_approach": 6,
+    "user.role_context": 3,
+    "user.communication_style": 3,
+    "none": 1,
+    "company.tools_config": 1,
+    "user.workflow_patterns": 2,
+    "company.strategic_signatures": 1,
+    "company.brand_core": 1
+  },
+  "multi_label_frequency": 0.7,
+  "avg_turns_per_conversation": 7.2,
+  "persistence_distribution": {
+    "long": 6,
+    "short": 1,
+    "medium": 3
+  },
+  "scope_distribution": {
+    "user": 7,
+    "none": 1,
+    "company": 2
+  },
+  "warnings": []
+}
+Waiting 5 seconds before next batch...
+
+=== Processing Batch 33 (Concurrent) ===
+  Launch 10 concurrent tasks...
+  Starting item 1 (Target: company.strategic_signatures)...
+  Starting item 2 (Target: company.strategic_signatures)...
+  Starting item 3 (Target: user.session_history)...
+  Starting item 4 (Target: none)...
+  Starting item 5 (Target: user.session_history)...
+  Starting item 6 (Target: company.performance_context)...
+  Starting item 7 (Target: company.brand_core)...
+  Starting item 8 (Target: company.brand_core)...
+  Starting item 9 (Target: company.brand_core)...
+  Starting item 10 (Target: company.strategic_signatures)...
+  Completed item 4: none_transactional_153
+  Completed item 3: user.strategic_approach_199
+  Completed item 10: company_marketing_conversation_012
+  Completed item 2: user_marketing_conversation_714
+  Completed item 6: user_marketing_specialist_034
+  Completed item 9: company_marketing_664
+  Completed item 1: user_marketing_assistant_034
+  Completed item 5: user_memory_user_session_history_691
+  Completed item 8: company_marketing_138
+  Completed item 7: company_marketing_798
+Batch 33 complete: 10/10 items generated
+Saved batch to synthetic_data/batch_33.jsonl
+Validating batch...
+{
+  "total_examples": 10,
+  "category_distribution": {
+    "user.strategic_approach": 5,
+    "user.communication_style": 2,
+    "user.role_context": 2,
+    "none": 1,
+    "user.workflow_patterns": 1,
+    "user.session_history": 1,
+    "company.strategic_signatures": 3,
+    "company.brand_core": 3,
+    "company.knowledge_artifacts": 2
+  },
+  "multi_label_frequency": 0.8,
+  "avg_turns_per_conversation": 7.0,
+  "persistence_distribution": {
+    "long": 8,
+    "short": 2
+  },
+  "scope_distribution": {
+    "user": 5,
+    "none": 1,
+    "company": 4
+  },
+  "warnings": []
+}
+Waiting 5 seconds before next batch...
+
+=== Processing Batch 34 (Concurrent) ===
+  Launch 10 concurrent tasks...
+  Starting item 1 (Target: user.strategic_approach)...
+  Starting item 2 (Target: company.brand_core)...
+  Starting item 3 (Target: none)...
+  Starting item 4 (Target: user.strategic_approach)...
+  Starting item 5 (Target: company.knowledge_artifacts)...
+  Starting item 6 (Target: company.strategic_signatures)...
+  Starting item 7 (Target: user.interaction_preferences)...
+  Starting item 8 (Target: company.tools_config)...
+  Starting item 9 (Target: company.strategic_signatures)...
+  Starting item 10 (Target: user.session_history)...
+  Completed item 3: none_transactional_735
+  Completed item 10: user.strategic_approach_101_842
+  Completed item 1: user_memory_strategic_approach_058
+  Completed item 9: company_performance_context_337
+  Completed item 5: user_training_conversation_782
+  Completed item 6: user.communication_style_045
+  Completed item 4: user_marketing_analyst_782
+  Completed item 7: user.interaction_preferences_user.communication_style_123
+  Completed item 8: user_marketing_conversation_001
+  Completed item 2: user_mixed_078
+Batch 34 complete: 10/10 items generated
+Saved batch to synthetic_data/batch_34.jsonl
+Validating batch...
+{
+  "total_examples": 10,
+  "category_distribution": {
+    "user.strategic_approach": 6,
+    "user.role_context": 4,
+    "user.communication_style": 4,
+    "none": 1,
+    "user.interaction_preferences": 1,
+    "company.performance_context": 1
+  },
+  "multi_label_frequency": 0.5,
+  "avg_turns_per_conversation": 6.7,
+  "persistence_distribution": {
+    "long": 7,
+    "medium": 1,
+    "short": 1,
+    "rolling": 1
+  },
+  "scope_distribution": {
+    "user": 8,
+    "none": 1,
+    "company": 1
+  },
+  "warnings": []
+}
+Waiting 5 seconds before next batch...
+
+=== Processing Batch 35 (Concurrent) ===
+  Launch 10 concurrent tasks...
+  Starting item 1 (Target: user.strategic_approach)...
+  Starting item 2 (Target: user.session_history)...
+  Starting item 3 (Target: user.session_history)...
+  Starting item 4 (Target: none)...
+  Starting item 5 (Target: company.brand_core)...
+  Starting item 6 (Target: user.interaction_preferences)...
+  Starting item 7 (Target: none)...
+  Starting item 8 (Target: user.session_history)...
+  Starting item 9 (Target: company.strategic_signatures)...
+  Starting item 10 (Target: user.communication_style)...
+  Completed item 4: none_transactional_018
+  Completed item 5: company_brand_launch_049
+  Completed item 7: none_transactional_823
+  Completed item 2: user_conversation_771
+  Completed item 1: user_professional_services_consultant_973
+  Completed item 3: user_guided_dialogue_753
+  Completed item 8: user.communication_style_143
+  Completed item 6: user_marketing_conversation_023
+  Completed item 9: user_special_401
+  Completed item 10: user_user_023
+Batch 35 complete: 10/10 items generated
+Saved batch to synthetic_data/batch_35.jsonl
+Validating batch...
+{
+  "total_examples": 10,
+  "category_distribution": {
+    "user.strategic_approach": 6,
+    "user.workflow_patterns": 2,
+    "user.session_history": 1,
+    "user.role_context": 1,
+    "none": 2,
+    "company.knowledge_artifacts": 1,
+    "company.brand_core": 1,
+    "user.communication_style": 4
+  },
+  "multi_label_frequency": 0.8,
+  "avg_turns_per_conversation": 6.7,
+  "persistence_distribution": {
+    "long": 7,
+    "medium": 1,
+    "short": 2
+  },
+  "scope_distribution": {
+    "user": 7,
+    "none": 2,
+    "company": 1
+  },
+  "warnings": []
+}
+Waiting 5 seconds before next batch...
+
+=== Processing Batch 36 (Concurrent) ===
+  Launch 10 concurrent tasks...
+  Starting item 1 (Target: user.interaction_preferences)...
+  Starting item 2 (Target: company.knowledge_artifacts)...
+  Starting item 3 (Target: company.brand_core)...
+  Starting item 4 (Target: user.strategic_approach)...
+  Starting item 5 (Target: user.role_context)...
+  Starting item 6 (Target: user.workflow_patterns)...
+  Starting item 7 (Target: user.communication_style)...
+  Starting item 8 (Target: company.performance_context)...
+  Starting item 9 (Target: user.interaction_preferences)...
+  Starting item 10 (Target: user.interaction_preferences)...
+  Completed item 6: user_marketing_conversation_031
+  Completed item 3: user_special_043
+  Completed item 10: user_marketing_487
+  Completed item 1: user.strategic_approach_124
+  Completed item 4: user_descriptive_075
+  Completed item 2: user_marketing_specialist_051
+  Completed item 9: user_interaction_preferences_842
+  Completed item 5: company_special_912
+  Completed item 7: user_assistant_conversation_037
+  Completed item 8: user.strategic_approach_972
+Batch 36 complete: 10/10 items generated
+Saved batch to synthetic_data/batch_36.jsonl
+Validating batch...
+{
+  "total_examples": 10,
+  "category_distribution": {
+    "user.strategic_approach": 8,
+    "user.role_context": 2,
+    "company.knowledge_artifacts": 1,
+    "company.performance_context": 1,
+    "company.strategic_signatures": 1,
+    "user.communication_style": 2,
+    "user.workflow_patterns": 2
+  },
+  "multi_label_frequency": 0.6,
+  "avg_turns_per_conversation": 6.8,
+  "persistence_distribution": {
+    "long": 10
+  },
+  "scope_distribution": {
+    "user": 9,
+    "company": 1
+  },
+  "warnings": []
+}
+Waiting 5 seconds before next batch...
+
+=== Processing Batch 37 (Concurrent) ===
+  Launch 10 concurrent tasks...
+  Starting item 1 (Target: none)...
+  Starting item 2 (Target: company.brand_core)...
+  Starting item 3 (Target: company.strategic_signatures)...
+  Starting item 4 (Target: company.brand_core)...
+  Starting item 5 (Target: company.business_priorities)...
+  Starting item 6 (Target: user.communication_style)...
+  Starting item 7 (Target: user.workflow_patterns)...
+  Starting item 8 (Target: user.strategic_approach)...
+  Starting item 9 (Target: company.performance_context)...
+  Starting item 10 (Target: company.performance_context)...
+  Completed item 1: none_transactional_451
+  Completed item 10: company.performance_context_user.communication_style_123
+  Completed item 9: user_communication_style_marketing_conversation_034
+  Completed item 7: user_mixed_789
+  Completed item 8: user.strategic_approach_203
+  Completed item 6: user_strategic_approach_798
+  Completed item 3: user_user_081
+  Completed item 4: user.communication_style_123
+  Completed item 5: user_special_013
+  Completed item 2: company_memory_brand_048
+Batch 37 complete: 10/10 items generated
+Saved batch to synthetic_data/batch_37.jsonl
+Validating batch...
+{
+  "total_examples": 10,
+  "category_distribution": {
+    "none": 1,
+    "company.brand_core": 1,
+    "user.strategic_approach": 5,
+    "user.workflow_patterns": 2,
+    "user.communication_style": 4,
+    "user.session_history": 1,
+    "user.interaction_preferences": 1,
+    "company.performance_context": 1
+  },
+  "multi_label_frequency": 0.6,
+  "avg_turns_per_conversation": 7.5,
+  "persistence_distribution": {
+    "short": 1,
+    "long": 7,
+    "medium": 1,
+    "rolling ~6m": 1
+  },
+  "scope_distribution": {
+    "none": 1,
+    "company": 2,
+    "user": 7
+  },
+  "warnings": []
+}
+Waiting 5 seconds before next batch...
+
+=== Processing Batch 38 (Concurrent) ===
+  Launch 10 concurrent tasks...
+  Starting item 1 (Target: user.interaction_preferences)...
+  Starting item 2 (Target: user.strategic_approach)...
+  Starting item 3 (Target: user.role_context)...
+  Starting item 4 (Target: user.session_history)...
+  Starting item 5 (Target: user.role_context)...
+  Starting item 6 (Target: user.workflow_patterns)...
+  Starting item 7 (Target: company.tools_config)...
+  Starting item 8 (Target: user.strategic_approach)...
+  Starting item 9 (Target: user.session_history)...
+  Starting item 10 (Target: user.workflow_patterns)...
+  Completed item 4: user_workflow_324
+  Completed item 1: user_engagement_medium_015
+  Completed item 9: user_marketing_conversation_034
+  Completed item 3: user_training_conversation_009
+  Completed item 5: user_marketing_342
+  Completed item 8: user_mixed_023
+  Completed item 10: user_marketing_348
+  Completed item 2: company_strategic_signatures_778
+  Completed item 7: user.strategic_approach_342
+  Completed item 6: user.workflow_patterns_user.communication_style_123
+Batch 38 complete: 10/10 items generated
+Saved batch to synthetic_data/batch_38.jsonl
+Validating batch...
+{
+  "total_examples": 10,
+  "category_distribution": {
+    "user.strategic_approach": 8,
+    "user.communication_style": 4,
+    "company.strategic_signatures": 1,
+    "user.role_context": 4,
+    "user.workflow_patterns": 1
+  },
+  "multi_label_frequency": 0.8,
+  "avg_turns_per_conversation": 7.5,
+  "persistence_distribution": {
+    "medium": 3,
+    "long": 7
+  },
+  "scope_distribution": {
+    "user": 9,
+    "company": 1
+  },
+  "warnings": []
+}
+Waiting 5 seconds before next batch...
+
+=== Processing Batch 39 (Concurrent) ===
+  Launch 10 concurrent tasks...
+  Starting item 1 (Target: user.interaction_preferences)...
+  Starting item 2 (Target: user.role_context)...
+  Starting item 3 (Target: company.business_priorities)...
+  Starting item 4 (Target: company.strategic_signatures)...
+  Starting item 5 (Target: user.workflow_patterns)...
+  Starting item 6 (Target: none)...
+  Starting item 7 (Target: user.strategic_approach)...
+  Starting item 8 (Target: company.brand_core)...
+  Starting item 9 (Target: company.knowledge_artifacts)...
+  Starting item 10 (Target: company.business_priorities)...
+  Completed item 6: none_transactional_694
+  Completed item 8: user_assistant_782
+  Completed item 10: user_marketing_conversation_456
+  Completed item 4: user_mixed_081
+  Completed item 1: user.communication_style_user.strategic_approach_user.workflow_patterns_123
+  Completed item 7: user_interaction_preferences_descriptive_label_093
+  Completed item 3: user_marketing_assistant_029
+  Completed item 9: user_descriptive_001
+  Completed item 5: user.communication_style_user.strategic_approach_user.role_context_123
+  Completed item 2: user_mixed_065
+Batch 39 complete: 10/10 items generated
+Saved batch to synthetic_data/batch_39.jsonl
+Validating batch...
+{
+  "total_examples": 10,
+  "category_distribution": {
+    "user.strategic_approach": 8,
+    "user.workflow_patterns": 1,
+    "user.communication_style": 5,
+    "user.role_context": 4,
+    "company.strategic_signatures": 1,
+    "none": 1,
+    "user.interaction_preferences": 1,
+    "company.brand_core": 1
+  },
+  "multi_label_frequency": 0.8,
+  "avg_turns_per_conversation": 6.3,
+  "persistence_distribution": {
+    "long": 9,
+    "short": 1
+  },
+  "scope_distribution": {
+    "user": 7,
+    "mixed": 2,
+    "none": 1
+  },
+  "warnings": []
+}
+Waiting 5 seconds before next batch...
+
+=== Processing Batch 40 (Concurrent) ===
+  Launch 10 concurrent tasks...
+  Starting item 1 (Target: user.session_history)...
+  Starting item 2 (Target: company.knowledge_artifacts)...
+  Starting item 3 (Target: company.tools_config)...
+  Starting item 4 (Target: user.communication_style)...
+  Starting item 5 (Target: company.tools_config)...
+  Starting item 6 (Target: company.strategic_signatures)...
+  Starting item 7 (Target: company.brand_core)...
+  Starting item 8 (Target: user.interaction_preferences)...
+  Starting item 9 (Target: user.session_history)...
+  Starting item 10 (Target: company.brand_core)...
+  Completed item 10: company_marketing_strategy_812
+  Completed item 3: user_feedback_100
+  Completed item 1: user_scenario_825
+  Completed item 5: user_marketing_452
+  Completed item 2: user_marketing_assistant_034
+  Completed item 9: user_user_069
+  Completed item 7: user_descriptive_label_012
+  Completed item 4: user_training_conversation_725
+  Completed item 6: user.communication_style_none_459
+  Completed item 8: user.communication_style_user.strategic_approach_user.role_context_307
+Batch 40 complete: 10/10 items generated
+Saved batch to synthetic_data/batch_40.jsonl
+Validating batch...
+{
+  "total_examples": 10,
+  "category_distribution": {
+    "user.strategic_approach": 8,
+    "user.role_context": 4,
+    "user.communication_style": 4,
+    "company.knowledge_artifacts": 1,
+    "user.workflow_patterns": 1,
+    "company.business_priorities": 1,
+    "company.brand_core": 1
+  },
+  "multi_label_frequency": 0.9,
+  "avg_turns_per_conversation": 7.0,
+  "persistence_distribution": {
+    "long": 10
+  },
+  "scope_distribution": {
+    "user": 8,
+    "mixed": 1,
+    "company": 1
+  },
+  "warnings": []
+}
+Waiting 5 seconds before next batch...
+
+=== Processing Batch 41 (Concurrent) ===
+  Launch 10 concurrent tasks...
+  Starting item 1 (Target: user.workflow_patterns)...
+  Starting item 2 (Target: company.tools_config)...
+  Starting item 3 (Target: none)...
+  Starting item 4 (Target: user.strategic_approach)...
+  Starting item 5 (Target: company.brand_core)...
+  Starting item 6 (Target: user.interaction_preferences)...
+  Starting item 7 (Target: user.workflow_patterns)...
+  Starting item 8 (Target: user.role_context)...
+  Starting item 9 (Target: user.role_context)...
+  Starting item 10 (Target: company.brand_core)...
+  Completed item 3: none_transactional_635
+  Completed item 7: user.session_history_043
+  Completed item 8: user_marketing_conversation_021
+  Completed item 5: user.strategic_approach_213
+  Completed item 9: user_strategic_approach_043
+  Completed item 6: user.workflow_patterns_123
+  Completed item 2: user.session_history_user.strategic_approach_company.performance_context_118
+  Completed item 1: user_marketing_specialist_587
+  Completed item 10: user_marketing_348
+  Completed item 4: user.workflow_patterns_199
+Batch 41 complete: 10/10 items generated
+Saved batch to synthetic_data/batch_41.jsonl
+Validating batch...
+{
+  "total_examples": 10,
+  "category_distribution": {
+    "user.strategic_approach": 6,
+    "user.role_context": 2,
+    "user.session_history": 2,
+    "company.performance_context": 1,
+    "none": 1,
+    "user.workflow_patterns": 2,
+    "company.brand_core": 1,
+    "user.communication_style": 1
+  },
+  "multi_label_frequency": 0.5,
+  "avg_turns_per_conversation": 6.8,
+  "persistence_distribution": {
+    "long": 4,
+    "short": 3,
+    "medium": 3
+  },
+  "scope_distribution": {
+    "user": 7,
+    "mixed": 2,
+    "none": 1
+  },
+  "warnings": []
+}
+Waiting 5 seconds before next batch...
+
+=== Processing Batch 42 (Concurrent) ===
+  Launch 10 concurrent tasks...
+  Starting item 1 (Target: user.workflow_patterns)...
+  Starting item 2 (Target: user.session_history)...
+  Starting item 3 (Target: company.strategic_signatures)...
+  Starting item 4 (Target: none)...
+  Starting item 5 (Target: user.strategic_approach)...
+  Starting item 6 (Target: user.session_history)...
+  Starting item 7 (Target: company.knowledge_artifacts)...
+  Starting item 8 (Target: user.strategic_approach)...
+  Starting item 9 (Target: none)...
+  Starting item 10 (Target: user.strategic_approach)...
+  Completed item 8: user.communication_style_user.strategic_approach_user.role_context_184
+  Completed item 2: user_marketing_assistant_019
+  Completed item 6: user_marketing_conversation_463
+  Completed item 9: none_transactional_816
+  Completed item 1: user.session_history_031
+  Completed item 7: user_special_015
+  Completed item 4: none_transactional_781
+  Completed item 5: user_special_048
+  Completed item 10: user_strategic_approach_456
+  Completed item 3: user_special_463
+Batch 42 complete: 10/10 items generated
+Saved batch to synthetic_data/batch_42.jsonl
+Validating batch...
+{
+  "total_examples": 10,
+  "category_distribution": {
+    "user.session_history": 1,
+    "user.strategic_approach": 7,
+    "user.role_context": 5,
+    "user.communication_style": 2,
+    "none": 2
+  },
+  "multi_label_frequency": 0.6,
+  "avg_turns_per_conversation": 6.4,
+  "persistence_distribution": {
+    "short": 3,
+    "long": 7
+  },
+  "scope_distribution": {
+    "user": 8,
+    "none": 2
+  },
+  "warnings": []
+}
+Waiting 5 seconds before next batch...
+
+=== Processing Batch 43 (Concurrent) ===
+  Launch 10 concurrent tasks...
+  Starting item 1 (Target: user.communication_style)...
+  Starting item 2 (Target: user.interaction_preferences)...
+  Starting item 3 (Target: company.tools_config)...
+  Starting item 4 (Target: user.strategic_approach)...
+  Starting item 5 (Target: none)...
+  Starting item 6 (Target: company.knowledge_artifacts)...
+  Starting item 7 (Target: none)...
+  Starting item 8 (Target: company.strategic_signatures)...
+  Starting item 9 (Target: user.interaction_preferences)...
+  Starting item 10 (Target: company.tools_config)...
+  Completed item 7: none_transactional_721
+  Completed item 5: none_transactional_523
+  Completed item 8: user_marketing_342
+  Completed item 10: user.strategic_approach_082
+  Completed item 4: user.strategic_approach_035
+  Completed item 3: user.strategic_approach_333
+  Completed item 2: user_interactive_learning_912
+  Completed item 9: user_marketing_conversation_014
+  Completed item 6: user_healthcare_collaboration_043
+  Completed item 1: user_memory_marketing_948
+Batch 43 complete: 10/10 items generated
+Saved batch to synthetic_data/batch_43.jsonl
+Validating batch...
+{
+  "total_examples": 10,
+  "category_distribution": {
+    "user.strategic_approach": 6,
+    "user.workflow_patterns": 3,
+    "user.interaction_preferences": 2,
+    "none": 2,
+    "user.communication_style": 1,
+    "user.role_context": 1
+  },
+  "multi_label_frequency": 0.5,
+  "avg_turns_per_conversation": 6.7,
+  "persistence_distribution": {
+    "long": 8,
+    "short": 2
+  },
+  "scope_distribution": {
+    "user": 8,
+    "none": 2
+  },
+  "warnings": []
+}
+Waiting 5 seconds before next batch...
+
+=== Processing Batch 44 (Concurrent) ===
+  Launch 10 concurrent tasks...
+  Starting item 1 (Target: user.session_history)...
+  Starting item 2 (Target: company.brand_core)...
+  Starting item 3 (Target: user.role_context)...
+  Starting item 4 (Target: company.knowledge_artifacts)...
+  Starting item 5 (Target: user.strategic_approach)...
+  Starting item 6 (Target: company.brand_core)...
+  Starting item 7 (Target: user.workflow_patterns)...
+  Starting item 8 (Target: company.strategic_signatures)...
+  Starting item 9 (Target: user.session_history)...
+  Starting item 10 (Target: company.performance_context)...
+  Completed item 1: user_marketing_387
+  Completed item 10: user_marketing_assistant_032
+  Completed item 2: company_memory_recall_837
+  Completed item 5: user.strategic_approach_002
+  Completed item 3: user.communication_style_357
+  Completed item 4: user.communication_style_123
+  Completed item 6: company_marketing_strategy_037
+  Completed item 7: user_strategic_approach_469
+  Completed item 9: user_professional_services_045
+  Completed item 8: user_strategy_session_456
+Batch 44 complete: 10/10 items generated
+Saved batch to synthetic_data/batch_44.jsonl
+Validating batch...
+{
+  "total_examples": 10,
+  "category_distribution": {
+    "user.strategic_approach": 7,
+    "user.session_history": 1,
+    "company.performance_context": 1,
+    "company.brand_core": 2,
+    "user.communication_style": 2,
+    "company.strategic_signatures": 1,
+    "user.role_context": 2,
+    "user.workflow_patterns": 1
+  },
+  "multi_label_frequency": 0.7,
+  "avg_turns_per_conversation": 6.1,
+  "persistence_distribution": {
+    "short": 1,
+    "long": 7,
+    "medium": 2
+  },
+  "scope_distribution": {
+    "user": 8,
+    "company": 2
+  },
+  "warnings": []
+}
+Waiting 5 seconds before next batch...
+
+=== Processing Batch 45 (Concurrent) ===
+  Launch 10 concurrent tasks...
+  Starting item 1 (Target: user.workflow_patterns)...
+  Starting item 2 (Target: user.interaction_preferences)...
+  Starting item 3 (Target: company.brand_core)...
+  Starting item 4 (Target: user.strategic_approach)...
+  Starting item 5 (Target: company.tools_config)...
+  Starting item 6 (Target: none)...
+  Starting item 7 (Target: none)...
+  Starting item 8 (Target: company.strategic_signatures)...
+  Starting item 9 (Target: none)...
+  Starting item 10 (Target: company.brand_core)...
+  Completed item 7: none_transactional_735
+  Completed item 6: none_transactional_597
+  Completed item 9: none_transactional_572
+  Completed item 5: user_user_019
+  Completed item 3: user_memory_123
+  Completed item 2: user_strategic_approach_010
+  Completed item 10: company_marketing_conversation_456
+  Completed item 4: user_marketing_383
+  Completed item 1: user_cybersecurity_analyst_666
+  Completed item 8: user_marketing_conversation_038
+Batch 45 complete: 10/10 items generated
+Saved batch to synthetic_data/batch_45.jsonl
+Validating batch...
+{
+  "total_examples": 10,
+  "category_distribution": {
+    "user.strategic_approach": 6,
+    "user.role_context": 3,
+    "user.communication_style": 2,
+    "user.workflow_patterns": 2,
+    "none": 3,
+    "company.knowledge_artifacts": 1,
+    "company.brand_core": 1
+  },
+  "multi_label_frequency": 0.7,
+  "avg_turns_per_conversation": 6.4,
+  "persistence_distribution": {
+    "medium": 1,
+    "long": 6,
+    "short": 3
+  },
+  "scope_distribution": {
+    "user": 6,
+    "none": 3,
+    "company": 1
+  },
+  "warnings": []
+}
+Waiting 5 seconds before next batch...
+
+=== Processing Batch 46 (Concurrent) ===
+  Launch 10 concurrent tasks...
+  Starting item 1 (Target: user.workflow_patterns)...
+  Starting item 2 (Target: company.brand_core)...
+  Starting item 3 (Target: company.knowledge_artifacts)...
+  Starting item 4 (Target: user.communication_style)...
+  Starting item 5 (Target: company.knowledge_artifacts)...
+  Starting item 6 (Target: company.strategic_signatures)...
+  Starting item 7 (Target: user.workflow_patterns)...
+  Starting item 8 (Target: user.communication_style)...
+  Starting item 9 (Target: company.brand_core)...
+  Starting item 10 (Target: company.tools_config)...
+  Completed item 4: user_marketing_384
+  Completed item 5: user_marketing_assistant_926
+  Completed item 10: user.communication_style_descriptive_label_698
+  Completed item 3: company_memory_enhancement_014
+  Completed item 2: company_marketing_337
+  Completed item 8: user.communication_style_123
+  Completed item 7: user.strategic_approach_358
+  Completed item 6: company_marketing_156
+  Completed item 1: user_descriptive_label_468
+  Completed item 9: user.workflow_patterns_user.session_history_user.interaction_preferences_123
+Batch 46 complete: 10/10 items generated
+Saved batch to synthetic_data/batch_46.jsonl
+Validating batch...
+{
+  "total_examples": 10,
+  "category_distribution": {
+    "user.strategic_approach": 5,
+    "user.role_context": 2,
+    "company.brand_core": 1,
+    "company.business_priorities": 2,
+    "company.performance_context": 1,
+    "user.communication_style": 3,
+    "company.strategic_signatures": 1,
+    "company.knowledge_artifacts": 1,
+    "user.workflow_patterns": 1,
+    "user.session_history": 1,
+    "user.interaction_preferences": 1
+  },
+  "multi_label_frequency": 0.7,
+  "avg_turns_per_conversation": 6.9,
+  "persistence_distribution": {
+    "long": 8,
+    "short,rolling": 1,
+    "medium": 1
+  },
+  "scope_distribution": {
+    "user": 7,
+    "company": 3
+  },
+  "warnings": []
+}
+Waiting 5 seconds before next batch...
+
+=== Processing Batch 47 (Concurrent) ===
+  Launch 10 concurrent tasks...
+  Starting item 1 (Target: user.session_history)...
+  Starting item 2 (Target: company.brand_core)...
+  Starting item 3 (Target: none)...
+  Starting item 4 (Target: user.strategic_approach)...
+  Starting item 5 (Target: company.brand_core)...
+  Starting item 6 (Target: user.workflow_patterns)...
+  Starting item 7 (Target: user.session_history)...
+  Starting item 8 (Target: user.strategic_approach)...
+  Starting item 9 (Target: company.business_priorities)...
+  Starting item 10 (Target: company.business_priorities)...
+  Completed item 3: none_transactional_452
+  Completed item 8: user_marketing_assistant_039
+  Completed item 1: user_marketing_assistant_049
+  Completed item 2: user.communication_style_123
+  Completed item 6: user_user_023
+  Completed item 9: user.session_history_032
+  Completed item 7: user_mixed_098
+  Completed item 4: user_research_collaboration_456
+  Completed item 5: user_marketing_721
+  Completed item 10: user_memory_024
+Batch 47 complete: 10/10 items generated
+Saved batch to synthetic_data/batch_47.jsonl
+Validating batch...
+{
+  "total_examples": 10,
+  "category_distribution": {
+    "user.interaction_preferences": 1,
+    "user.session_history": 4,
+    "user.communication_style": 4,
+    "none": 1,
+    "user.strategic_approach": 5,
+    "user.workflow_patterns": 2,
+    "user.role_context": 3
+  },
+  "multi_label_frequency": 0.8,
+  "avg_turns_per_conversation": 6.2,
+  "persistence_distribution": {
+    "short": 5,
+    "long": 4,
+    "medium": 1
+  },
+  "scope_distribution": {
+    "user": 9,
+    "none": 1
+  },
+  "warnings": []
+}
+Waiting 5 seconds before next batch...
+
+=== Processing Batch 48 (Concurrent) ===
+  Launch 10 concurrent tasks...
+  Starting item 1 (Target: company.strategic_signatures)...
+  Starting item 2 (Target: user.role_context)...
+  Starting item 3 (Target: user.interaction_preferences)...
+  Starting item 4 (Target: none)...
+  Starting item 5 (Target: company.performance_context)...
+  Starting item 6 (Target: user.interaction_preferences)...
+  Starting item 7 (Target: user.session_history)...
+  Starting item 8 (Target: user.session_history)...
+  Starting item 9 (Target: company.strategic_signatures)...
+  Starting item 10 (Target: company.strategic_signatures)...
+Conversation generation failed (attempt 1/6): headers: {'date': 'Mon, 24 Nov 2025 18:42:33 GMT', 'content-length': '0', 'x-envoy-upstream-service-time': '1601', 'server': 'envoy', 'via': '1.1 google', 'alt-svc': 'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000'}, status_code: 500, body: 
+Conversation generation failed (attempt 1/6): headers: {'date': 'Mon, 24 Nov 2025 18:42:33 GMT', 'content-length': '0', 'x-envoy-upstream-service-time': '1970', 'server': 'envoy', 'via': '1.1 google', 'alt-svc': 'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000'}, status_code: 500, body: 
+Retrying in 10s...
+Retrying in 10s...
+  Completed item 4: none_transactional_532
+  Completed item 6: user_strategic_approach_664
+  Completed item 10: company_descriptive_label_715
+  Completed item 7: user_troubleshooting_738
+  Completed item 9: user_brainstorming_916
+  Completed item 1: company_marketing_strategy_001
+  Completed item 2: user_special_021
+  Completed item 3: user_interaction_preferences_123
+  Completed item 5: user_strategic_approach_567
+  Completed item 8: user_marketing_specialist_874
+Batch 48 complete: 10/10 items generated
+Saved batch to synthetic_data/batch_48.jsonl
+Validating batch...
+{
+  "total_examples": 10,
+  "category_distribution": {
+    "company.business_priorities": 1,
+    "company.strategic_signatures": 2,
+    "user.strategic_approach": 5,
+    "user.communication_style": 1,
+    "user.interaction_preferences": 2,
+    "none": 1,
+    "user.session_history": 1,
+    "user.role_context": 2,
+    "company.brand_core": 1
+  },
+  "multi_label_frequency": 0.6,
+  "avg_turns_per_conversation": 6.6,
+  "persistence_distribution": {
+    "long": 8,
+    "short": 2
+  },
+  "scope_distribution": {
+    "company": 2,
+    "user": 7,
+    "none": 1
+  },
+  "warnings": []
+}
+Waiting 5 seconds before next batch...
+
+=== Processing Batch 49 (Concurrent) ===
+  Launch 10 concurrent tasks...
+  Starting item 1 (Target: user.role_context)...
+  Starting item 2 (Target: user.interaction_preferences)...
+  Starting item 3 (Target: none)...
+  Starting item 4 (Target: company.business_priorities)...
+  Starting item 5 (Target: company.knowledge_artifacts)...
+  Starting item 6 (Target: company.performance_context)...
+  Starting item 7 (Target: company.strategic_signatures)...
+  Starting item 8 (Target: user.workflow_patterns)...
+  Starting item 9 (Target: user.interaction_preferences)...
+  Starting item 10 (Target: user.strategic_approach)...
+  Completed item 3: none_transactional_653
+  Completed item 9: user_communication_style_none_029
+  Completed item 2: user_interaction_preferences_scenario_745
+  Completed item 7: user_memory_369
+  Completed item 1: user.communication_style_213
+  Completed item 4: user_marketing_strategy_045
+  Completed item 10: user_descriptive_label_782
+  Completed item 5: user_special_015
+  Completed item 6: user_descriptive_697
+  Completed item 8: user_marketing_specialist_873
+Batch 49 complete: 10/10 items generated
+Saved batch to synthetic_data/batch_49.jsonl
+Validating batch...
+{
+  "total_examples": 10,
+  "category_distribution": {
+    "user.communication_style": 4,
+    "user.interaction_preferences": 1,
+    "user.workflow_patterns": 5,
+    "none": 1,
+    "user.strategic_approach": 6
+  },
+  "multi_label_frequency": 0.7,
+  "avg_turns_per_conversation": 6.3,
+  "persistence_distribution": {
+    "long": 8,
+    "evolving": 1,
+    "short": 1
+  },
+  "scope_distribution": {
+    "user": 9,
+    "none": 1
+  },
+  "warnings": []
+}
+Waiting 5 seconds before next batch...
+
+=== Processing Batch 50 (Concurrent) ===
+  Launch 10 concurrent tasks...
+  Starting item 1 (Target: none)...
+  Starting item 2 (Target: none)...
+  Starting item 3 (Target: company.brand_core)...
+  Starting item 4 (Target: user.communication_style)...
+  Starting item 5 (Target: company.performance_context)...
+  Starting item 6 (Target: none)...
+  Starting item 7 (Target: company.tools_config)...
+  Starting item 8 (Target: user.interaction_preferences)...
+  Starting item 9 (Target: company.knowledge_artifacts)...
+  Starting item 10 (Target: none)...
+  Completed item 6: none_transactional_666
+  Completed item 10: none_transactional_652
+  Completed item 8: user.interaction_preferences_108
+  Completed item 1: none_transactional_738
+  Completed item 4: user.communication_style_user.strategic_approach_123
+  Completed item 2: none_transactional_312
+  Completed item 9: user.workflow_patterns_187
+  Completed item 5: user.communication_style_123
+Conversation generation failed (attempt 1/6): headers: {'date': 'Mon, 24 Nov 2025 18:45:16 GMT', 'content-length': '0', 'x-envoy-upstream-service-time': '26707', 'server': 'envoy', 'via': '1.1 google', 'alt-svc': 'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000'}, status_code: 500, body: 
+Retrying in 10s...
+  Completed item 3: company_marketing_987
+  Completed item 7: user_onboarding_583
+Batch 50 complete: 10/10 items generated
+Saved batch to synthetic_data/batch_50.jsonl
+Validating batch...
+{
+  "total_examples": 10,
+  "category_distribution": {
+    "none": 4,
+    "company.knowledge_artifacts": 1,
+    "company.brand_core": 1,
+    "user.strategic_approach": 2,
+    "user.communication_style": 3,
+    "user.role_context": 1,
+    "user.interaction_preferences": 1,
+    "user.workflow_patterns": 1
+  },
+  "multi_label_frequency": 0.3,
+  "avg_turns_per_conversation": 7.5,
+  "persistence_distribution": {
+    "short": 4,
+    "long": 4,
+    "evolving": 1,
+    "medium": 1
+  },
+  "scope_distribution": {
+    "none": 4,
+    "company": 1,
+    "user": 5
+  },
+  "warnings": []
+}
+Waiting 5 seconds before next batch...
+
+=== Processing Batch 51 (Concurrent) ===
+  Launch 10 concurrent tasks...
+  Starting item 1 (Target: company.brand_core)...
+  Starting item 2 (Target: user.strategic_approach)...
+  Starting item 3 (Target: company.brand_core)...
+  Starting item 4 (Target: user.role_context)...
+  Starting item 5 (Target: company.brand_core)...
+  Starting item 6 (Target: user.session_history)...
+  Starting item 7 (Target: company.knowledge_artifacts)...
+  Starting item 8 (Target: company.brand_core)...
+  Starting item 9 (Target: none)...
+  Starting item 10 (Target: company.knowledge_artifacts)...
+  Completed item 1: company_marketing_conversation_782
+  Completed item 10: user_marketing_conversation_010
+  Completed item 2: user_special_021
+  Completed item 7: user.strategic_approach_193
+  Completed item 9: none_transactional_682
+  Completed item 6: user_special_071
+  Completed item 4: user_user_046
+  Completed item 8: company.knowledge_artifacts_user.communication_style_023
+  Completed item 5: user_marketing_specialist_784
+  Completed item 3: user_marketing_conversation_854
+Batch 51 complete: 10/10 items generated
+Saved batch to synthetic_data/batch_51.jsonl
+Validating batch...
+{
+  "total_examples": 10,
+  "category_distribution": {
+    "company.strategic_signatures": 1,
+    "company.brand_core": 2,
+    "user.strategic_approach": 6,
+    "user.role_context": 4,
+    "user.workflow_patterns": 1,
+    "company.knowledge_artifacts": 1,
+    "user.communication_style": 2,
+    "none": 1
+  },
+  "multi_label_frequency": 0.7,
+  "avg_turns_per_conversation": 5.8,
+  "persistence_distribution": {
+    "long": 8,
+    "medium": 1,
+    "short": 1
+  },
+  "scope_distribution": {
+    "company": 1,
+    "user": 6,
+    "mixed": 2,
+    "none": 1
+  },
+  "warnings": []
+}
+Waiting 5 seconds before next batch...
+
+=== Processing Batch 52 (Concurrent) ===
+  Launch 10 concurrent tasks...
+  Starting item 1 (Target: company.business_priorities)...
+  Starting item 2 (Target: user.session_history)...
+  Starting item 3 (Target: none)...
+  Starting item 4 (Target: user.workflow_patterns)...
+  Starting item 5 (Target: user.communication_style)...
+  Starting item 6 (Target: user.workflow_patterns)...
+  Starting item 7 (Target: user.role_context)...
+  Starting item 8 (Target: company.strategic_signatures)...
+  Starting item 9 (Target: user.interaction_preferences)...
+  Starting item 10 (Target: user.workflow_patterns)...
+  Completed item 8: user_strategic_approach_015
+  Completed item 3: none_transactional_459
+  Completed item 1: user_marketing_conversation_002
+  Completed item 4: user_marketing_assistant_734
+  Completed item 10: user_memory_065
+  Completed item 6: user_strategy_137
+  Completed item 2: user_marketing_367
+  Completed item 7: user_marketing_specialist_528
+  Completed item 5: user_communication_style_010
+  Completed item 9: user_marketing_specialist_513
+Batch 52 complete: 10/10 items generated
+Saved batch to synthetic_data/batch_52.jsonl
+Validating batch...
+{
+  "total_examples": 10,
+  "category_distribution": {
+    "user.strategic_approach": 7,
+    "user.communication_style": 3,
+    "user.workflow_patterns": 3,
+    "none": 1,
+    "user.role_context": 2
+  },
+  "multi_label_frequency": 0.6,
+  "avg_turns_per_conversation": 6.4,
+  "persistence_distribution": {
+    "long": 8,
+    "medium": 1,
+    "short": 1
+  },
+  "scope_distribution": {
+    "user": 9,
+    "none": 1
+  },
+  "warnings": []
+}
+Waiting 5 seconds before next batch...
+
+=== Processing Batch 53 (Concurrent) ===
+  Launch 10 concurrent tasks...
+  Starting item 1 (Target: user.workflow_patterns)...
+  Starting item 2 (Target: company.business_priorities)...
+  Starting item 3 (Target: company.performance_context)...
+  Starting item 4 (Target: user.communication_style)...
+  Starting item 5 (Target: company.brand_core)...
+  Starting item 6 (Target: user.interaction_preferences)...
+  Starting item 7 (Target: user.communication_style)...
+  Starting item 8 (Target: user.session_history)...
+  Starting item 9 (Target: user.workflow_patterns)...
+  Starting item 10 (Target: user.role_context)...
+  Completed item 9: user_user_048
+  Completed item 10: user_special_068
+  Completed item 6: user_memory_long_term_engagement_782
+  Completed item 7: user.communication_style_029
+  Completed item 4: user.communication_style_user.strategic_approach_user.workflow_patterns_138
+  Completed item 1: user_special_021
+  Completed item 3: user.strategic_approach_834
+  Completed item 8: user_user_026
+  Completed item 5: company_marketing_716
+  Completed item 2: user.workflow_patterns_user.communication_style_892
+Batch 53 complete: 10/10 items generated
+Saved batch to synthetic_data/batch_53.jsonl
+Validating batch...
+{
+  "total_examples": 10,
+  "category_distribution": {
+    "user.strategic_approach": 7,
+    "user.workflow_patterns": 3,
+    "user.communication_style": 7,
+    "company.performance_context": 1,
+    "company.brand_core": 1
+  },
+  "multi_label_frequency": 0.8,
+  "avg_turns_per_conversation": 6.5,
+  "persistence_distribution": {
+    "long": 10
+  },
+  "scope_distribution": {
+    "user": 9,
+    "company": 1
+  },
+  "warnings": []
+}
+Waiting 5 seconds before next batch...
+
+=== Processing Batch 54 (Concurrent) ===
+  Launch 10 concurrent tasks...
+  Starting item 1 (Target: user.interaction_preferences)...
+  Starting item 2 (Target: none)...
+  Starting item 3 (Target: company.strategic_signatures)...
+  Starting item 4 (Target: company.business_priorities)...
+  Starting item 5 (Target: user.communication_style)...
+  Starting item 6 (Target: none)...
+  Starting item 7 (Target: user.workflow_patterns)...
+  Starting item 8 (Target: user.session_history)...
+  Starting item 9 (Target: company.performance_context)...
+  Starting item 10 (Target: company.performance_context)...
+  Completed item 2: none_transactional_568
+  Completed item 6: none_transactional_456
+  Completed item 8: user_marketing_698
+  Completed item 1: user_session_history_124
+  Completed item 5: user_scenario_773
+  Completed item 4: user_simulation_817
+  Completed item 10: user_marketing_332
+  Completed item 7: user.strategic_approach_059
+  Completed item 9: user.workflow_patterns_134
+  Completed item 3: user.strategic_approach_2_045
+Batch 54 complete: 10/10 items generated
+Saved batch to synthetic_data/batch_54.jsonl
+Validating batch...
+{
+  "total_examples": 10,
+  "category_distribution": {
+    "user.session_history": 2,
+    "none": 2,
+    "user.strategic_approach": 5,
+    "user.role_context": 2,
+    "user.communication_style": 1,
+    "user.workflow_patterns": 3
+  },
+  "multi_label_frequency": 0.4,
+  "avg_turns_per_conversation": 7.7,
+  "persistence_distribution": {
+    "short": 4,
+    "long": 4,
+    "medium": 2
+  },
+  "scope_distribution": {
+    "user": 8,
+    "none": 2
+  },
+  "warnings": []
+}
+Waiting 5 seconds before next batch...
+
+=== Processing Batch 55 (Concurrent) ===
+  Launch 10 concurrent tasks...
+  Starting item 1 (Target: user.session_history)...
+  Starting item 2 (Target: company.performance_context)...
+  Starting item 3 (Target: none)...
+  Starting item 4 (Target: user.strategic_approach)...
+  Starting item 5 (Target: user.session_history)...
+  Starting item 6 (Target: company.tools_config)...
+  Starting item 7 (Target: company.knowledge_artifacts)...
+  Starting item 8 (Target: user.workflow_patterns)...
+  Starting item 9 (Target: company.performance_context)...
+  Starting item 10 (Target: user.interaction_preferences)...
+Conversation generation failed (attempt 1/6): headers: {'content-type': 'text/html; charset=UTF-8', 'referrer-policy': 'no-referrer', 'content-length': '332', 'date': 'Mon, 24 Nov 2025 18:52:28 GMT', 'alt-svc': 'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000'}, status_code: 502, body: 
+<html><head>
+<meta http-equiv="content-type" content="text/html;charset=utf-8">
+<title>502 Server Error</title>
+</head>
+<body text=#000000 bgcolor=#ffffff>
+<h1>Error: Server Error</h1>
+<h2>The server encountered a temporary error and could not complete your request.<p>Please try again in 30 seconds.</h2>
+<h2></h2>
+</body></html>
+
+Retrying in 10s...
+Conversation generation failed (attempt 1/6): headers: {'content-type': 'text/html; charset=UTF-8', 'referrer-policy': 'no-referrer', 'content-length': '332', 'date': 'Mon, 24 Nov 2025 18:52:28 GMT', 'alt-svc': 'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000'}, status_code: 502, body: 
+<html><head>
+<meta http-equiv="content-type" content="text/html;charset=utf-8">
+<title>502 Server Error</title>
+</head>
+<body text=#000000 bgcolor=#ffffff>
+<h1>Error: Server Error</h1>
+<h2>The server encountered a temporary error and could not complete your request.<p>Please try again in 30 seconds.</h2>
+<h2></h2>
+</body></html>
+
+Retrying in 10s...
+Conversation generation failed (attempt 1/6): headers: {'content-type': 'text/html; charset=UTF-8', 'referrer-policy': 'no-referrer', 'content-length': '332', 'date': 'Mon, 24 Nov 2025 18:52:28 GMT', 'alt-svc': 'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000'}, status_code: 502, body: 
+<html><head>
+<meta http-equiv="content-type" content="text/html;charset=utf-8">
+<title>502 Server Error</title>
+</head>
+<body text=#000000 bgcolor=#ffffff>
+<h1>Error: Server Error</h1>
+<h2>The server encountered a temporary error and could not complete your request.<p>Please try again in 30 seconds.</h2>
+<h2></h2>
+</body></html>
+
+Retrying in 10s...
+Conversation generation failed (attempt 1/6): headers: {'content-type': 'text/html; charset=UTF-8', 'referrer-policy': 'no-referrer', 'content-length': '332', 'date': 'Mon, 24 Nov 2025 18:52:28 GMT', 'alt-svc': 'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000'}, status_code: 502, body: 
+<html><head>
+<meta http-equiv="content-type" content="text/html;charset=utf-8">
+<title>502 Server Error</title>
+</head>
+<body text=#000000 bgcolor=#ffffff>
+<h1>Error: Server Error</h1>
+<h2>The server encountered a temporary error and could not complete your request.<p>Please try again in 30 seconds.</h2>
+<h2></h2>
+</body></html>
+
+Retrying in 10s...
+Conversation generation failed (attempt 1/6): headers: {'content-type': 'text/html; charset=UTF-8', 'referrer-policy': 'no-referrer', 'content-length': '332', 'date': 'Mon, 24 Nov 2025 18:52:28 GMT', 'alt-svc': 'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000'}, status_code: 502, body: 
+<html><head>
+<meta http-equiv="content-type" content="text/html;charset=utf-8">
+<title>502 Server Error</title>
+</head>
+<body text=#000000 bgcolor=#ffffff>
+<h1>Error: Server Error</h1>
+<h2>The server encountered a temporary error and could not complete your request.<p>Please try again in 30 seconds.</h2>
+<h2></h2>
+</body></html>
+
+Retrying in 10s...
+Conversation generation failed (attempt 1/6): headers: {'content-type': 'text/html; charset=UTF-8', 'referrer-policy': 'no-referrer', 'content-length': '332', 'date': 'Mon, 24 Nov 2025 18:52:28 GMT', 'alt-svc': 'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000'}, status_code: 502, body: 
+<html><head>
+<meta http-equiv="content-type" content="text/html;charset=utf-8">
+<title>502 Server Error</title>
+</head>
+<body text=#000000 bgcolor=#ffffff>
+<h1>Error: Server Error</h1>
+<h2>The server encountered a temporary error and could not complete your request.<p>Please try again in 30 seconds.</h2>
+<h2></h2>
+</body></html>
+
+Retrying in 10s...
+  Completed item 3: none_transactional_725
+  Completed item 5: user_session_history_101_559
+  Completed item 9: user_marketing_strategy_042
+  Completed item 1: user_strategic_approach_783
+  Completed item 7: user.communication_style_descriptive_label_763
+  Completed item 10: user_coaching_054
+  Completed item 8: user_marketing_640
+  Completed item 2: user.communication_style_367
+  Completed item 6: user_workflow_patterns_082
+  Completed item 4: user_gaming_marketing_strategy_001
+Batch 55 complete: 10/10 items generated
+Saved batch to synthetic_data/batch_55.jsonl
+Validating batch...
+{
+  "total_examples": 10,
+  "category_distribution": {
+    "user.strategic_approach": 7,
+    "user.role_context": 4,
+    "user.communication_style": 3,
+    "none": 1,
+    "user.session_history": 1,
+    "user.workflow_patterns": 1
+  },
+  "multi_label_frequency": 0.6,
+  "avg_turns_per_conversation": 7.1,
+  "persistence_distribution": {
+    "long": 7,
+    "short": 2,
+    "medium": 1
+  },
+  "scope_distribution": {
+    "user": 9,
+    "none": 1
+  },
+  "warnings": []
+}
+Waiting 5 seconds before next batch...
+
+=== Processing Batch 56 (Concurrent) ===
+  Launch 10 concurrent tasks...
+  Starting item 1 (Target: none)...
+  Starting item 2 (Target: company.brand_core)...
+  Starting item 3 (Target: company.performance_context)...
+  Starting item 4 (Target: user.communication_style)...
+  Starting item 5 (Target: user.interaction_preferences)...
+  Starting item 6 (Target: none)...
+  Starting item 7 (Target: user.interaction_preferences)...
+  Starting item 8 (Target: none)...
+  Starting item 9 (Target: company.business_priorities)...
+  Starting item 10 (Target: user.session_history)...
+  Completed item 1: none_transactional_349
+  Completed item 2: user_special_074
+  Completed item 6: none_transactional_437
+  Completed item 10: user_marketing_assistant_872
+  Completed item 8: none_transactional_164
+  Completed item 5: user_marketing_specialist_872
+  Completed item 3: user.strategic_approach_045
+  Completed item 9: company_memory_training_051
+  Completed item 4: user_marketing_conversation_745
+  Completed item 7: user_sales_547
+Batch 56 complete: 10/10 items generated
+Saved batch to synthetic_data/batch_56.jsonl
+Validating batch...
+{
+  "total_examples": 10,
+  "category_distribution": {
+    "none": 3,
+    "user.strategic_approach": 6,
+    "user.workflow_patterns": 1,
+    "user.role_context": 2,
+    "user.communication_style": 1,
+    "company.strategic_signatures": 1,
+    "company.performance_context": 1,
+    "company.brand_core": 1,
+    "user.session_history": 1
+  },
+  "multi_label_frequency": 0.5,
+  "avg_turns_per_conversation": 5.8,
+  "persistence_distribution": {
+    "short": 3,
+    "long": 6,
+    "medium": 1
+  },
+  "scope_distribution": {
+    "none": 3,
+    "user": 6,
+    "company": 1
+  },
+  "warnings": []
+}
+Waiting 5 seconds before next batch...
+
+=== Processing Batch 57 (Concurrent) ===
+  Launch 10 concurrent tasks...
+  Starting item 1 (Target: company.knowledge_artifacts)...
+  Starting item 2 (Target: company.performance_context)...
+  Starting item 3 (Target: company.brand_core)...
+  Starting item 4 (Target: company.knowledge_artifacts)...
+  Starting item 5 (Target: user.strategic_approach)...
+  Starting item 6 (Target: user.workflow_patterns)...
+  Starting item 7 (Target: user.role_context)...
+  Starting item 8 (Target: company.tools_config)...
+  Starting item 9 (Target: none)...
+  Starting item 10 (Target: company.business_priorities)...
+  Completed item 9: none_transactional_787
+  Completed item 6: user_special_023
+  Completed item 2: user.strategic_approach_914
+  Completed item 1: user_marketing_conversation_016
+  Completed item 5: user.strategic_approach_1_537
+  Completed item 4: user_descriptive_label_019
+  Completed item 7: user.strategic_approach_123
+  Completed item 3: company_marketing_strategy_452
+  Completed item 10: user_marketing_specialist_837
+  Completed item 8: user.strategic_approach_987
+Batch 57 complete: 10/10 items generated
+Saved batch to synthetic_data/batch_57.jsonl
+Validating batch...
+{
+  "total_examples": 10,
+  "category_distribution": {
+    "user.strategic_approach": 8,
+    "user.role_context": 2,
+    "company.business_priorities": 1,
+    "company.strategic_signatures": 1,
+    "company.brand_core": 1,
+    "user.communication_style": 2,
+    "user.workflow_patterns": 1,
+    "none": 1
+  },
+  "multi_label_frequency": 0.5,
+  "avg_turns_per_conversation": 7.0,
+  "persistence_distribution": {
+    "medium": 1,
+    "long": 8,
+    "short": 1
+  },
+  "scope_distribution": {
+    "user": 8,
+    "company": 1,
+    "none": 1
+  },
+  "warnings": []
+}
+Waiting 5 seconds before next batch...
+
+=== Processing Batch 58 (Concurrent) ===
+  Launch 10 concurrent tasks...
+  Starting item 1 (Target: company.brand_core)...
+  Starting item 2 (Target: user.strategic_approach)...
+  Starting item 3 (Target: user.session_history)...
+  Starting item 4 (Target: user.interaction_preferences)...
+  Starting item 5 (Target: company.brand_core)...
+  Starting item 6 (Target: none)...
+  Starting item 7 (Target: user.session_history)...
+  Starting item 8 (Target: none)...
+  Starting item 9 (Target: user.interaction_preferences)...
+  Starting item 10 (Target: none)...
+  Completed item 6: none_transactional_682
+  Completed item 8: none_transactional_342
+  Completed item 4: user_strategic_approach_348
+  Completed item 7: user_marketing_assistant_789
+  Completed item 10: none_transactional_548
+  Completed item 3: user_tutoring_893
+  Completed item 5: company_omnichannel_strategy_014
+  Completed item 2: user.strategic_approach_548
+  Completed item 9: user_special_080
+  Completed item 1: user_marketing_148
+Batch 58 complete: 10/10 items generated
+Saved batch to synthetic_data/batch_58.jsonl
+Validating batch...
+{
+  "total_examples": 10,
+  "category_distribution": {
+    "user.workflow_patterns": 1,
+    "user.session_history": 2,
+    "user.strategic_approach": 4,
+    "user.interaction_preferences": 2,
+    "company.performance_context": 1,
+    "company.brand_core": 1,
+    "none": 3,
+    "user.role_context": 1,
+    "user.communication_style": 1
+  },
+  "multi_label_frequency": 0.5,
+  "avg_turns_per_conversation": 6.8,
+  "persistence_distribution": {
+    "short": 5,
+    "long": 5
+  },
+  "scope_distribution": {
+    "user": 6,
+    "company": 1,
+    "none": 3
+  },
+  "warnings": []
+}
+Waiting 5 seconds before next batch...
+
+=== Processing Batch 59 (Concurrent) ===
+  Launch 10 concurrent tasks...
+  Starting item 1 (Target: company.strategic_signatures)...
+  Starting item 2 (Target: user.strategic_approach)...
+  Starting item 3 (Target: user.role_context)...
+  Starting item 4 (Target: user.workflow_patterns)...
+  Starting item 5 (Target: company.knowledge_artifacts)...
+  Starting item 6 (Target: user.interaction_preferences)...
+  Starting item 7 (Target: user.strategic_approach)...
+  Starting item 8 (Target: user.workflow_patterns)...
+  Starting item 9 (Target: none)...
+  Starting item 10 (Target: company.business_priorities)...
+  Completed item 9: none_transactional_516
+  Completed item 10: user_memory_conversation_857
+  Completed item 8: user.strategic_approach_214
+  Completed item 2: user_special_726
+  Completed item 4: user.communication_style_234
+  Completed item 3: user_interaction_preferences_descriptive_label_621
+  Completed item 6: user.communication_style_103
+  Completed item 1: user.strategic_approach_112
+  Completed item 7: user_user_065
+  Completed item 5: user.strategic_approach_498
+Batch 59 complete: 10/10 items generated
+Saved batch to synthetic_data/batch_59.jsonl
+Validating batch...
+{
+  "total_examples": 10,
+  "category_distribution": {
+    "user.strategic_approach": 9,
+    "user.role_context": 2,
+    "user.interaction_preferences": 1,
+    "user.communication_style": 4,
+    "none": 1
+  },
+  "multi_label_frequency": 0.7,
+  "avg_turns_per_conversation": 7.8,
+  "persistence_distribution": {
+    "long": 9,
+    "short": 1
+  },
+  "scope_distribution": {
+    "user": 9,
+    "none": 1
+  },
+  "warnings": []
+}
+Waiting 5 seconds before next batch...
+
+=== Processing Batch 60 (Concurrent) ===
+  Launch 10 concurrent tasks...
+  Starting item 1 (Target: company.brand_core)...
+  Starting item 2 (Target: user.communication_style)...
+  Starting item 3 (Target: user.communication_style)...
+  Starting item 4 (Target: user.session_history)...
+  Starting item 5 (Target: user.interaction_preferences)...
+  Starting item 6 (Target: company.strategic_signatures)...
+  Starting item 7 (Target: user.communication_style)...
+  Starting item 8 (Target: company.brand_core)...
+  Starting item 9 (Target: none)...
+  Starting item 10 (Target: user.communication_style)...
+  Completed item 9: none_transactional_512
+  Completed item 5: user_special_739
+  Completed item 8: user.strategic_approach_243
+  Completed item 4: user_memory_201
+  Completed item 10: user_memory_loyal_customer_feedback_854
+  Completed item 1: user_marketing_assistant_486
+  Completed item 3: user_special_456
+  Completed item 2: user_cybersecurity_incident_923
+  Completed item 6: user_marketing_conversation_009
+  Completed item 7: user_sales_332
+Batch 60 complete: 10/10 items generated
+Saved batch to synthetic_data/batch_60.jsonl
+Validating batch...
+{
+  "total_examples": 10,
+  "category_distribution": {
+    "user.strategic_approach": 7,
+    "user.workflow_patterns": 3,
+    "user.communication_style": 4,
+    "user.session_history": 1,
+    "user.interaction_preferences": 1,
+    "user.role_context": 1,
+    "none": 1
+  },
+  "multi_label_frequency": 0.7,
+  "avg_turns_per_conversation": 7.0,
+  "persistence_distribution": {
+    "medium": 1,
+    "long": 6,
+    "short": 2,
+    "evolving": 1
+  },
+  "scope_distribution": {
+    "user": 9,
+    "none": 1
+  },
+  "warnings": []
+}
+Waiting 5 seconds before next batch...
+
+=== Processing Batch 61 (Concurrent) ===
+  Launch 10 concurrent tasks...
+  Starting item 1 (Target: none)...
+  Starting item 2 (Target: company.brand_core)...
+  Starting item 3 (Target: company.brand_core)...
+  Starting item 4 (Target: user.session_history)...
+  Starting item 5 (Target: user.communication_style)...
+  Starting item 6 (Target: user.workflow_patterns)...
+  Starting item 7 (Target: company.knowledge_artifacts)...
+  Starting item 8 (Target: company.brand_core)...
+  Starting item 9 (Target: none)...
+  Starting item 10 (Target: none)...
+  Completed item 1: none_transactional_342
+  Completed item 9: none_transactional_699
+  Completed item 4: user_strategic_approach_853
+  Completed item 3: user_marketing_723
+  Completed item 10: none_transactional_658
+  Completed item 5: user_sales_456
+  Completed item 2: company_memory_live_ops_872
+  Completed item 6: user_special_763
+  Completed item 8: company.brand_core_scenario_815
+  Completed item 7: user.workflow_patterns_user.session_history_user.interaction_preferences_354
+Batch 61 complete: 10/10 items generated
+Saved batch to synthetic_data/batch_61.jsonl
+Validating batch...
+{
+  "total_examples": 10,
+  "category_distribution": {
+    "none": 3,
+    "company.knowledge_artifacts": 1,
+    "company.brand_core": 3,
+    "company.business_priorities": 1,
+    "user.strategic_approach": 3,
+    "user.workflow_patterns": 2,
+    "user.communication_style": 1,
+    "user.session_history": 1,
+    "user.interaction_preferences": 1
+  },
+  "multi_label_frequency": 0.5,
+  "avg_turns_per_conversation": 8.4,
+  "persistence_distribution": {
+    "short": 3,
+    "long": 5,
+    "medium": 2
+  },
+  "scope_distribution": {
+    "none": 3,
+    "company": 3,
+    "user": 4
+  },
+  "warnings": []
+}
+Waiting 5 seconds before next batch...
+
+=== Processing Batch 62 (Concurrent) ===
+  Launch 10 concurrent tasks...
+  Starting item 1 (Target: none)...
+  Starting item 2 (Target: company.knowledge_artifacts)...
+  Starting item 3 (Target: user.communication_style)...
+  Starting item 4 (Target: company.tools_config)...
+  Starting item 5 (Target: none)...
+  Starting item 6 (Target: company.knowledge_artifacts)...
+  Starting item 7 (Target: company.brand_core)...
+  Starting item 8 (Target: company.knowledge_artifacts)...
+  Starting item 9 (Target: none)...
+  Starting item 10 (Target: none)...
+  Completed item 1: none_transactional_059
+  Completed item 9: none_transactional_330
+  Completed item 10: none_transactional_758
+  Completed item 2: user_special_847
+  Completed item 5: none_transactional_679
+  Completed item 3: user_marketing_456
+  Completed item 8: company_memory_storage_742
+  Completed item 7: user_mixed_739
+  Completed item 4: user_marketing_468
+  Completed item 6: user_marketing_assistant_987
+Batch 62 complete: 10/10 items generated
+Saved batch to synthetic_data/batch_62.jsonl
+Validating batch...
+{
+  "total_examples": 10,
+  "category_distribution": {
+    "none": 4,
+    "user.strategic_approach": 4,
+    "user.workflow_patterns": 2,
+    "user.interaction_preferences": 1,
+    "user.communication_style": 2,
+    "user.role_context": 2,
+    "company.business_priorities": 1
+  },
+  "multi_label_frequency": 0.5,
+  "avg_turns_per_conversation": 7.7,
+  "persistence_distribution": {
+    "short": 5,
+    "long": 5
+  },
+  "scope_distribution": {
+    "none": 4,
+    "user": 5,
+    "company": 1
+  },
+  "warnings": []
+}
+Waiting 5 seconds before next batch...
+
+=== Processing Batch 63 (Concurrent) ===
+  Launch 10 concurrent tasks...
+  Starting item 1 (Target: none)...
+  Starting item 2 (Target: user.workflow_patterns)...
+  Starting item 3 (Target: none)...
+  Starting item 4 (Target: company.brand_core)...
+  Starting item 5 (Target: user.workflow_patterns)...
+  Starting item 6 (Target: company.performance_context)...
+  Starting item 7 (Target: user.workflow_patterns)...
+  Starting item 8 (Target: company.strategic_signatures)...
+  Starting item 9 (Target: company.performance_context)...
+  Starting item 10 (Target: company.performance_context)...
+  Completed item 1: none_transactional_048
+  Completed item 2: user_marketing_assistant_023
+  Completed item 9: user_memory_user_preferences_152
+  Completed item 5: user_descriptive_label_024
+  Completed item 10: user.strategic_approach_011
+  Completed item 6: user_descriptive_736
+  Completed item 7: user_special_064
+  Completed item 4: user.communication_style_gaming_942
+  Completed item 3: none_transactional_759
+  Completed item 8: company_strategic_signatures_664
+Batch 63 complete: 10/10 items generated
+Saved batch to synthetic_data/batch_63.jsonl
+Validating batch...
+{
+  "total_examples": 10,
+  "category_distribution": {
+    "none": 2,
+    "user.strategic_approach": 5,
+    "user.communication_style": 3,
+    "user.role_context": 1,
+    "user.interaction_preferences": 1,
+    "user.session_history": 2,
+    "user.workflow_patterns": 2,
+    "company.strategic_signatures": 1,
+    "company.knowledge_artifacts": 1
+  },
+  "multi_label_frequency": 0.7,
+  "avg_turns_per_conversation": 6.7,
+  "persistence_distribution": {
+    "short": 4,
+    "long": 6
+  },
+  "scope_distribution": {
+    "none": 2,
+    "user": 7,
+    "company": 1
+  },
+  "warnings": []
+}
+Waiting 5 seconds before next batch...
+
+=== Processing Batch 64 (Concurrent) ===
+  Launch 10 concurrent tasks...
+  Starting item 1 (Target: company.knowledge_artifacts)...
+  Starting item 2 (Target: company.brand_core)...
+  Starting item 3 (Target: company.brand_core)...
+  Starting item 4 (Target: user.workflow_patterns)...
+  Starting item 5 (Target: company.business_priorities)...
+  Starting item 6 (Target: user.strategic_approach)...
+  Starting item 7 (Target: company.business_priorities)...
+  Starting item 8 (Target: user.workflow_patterns)...
+  Starting item 9 (Target: none)...
+  Starting item 10 (Target: user.session_history)...
+  Completed item 9: none_transactional_386
+  Completed item 4: user.strategic_approach_091
+  Completed item 10: user_special_091
+  Completed item 6: user_special_784
+  Completed item 1: user.workflow_patterns_user.role_context_user.communication_style_947
+  Completed item 8: user_assistant_582
+  Completed item 3: company_marketing_collaboration_023
+  Completed item 7: user_marketing_assistant_012
+  Completed item 5: user.communication_style_102
+  Completed item 2: company_marketing_012
+Batch 64 complete: 10/10 items generated
+Saved batch to synthetic_data/batch_64.jsonl
+Validating batch...
+{
+  "total_examples": 10,
+  "category_distribution": {
+    "user.workflow_patterns": 2,
+    "user.role_context": 3,
+    "user.communication_style": 4,
+    "company.knowledge_artifacts": 1,
+    "company.brand_core": 2,
+    "company.business_priorities": 1,
+    "user.strategic_approach": 5,
+    "none": 1
+  },
+  "multi_label_frequency": 0.7,
+  "avg_turns_per_conversation": 7.5,
+  "persistence_distribution": {
+    "medium": 2,
+    "long": 7,
+    "short": 1
+  },
+  "scope_distribution": {
+    "user": 7,
+    "company": 2,
+    "none": 1
+  },
+  "warnings": []
+}
+Waiting 5 seconds before next batch...
+
+=== Processing Batch 65 (Concurrent) ===
+  Launch 10 concurrent tasks...
+  Starting item 1 (Target: user.strategic_approach)...
+  Starting item 2 (Target: none)...
+  Starting item 3 (Target: company.strategic_signatures)...
+  Starting item 4 (Target: user.strategic_approach)...
+  Starting item 5 (Target: company.knowledge_artifacts)...
+  Starting item 6 (Target: company.knowledge_artifacts)...
+  Starting item 7 (Target: user.strategic_approach)...
+  Starting item 8 (Target: user.strategic_approach)...
+  Starting item 9 (Target: none)...
+  Starting item 10 (Target: user.workflow_patterns)...
+  Completed item 9: none_transactional_572
+  Completed item 5: user.communication_style_093
+  Completed item 2: none_transactional_802
+  Completed item 6: user_special_729
+  Completed item 7: user_marketing_conversation_734
+  Completed item 10: user.communication_style_descriptive_label_557
+  Completed item 1: user_special_084
+  Completed item 8: user.communication_style_383
+  Completed item 3: user_mixed_084
+  Completed item 4: user.communication_style_234
+Batch 65 complete: 10/10 items generated
+Saved batch to synthetic_data/batch_65.jsonl
+Validating batch...
+{
+  "total_examples": 10,
+  "category_distribution": {
+    "user.strategic_approach": 6,
+    "user.communication_style": 5,
+    "none": 2,
+    "company.strategic_signatures": 1,
+    "company.tools_config": 1,
+    "user.session_history": 1,
+    "user.workflow_patterns": 1
+  },
+  "multi_label_frequency": 0.6,
+  "avg_turns_per_conversation": 6.8,
+  "persistence_distribution": {
+    "long": 7,
+    "short": 3
+  },
+  "scope_distribution": {
+    "user": 7,
+    "none": 2,
+    "mixed": 1
+  },
+  "warnings": []
+}
+Waiting 5 seconds before next batch...
+
+=== Processing Batch 66 (Concurrent) ===
+  Launch 10 concurrent tasks...
+  Starting item 1 (Target: company.strategic_signatures)...
+  Starting item 2 (Target: company.knowledge_artifacts)...
+  Starting item 3 (Target: none)...
+  Starting item 4 (Target: user.session_history)...
+  Starting item 5 (Target: user.interaction_preferences)...
+  Starting item 6 (Target: company.business_priorities)...
+  Starting item 7 (Target: company.brand_core)...
+  Starting item 8 (Target: company.business_priorities)...
+  Starting item 9 (Target: user.interaction_preferences)...
+  Starting item 10 (Target: company.brand_core)...
+  Completed item 5: user_strategic_approach_835
+  Completed item 3: none_transactional_367
+  Completed item 8: user_marketing_conversation_012
+  Completed item 7: user_marketing_conversation_003
+  Completed item 9: user_strategic_approach_923
+  Completed item 10: user_mixed_013
+  Completed item 4: user_memory_145
+  Completed item 2: user_marketing_assistant_043
+  Completed item 6: user_special_021
+  Completed item 1: user_marketing_specialist_578
+Batch 66 complete: 10/10 items generated
+Saved batch to synthetic_data/batch_66.jsonl
+Validating batch...
+{
+  "total_examples": 10,
+  "category_distribution": {
+    "user.strategic_approach": 9,
+    "user.communication_style": 3,
+    "user.role_context": 3,
+    "none": 1,
+    "user.workflow_patterns": 1,
+    "user.session_history": 1,
+    "company.performance_context": 1
+  },
+  "multi_label_frequency": 0.6,
+  "avg_turns_per_conversation": 6.9,
+  "persistence_distribution": {
+    "long": 8,
+    "short": 1,
+    "medium": 1
+  },
+  "scope_distribution": {
+    "user": 8,
+    "none": 1,
+    "mixed": 1
+  },
+  "warnings": []
+}
+Waiting 5 seconds before next batch...
+
+=== Processing Batch 67 (Concurrent) ===
+  Launch 10 concurrent tasks...
+  Starting item 1 (Target: none)...
+  Starting item 2 (Target: company.performance_context)...
+  Starting item 3 (Target: user.communication_style)...
+  Starting item 4 (Target: company.performance_context)...
+  Starting item 5 (Target: user.interaction_preferences)...
+  Starting item 6 (Target: user.role_context)...
+  Starting item 7 (Target: none)...
+  Starting item 8 (Target: user.workflow_patterns)...
+  Starting item 9 (Target: user.interaction_preferences)...
+  Starting item 10 (Target: none)...
+  Completed item 7: none_transactional_753
+  Completed item 1: none_transactional_783
+  Completed item 3: user.communication_style_user.strategic_approach_user.role_context_123
+  Completed item 5: user_communication_style_special_081
+  Completed item 2: user.communication_style_user_marketing_assistant_813
+  Completed item 9: user_memory_recall_782
+  Completed item 10: none_transactional_321
+  Completed item 4: user_memory_1_000
+  Completed item 6: user_descriptive_label_001
+  Completed item 8: user_marketing_384
+Batch 67 complete: 10/10 items generated
+Saved batch to synthetic_data/batch_67.jsonl
+Validating batch...
+{
+  "total_examples": 10,
+  "category_distribution": {
+    "none": 3,
+    "user.strategic_approach": 5,
+    "user.communication_style": 5,
+    "user.role_context": 1,
+    "user.workflow_patterns": 2,
+    "user.interaction_preferences": 1
+  },
+  "multi_label_frequency": 0.6,
+  "avg_turns_per_conversation": 8.3,
+  "persistence_distribution": {
+    "short": 3,
+    "long": 6,
+    "evolving": 1
+  },
+  "scope_distribution": {
+    "none": 3,
+    "user": 7
+  },
+  "warnings": []
+}
+Waiting 5 seconds before next batch...
+
+=== Processing Batch 68 (Concurrent) ===
+  Launch 10 concurrent tasks...
+  Starting item 1 (Target: user.communication_style)...
+  Starting item 2 (Target: user.strategic_approach)...
+  Starting item 3 (Target: user.strategic_approach)...
+  Starting item 4 (Target: user.session_history)...
+  Starting item 5 (Target: user.role_context)...
+  Starting item 6 (Target: user.session_history)...
+  Starting item 7 (Target: company.tools_config)...
+  Starting item 8 (Target: none)...
+  Starting item 9 (Target: company.brand_core)...
+  Starting item 10 (Target: user.session_history)...
+Scenario generation failed (attempt 1/6): headers: {'content-type': 'text/html; charset=UTF-8', 'referrer-policy': 'no-referrer', 'content-length': '332', 'date': 'Mon, 24 Nov 2025 19:06:41 GMT', 'alt-svc': 'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000'}, status_code: 502, body: 
+<html><head>
+<meta http-equiv="content-type" content="text/html;charset=utf-8">
+<title>502 Server Error</title>
+</head>
+<body text=#000000 bgcolor=#ffffff>
+<h1>Error: Server Error</h1>
+<h2>The server encountered a temporary error and could not complete your request.<p>Please try again in 30 seconds.</h2>
+<h2></h2>
+</body></html>
+
+Retrying in 10s...
+Conversation generation failed (attempt 1/6): headers: {'content-type': 'text/html; charset=UTF-8', 'referrer-policy': 'no-referrer', 'content-length': '332', 'date': 'Mon, 24 Nov 2025 19:06:56 GMT', 'alt-svc': 'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000'}, status_code: 502, body: 
+<html><head>
+<meta http-equiv="content-type" content="text/html;charset=utf-8">
+<title>502 Server Error</title>
+</head>
+<body text=#000000 bgcolor=#ffffff>
+<h1>Error: Server Error</h1>
+<h2>The server encountered a temporary error and could not complete your request.<p>Please try again in 30 seconds.</h2>
+<h2></h2>
+</body></html>
+
+Retrying in 10s...
+  Completed item 8: none_transactional_638
+  Completed item 10: user_marketing_conversation_023
+  Completed item 4: user_sports_media_729
+  Completed item 6: user_tutorial_559
+  Completed item 3: user.communication_style_scenario_927
+  Completed item 2: user.strategic_approach_101_017
+  Completed item 7: company_marketing_initiative_023
+  Completed item 5: user_marketing_conversation_012
+  Completed item 9: company_marketing_support_921
+  Completed item 1: user_memory_063
+Batch 68 complete: 10/10 items generated
+Saved batch to synthetic_data/batch_68.jsonl
+Validating batch...
+{
+  "total_examples": 10,
+  "category_distribution": {
+    "user.strategic_approach": 6,
+    "user.communication_style": 3,
+    "user.workflow_patterns": 2,
+    "user.role_context": 1,
+    "user.interaction_preferences": 1,
+    "user.session_history": 1,
+    "company.business_priorities": 2,
+    "company.performance_context": 1,
+    "company.tools_config": 1,
+    "none": 1,
+    "company.knowledge_artifacts": 1,
+    "company.brand_core": 1
+  },
+  "multi_label_frequency": 0.8,
+  "avg_turns_per_conversation": 7.6,
+  "persistence_distribution": {
+    "long": 6,
+    "medium": 2,
+    "short": 2
+  },
+  "scope_distribution": {
+    "user": 7,
+    "company": 2,
+    "none": 1
+  },
+  "warnings": []
+}
+Waiting 5 seconds before next batch...
+
+=== Processing Batch 69 (Concurrent) ===
+  Launch 10 concurrent tasks...
+  Starting item 1 (Target: user.session_history)...
+  Starting item 2 (Target: company.performance_context)...
+  Starting item 3 (Target: company.strategic_signatures)...
+  Starting item 4 (Target: user.strategic_approach)...
+  Starting item 5 (Target: user.strategic_approach)...
+  Starting item 6 (Target: company.knowledge_artifacts)...
+  Starting item 7 (Target: company.brand_core)...
+  Starting item 8 (Target: none)...
+  Starting item 9 (Target: user.interaction_preferences)...
+  Starting item 10 (Target: user.workflow_patterns)...
+  Completed item 8: none_transactional_724
+  Completed item 3: user.strategic_approach_123
+  Completed item 10: user_coaching_738
+  Completed item 9: user.communication_style_none_832
+  Completed item 6: user_memory_none_372
+  Completed item 2: company.performance_context_user.workflow_patterns_038
+  Completed item 5: user_marketing_conversation_021
+  Completed item 7: user_marketing_conversation_010
+  Completed item 1: user_user_062
+  Completed item 4: user_strategic_approach_814
+Batch 69 complete: 10/10 items generated
+Saved batch to synthetic_data/batch_69.jsonl
+Validating batch...
+{
+  "total_examples": 10,
+  "category_distribution": {
+    "user.strategic_approach": 6,
+    "user.session_history": 1,
+    "user.role_context": 2,
+    "user.workflow_patterns": 2,
+    "company.performance_context": 1,
+    "none": 2,
+    "company.brand_core": 1,
+    "user.communication_style": 2
+  },
+  "multi_label_frequency": 0.5,
+  "avg_turns_per_conversation": 6.6,
+  "persistence_distribution": {
+    "medium": 2,
+    "rolling": 1,
+    "long": 5,
+    "none": 1,
+    "short": 1
+  },
+  "scope_distribution": {
+    "user": 6,
+    "mixed": 2,
+    "none": 2
+  },
+  "warnings": []
+}
+Waiting 5 seconds before next batch...
+
+=== Processing Batch 70 (Concurrent) ===
+  Launch 10 concurrent tasks...
+  Starting item 1 (Target: none)...
+  Starting item 2 (Target: user.strategic_approach)...
+  Starting item 3 (Target: user.session_history)...
+  Starting item 4 (Target: company.business_priorities)...
+  Starting item 5 (Target: none)...
+  Starting item 6 (Target: company.business_priorities)...
+  Starting item 7 (Target: user.session_history)...
+  Starting item 8 (Target: company.strategic_signatures)...
+  Starting item 9 (Target: company.brand_core)...
+  Starting item 10 (Target: company.performance_context)...
+  Completed item 1: none_transactional_596
+  Completed item 8: company_strategic_signatures_342
+  Completed item 2: user_memory_driver_engagement_742
+  Completed item 4: user_memory_retail_584
+  Completed item 5: none_transactional_459
+  Completed item 6: company_marketing_conversation_023
+  Completed item 3: user_strategic_approach_782
+  Completed item 7: user_memory_011
+  Completed item 9: user_descriptive_label_845
+  Completed item 10: user_marketing_conversation_825
+Batch 70 complete: 10/10 items generated
+Saved batch to synthetic_data/batch_70.jsonl
+Validating batch...
+{
+  "total_examples": 10,
+  "category_distribution": {
+    "none": 2,
+    "user.strategic_approach": 5,
+    "user.workflow_patterns": 3,
+    "user.role_context": 1,
+    "company.business_priorities": 1,
+    "company.performance_context": 1,
+    "user.session_history": 1,
+    "user.communication_style": 2,
+    "company.strategic_signatures": 1
+  },
+  "multi_label_frequency": 0.6,
+  "avg_turns_per_conversation": 8.2,
+  "persistence_distribution": {
+    "short": 3,
+    "long": 6,
+    "medium": 1
+  },
+  "scope_distribution": {
+    "none": 2,
+    "user": 6,
+    "company": 2
+  },
+  "warnings": []
+}
+Waiting 5 seconds before next batch...
+
+=== Processing Batch 71 (Concurrent) ===
+  Launch 10 concurrent tasks...
+  Starting item 1 (Target: company.brand_core)...
+  Starting item 2 (Target: user.interaction_preferences)...
+  Starting item 3 (Target: company.brand_core)...
+  Starting item 4 (Target: company.knowledge_artifacts)...
+  Starting item 5 (Target: company.brand_core)...
+  Starting item 6 (Target: user.interaction_preferences)...
+  Starting item 7 (Target: user.strategic_approach)...
+  Starting item 8 (Target: user.session_history)...
+  Starting item 9 (Target: user.interaction_preferences)...
+  Starting item 10 (Target: company.strategic_signatures)...
+Conversation generation failed (attempt 1/6): headers: {'date': 'Mon, 24 Nov 2025 19:10:18 GMT', 'content-length': '0', 'x-envoy-upstream-service-time': '7172', 'server': 'envoy', 'via': '1.1 google', 'alt-svc': 'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000'}, status_code: 500, body: 
+Retrying in 10s...Conversation generation failed (attempt 1/6): headers: {'date': 'Mon, 24 Nov 2025 19:10:18 GMT', 'content-length': '0', 'x-envoy-upstream-service-time': '5137', 'server': 'envoy', 'via': '1.1 google', 'alt-svc': 'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000'}, status_code: 500, body: 
+Retrying in 10s...
+
+Conversation generation failed (attempt 1/6): headers: {'date': 'Mon, 24 Nov 2025 19:10:36 GMT', 'content-length': '0', 'x-envoy-upstream-service-time': '23559', 'server': 'envoy', 'via': '1.1 google', 'alt-svc': 'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000'}, status_code: 500, body: Conversation generation failed (attempt 1/6): headers: {'date': 'Mon, 24 Nov 2025 19:10:36 GMT', 'content-length': '0', 'x-envoy-upstream-service-time': '21786', 'server': 'envoy', 'via': '1.1 google', 'alt-svc': 'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000'}, status_code: 500, body: Conversation generation failed (attempt 1/6): headers: {'date': 'Mon, 24 Nov 2025 19:10:36 GMT', 'content-length': '0', 'x-envoy-upstream-service-time': '24258', 'server': 'envoy', 'via': '1.1 google', 'alt-svc': 'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000'}, status_code: 500, body: Conversation generation failed (attempt 1/6): headers: {'date': 'Mon, 24 Nov 2025 19:10:36 GMT', 'content-length': '0', 'x-envoy-upstream-service-time': '23553', 'server': 'envoy', 'via': '1.1 google', 'alt-svc': 'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000'}, status_code: 500, body: Conversation generation failed (attempt 1/6): headers: {'date': 'Mon, 24 Nov 2025 19:10:36 GMT', 'content-length': '0', 'x-envoy-upstream-service-time': '22476', 'server': 'envoy', 'via': '1.1 google', 'alt-svc': 'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000'}, status_code: 500, body: 
+Conversation generation failed (attempt 1/6): headers: {'date': 'Mon, 24 Nov 2025 19:10:36 GMT', 'content-length': '0', 'x-envoy-upstream-service-time': '26991', 'server': 'envoy', 'via': '1.1 google', 'alt-svc': 'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000'}, status_code: 500, body: 
+
+
+
+Retrying in 10s...
+
+Retrying in 10s...Retrying in 10s...Retrying in 10s...
+Retrying in 10s...
+
+Retrying in 10s...Conversation generation failed (attempt 2/6): headers: {'date': 'Mon, 24 Nov 2025 19:10:36 GMT', 'content-length': '0', 'x-envoy-upstream-service-time': '7569', 'server': 'envoy', 'via': '1.1 google', 'alt-svc': 'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000'}, status_code: 500, body: 
+
+Retrying in 20s...
+
+  Completed item 8: user_marketing_assistant_024
+  Completed item 3: company_descriptive_874
+Conversation generation failed (attempt 2/6): headers: {'date': 'Mon, 24 Nov 2025 19:10:50 GMT', 'content-length': '0', 'x-envoy-upstream-service-time': '4782', 'server': 'envoy', 'via': '1.1 google', 'alt-svc': 'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000'}, status_code: 500, body: Conversation generation failed (attempt 2/6): headers: {'date': 'Mon, 24 Nov 2025 19:10:50 GMT', 'content-length': '0', 'x-envoy-upstream-service-time': '4745', 'server': 'envoy', 'via': '1.1 google', 'alt-svc': 'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000'}, status_code: 500, body: 
+
+Retrying in 20s...Retrying in 20s...Conversation generation failed (attempt 2/6): headers: {'date': 'Mon, 24 Nov 2025 19:10:50 GMT', 'content-length': '0', 'x-envoy-upstream-service-time': '4747', 'server': 'envoy', 'via': '1.1 google', 'alt-svc': 'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000'}, status_code: 500, body: 
+Retrying in 20s...
+
+
+  Completed item 10: user_marketing_321
+Conversation generation failed (attempt 3/6): headers: {'date': 'Mon, 24 Nov 2025 19:10:58 GMT', 'content-length': '0', 'x-envoy-upstream-service-time': '2658', 'server': 'envoy', 'via': '1.1 google', 'alt-svc': 'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000'}, status_code: 500, body: 
+Retrying in 40s...
+  Completed item 5: user_marketing_487
+  Completed item 4: user_marketing_strategy_023
+  Completed item 6: user_marketing_conversation_783
+  Completed item 2: user_marketing_specialist_378
+  Completed item 1: user_memory_company_memory_312
+  Completed item 7: user_memory_123
+Conversation generation failed (attempt 4/6): The read operation timed out
+Retrying in 80s...
+  Completed item 9: user_marketing_assistant_819
+Batch 71 complete: 10/10 items generated
+Saved batch to synthetic_data/batch_71.jsonl
+Validating batch...
+{
+  "total_examples": 10,
+  "category_distribution": {
+    "company.brand_core": 2,
+    "company.knowledge_artifacts": 1,
+    "user.communication_style": 5,
+    "user.workflow_patterns": 3,
+    "user.session_history": 1,
+    "company.business_priorities": 1,
+    "user.strategic_approach": 7,
+    "user.role_context": 2
+  },
+  "multi_label_frequency": 0.9,
+  "avg_turns_per_conversation": 7.2,
+  "persistence_distribution": {
+    "long": 8,
+    "medium": 2
+  },
+  "scope_distribution": {
+    "mixed": 1,
+    "user": 8,
+    "company": 1
+  },
+  "warnings": []
+}
+Waiting 5 seconds before next batch...
+
+=== Processing Batch 72 (Concurrent) ===
+  Launch 10 concurrent tasks...
+  Starting item 1 (Target: user.session_history)...
+  Starting item 2 (Target: user.strategic_approach)...
+  Starting item 3 (Target: company.tools_config)...
+  Starting item 4 (Target: company.tools_config)...
+  Starting item 5 (Target: company.tools_config)...
+  Starting item 6 (Target: company.brand_core)...
+  Starting item 7 (Target: company.brand_core)...
+  Starting item 8 (Target: company.brand_core)...
+  Starting item 9 (Target: none)...
+  Starting item 10 (Target: user.communication_style)...
+  Completed item 4: user_marketing_assistant_029
+  Completed item 8: user_mixed_777
+  Completed item 2: company_marketing_strategy_015
+  Completed item 7: company_marketing_conversation_048
+  Completed item 9: none_transactional_549
+  Completed item 5: user.communication_style_143
+  Completed item 3: user_special_837
+  Completed item 6: company.brand_core_discussion_692
+  Completed item 10: user_workflow_patterns_532
+  Completed item 1: user_special_804
+Batch 72 complete: 10/10 items generated
+Saved batch to synthetic_data/batch_72.jsonl
+Validating batch...
+{
+  "total_examples": 10,
+  "category_distribution": {
+    "user.strategic_approach": 4,
+    "user.role_context": 1,
+    "company.strategic_signatures": 1,
+    "company.brand_core": 3,
+    "user.communication_style": 3,
+    "user.workflow_patterns": 2,
+    "none": 1
+  },
+  "multi_label_frequency": 0.5,
+  "avg_turns_per_conversation": 6.8,
+  "persistence_distribution": {
+    "long": 8,
+    "short": 1,
+    "medium": 1
+  },
+  "scope_distribution": {
+    "user": 6,
+    "company": 3,
+    "none": 1
+  },
+  "warnings": []
+}
+Waiting 5 seconds before next batch...
+
+=== Processing Batch 73 (Concurrent) ===
+  Launch 10 concurrent tasks...
+  Starting item 1 (Target: company.knowledge_artifacts)...
+  Starting item 2 (Target: user.strategic_approach)...
+  Starting item 3 (Target: company.brand_core)...
+  Starting item 4 (Target: company.business_priorities)...
+  Starting item 5 (Target: user.strategic_approach)...
+  Starting item 6 (Target: company.tools_config)...
+  Starting item 7 (Target: company.tools_config)...
+  Starting item 8 (Target: company.brand_core)...
+  Starting item 9 (Target: company.performance_context)...
+  Starting item 10 (Target: user.session_history)...
+  Completed item 4: user.strategic_approach_339
+  Completed item 2: user_marketing_assistant_039
+  Completed item 1: user_special_832
+  Completed item 7: user_none_092
+  Completed item 5: user.communication_style_none_456
+  Completed item 3: company_memory_marketing_assistant_036
+  Completed item 9: user.communication_style_383
+  Completed item 6: user_strategic_approach_012
+  Completed item 8: company_marketing_557
+  Completed item 10: user_marketing_conversation_749
+Batch 73 complete: 10/10 items generated
+Saved batch to synthetic_data/batch_73.jsonl
+Validating batch...
+{
+  "total_examples": 10,
+  "category_distribution": {
+    "user.strategic_approach": 5,
+    "user.role_context": 2,
+    "company.strategic_signatures": 1,
+    "company.performance_context": 1,
+    "company.brand_core": 2,
+    "user.communication_style": 2,
+    "none": 1,
+    "company.knowledge_artifacts": 1
+  },
+  "multi_label_frequency": 0.5,
+  "avg_turns_per_conversation": 7.1,
+  "persistence_distribution": {
+    "long": 8,
+    "none": 1,
+    "medium": 1
+  },
+  "scope_distribution": {
+    "user": 6,
+    "mixed": 1,
+    "company": 2,
+    "none": 1
+  },
+  "warnings": []
+}
+Waiting 5 seconds before next batch...
+
+=== Processing Batch 74 (Concurrent) ===
+  Launch 10 concurrent tasks...
+  Starting item 1 (Target: company.tools_config)...
+  Starting item 2 (Target: user.session_history)...
+  Starting item 3 (Target: user.interaction_preferences)...
+  Starting item 4 (Target: none)...
+  Starting item 5 (Target: user.workflow_patterns)...
+  Starting item 6 (Target: user.session_history)...
+  Starting item 7 (Target: company.performance_context)...
+  Starting item 8 (Target: user.interaction_preferences)...
+  Starting item 9 (Target: company.strategic_signatures)...
+  Starting item 10 (Target: user.session_history)...
+  Completed item 1: user.strategic_approach_564
+  Completed item 4: none_transactional_662
+  Completed item 10: user_marketing_assistant_041
+  Completed item 7: user.strategic_approach_108
+  Completed item 6: user_mixed_001
+  Completed item 5: user.workflow_patterns_101_956
+  Completed item 9: user_training_012
+  Completed item 3: user_strategic_approach_023
+  Completed item 2: user_memory_long_387
+  Completed item 8: user_memory_training_049
+Batch 74 complete: 10/10 items generated
+Saved batch to synthetic_data/batch_74.jsonl
+Validating batch...
+{
+  "total_examples": 10,
+  "category_distribution": {
+    "user.strategic_approach": 8,
+    "user.role_context": 3,
+    "user.communication_style": 3,
+    "none": 1,
+    "user.workflow_patterns": 1,
+    "company.strategic_signatures": 1
+  },
+  "multi_label_frequency": 0.5,
+  "avg_turns_per_conversation": 7.5,
+  "persistence_distribution": {
+    "long": 8,
+    "short": 1,
+    "medium": 1
+  },
+  "scope_distribution": {
+    "user": 8,
+    "none": 1,
+    "mixed": 1
+  },
+  "warnings": []
+}
+Waiting 5 seconds before next batch...
+
+=== Processing Batch 75 (Concurrent) ===
+  Launch 10 concurrent tasks...
+  Starting item 1 (Target: user.strategic_approach)...
+  Starting item 2 (Target: company.tools_config)...
+  Starting item 3 (Target: none)...
+  Starting item 4 (Target: company.brand_core)...
+  Starting item 5 (Target: user.interaction_preferences)...
+  Starting item 6 (Target: user.communication_style)...
+  Starting item 7 (Target: none)...
+  Starting item 8 (Target: user.communication_style)...
+  Starting item 9 (Target: user.communication_style)...
+  Starting item 10 (Target: company.knowledge_artifacts)...
+  Completed item 3: none_transactional_669
+  Completed item 7: none_transactional_001
+  Completed item 2: user_testing_784
+  Completed item 8: user_marketing_assistant_037
+  Completed item 10: user_special_028
+  Completed item 9: company_influencer_marketing_456
+  Completed item 1: company_marketing_collaboration_057
+  Completed item 4: user_marketing_conversation_024
+  Completed item 5: user_marketing_specialist_456
+  Completed item 6: user_mixed_012
+Batch 75 complete: 10/10 items generated
+Saved batch to synthetic_data/batch_75.jsonl
+Validating batch...
+{
+  "total_examples": 10,
+  "category_distribution": {
+    "company.strategic_signatures": 1,
+    "company.brand_core": 2,
+    "user.strategic_approach": 6,
+    "user.role_context": 3,
+    "none": 2,
+    "user.interaction_preferences": 1,
+    "user.communication_style": 1,
+    "user.workflow_patterns": 1,
+    "company.knowledge_artifacts": 1
+  },
+  "multi_label_frequency": 0.8,
+  "avg_turns_per_conversation": 7.1,
+  "persistence_distribution": {
+    "long": 8,
+    "short": 2
+  },
+  "scope_distribution": {
+    "company": 2,
+    "user": 6,
+    "none": 2
+  },
+  "warnings": []
+}
+Waiting 5 seconds before next batch...
+
+=== Processing Batch 76 (Concurrent) ===
+  Launch 10 concurrent tasks...
+  Starting item 1 (Target: user.communication_style)...
+  Starting item 2 (Target: none)...
+  Starting item 3 (Target: company.brand_core)...
+  Starting item 4 (Target: company.brand_core)...
+  Starting item 5 (Target: user.interaction_preferences)...
+  Starting item 6 (Target: user.interaction_preferences)...
+  Starting item 7 (Target: company.strategic_signatures)...
+  Starting item 8 (Target: user.session_history)...
+  Starting item 9 (Target: company.knowledge_artifacts)...
+  Starting item 10 (Target: company.performance_context)...
+  Completed item 6: user_memory_user_preferences_031
+  Completed item 2: none_transactional_574
+  Completed item 4: company_memory_assistant_857
+  Completed item 3: company_performance_context_045
+  Completed item 10: company_performance_context_632
+  Completed item 8: user.workflow_patterns_user.communication_style_845
+  Completed item 7: company_descriptive_987
+  Completed item 5: user_marketing_conversation_008
+  Completed item 1: user_descriptive_label_546
+  Completed item 9: company_knowledge_artifacts_687
+Batch 76 complete: 10/10 items generated
+Saved batch to synthetic_data/batch_76.jsonl
+Validating batch...
+{
+  "total_examples": 10,
+  "category_distribution": {
+    "user.strategic_approach": 3,
+    "user.communication_style": 4,
+    "none": 1,
+    "company.performance_context": 3,
+    "company.strategic_signatures": 1,
+    "company.brand_core": 1,
+    "company.business_priorities": 2,
+    "user.workflow_patterns": 1,
+    "company.knowledge_artifacts": 1
+  },
+  "multi_label_frequency": 0.7,
+  "avg_turns_per_conversation": 5.6,
+  "persistence_distribution": {
+    "long": 6,
+    "short": 2,
+    "rolling": 2
+  },
+  "scope_distribution": {
+    "user": 4,
+    "none": 1,
+    "company": 5
+  },
+  "warnings": []
+}
+Waiting 5 seconds before next batch...
+
+=== Processing Batch 77 (Concurrent) ===
+  Launch 10 concurrent tasks...
+  Starting item 1 (Target: user.interaction_preferences)...
+  Starting item 2 (Target: company.tools_config)...
+  Starting item 3 (Target: company.business_priorities)...
+  Starting item 4 (Target: user.strategic_approach)...
+  Starting item 5 (Target: company.performance_context)...
+  Starting item 6 (Target: user.session_history)...
+  Starting item 7 (Target: company.performance_context)...
+  Starting item 8 (Target: company.knowledge_artifacts)...
+  Starting item 9 (Target: user.workflow_patterns)...
+  Starting item 10 (Target: company.strategic_signatures)...
+  Completed item 9: user_special_743
+  Completed item 7: user.workflow_patterns_019
+  Completed item 1: user.interaction_preferences_user.communication_style_user.strategic_approach_247
+  Completed item 4: user.strategic_approach_001_789
+  Completed item 2: company_knowledge_artifacts_723
+  Completed item 8: user.communication_style_048
+  Completed item 10: user_marketing_assistant_432
+  Completed item 3: user_marketing_assistant_045
+  Completed item 6: user.strategic_approach_003
+  Completed item 5: user_descriptive_label_852
+Batch 77 complete: 10/10 items generated
+Saved batch to synthetic_data/batch_77.jsonl
+Validating batch...
+{
+  "total_examples": 10,
+  "category_distribution": {
+    "user.interaction_preferences": 1,
+    "user.communication_style": 2,
+    "user.strategic_approach": 7,
+    "company.knowledge_artifacts": 1,
+    "user.workflow_patterns": 2,
+    "user.session_history": 1,
+    "user.role_context": 3
+  },
+  "multi_label_frequency": 0.5,
+  "avg_turns_per_conversation": 6.8,
+  "persistence_distribution": {
+    "long": 7,
+    "short": 1,
+    "medium": 2
+  },
+  "scope_distribution": {
+    "user": 9,
+    "company": 1
+  },
+  "warnings": []
+}
+Waiting 5 seconds before next batch...
+
+=== Processing Batch 78 (Concurrent) ===
+  Launch 10 concurrent tasks...
+  Starting item 1 (Target: none)...
+  Starting item 2 (Target: user.session_history)...
+  Starting item 3 (Target: none)...
+  Starting item 4 (Target: company.brand_core)...
+  Starting item 5 (Target: user.workflow_patterns)...
+  Starting item 6 (Target: company.business_priorities)...
+  Starting item 7 (Target: user.communication_style)...
+  Starting item 8 (Target: user.role_context)...
+  Starting item 9 (Target: user.workflow_patterns)...
+  Starting item 10 (Target: company.business_priorities)...
+  Completed item 1: none_transactional_382
+  Completed item 5: user_special_086
+  Completed item 6: user.strategic_approach_234
+  Completed item 3: none_transactional_668
+  Completed item 4: user_incident_response_029
+  Completed item 10: company_marketing_strategy_783
+  Completed item 9: user_strategic_approach_814
+  Completed item 7: user.strategic_approach_107
+  Completed item 8: user_marketing_assistant_782
+  Completed item 2: user.strategic_approach_user.session_history_user.interaction_preferences_145
+Batch 78 complete: 10/10 items generated
+Saved batch to synthetic_data/batch_78.jsonl
+Validating batch...
+{
+  "total_examples": 10,
+  "category_distribution": {
+    "none": 2,
+    "user.strategic_approach": 7,
+    "user.session_history": 1,
+    "user.interaction_preferences": 1,
+    "user.role_context": 2,
+    "user.workflow_patterns": 1,
+    "company.business_priorities": 1,
+    "company.performance_context": 1
+  },
+  "multi_label_frequency": 0.5,
+  "avg_turns_per_conversation": 6.8,
+  "persistence_distribution": {
+    "short": 3,
+    "long": 7
+  },
+  "scope_distribution": {
+    "none": 2,
+    "user": 7,
+    "company": 1
+  },
+  "warnings": []
+}
+Waiting 5 seconds before next batch...
+
+=== Processing Batch 79 (Concurrent) ===
+  Launch 10 concurrent tasks...
+  Starting item 1 (Target: company.performance_context)...
+  Starting item 2 (Target: user.interaction_preferences)...
+  Starting item 3 (Target: company.knowledge_artifacts)...
+  Starting item 4 (Target: user.communication_style)...
+  Starting item 5 (Target: user.communication_style)...
+  Starting item 6 (Target: user.interaction_preferences)...
+  Starting item 7 (Target: user.interaction_preferences)...
+  Starting item 8 (Target: user.interaction_preferences)...
+  Starting item 9 (Target: user.strategic_approach)...
+  Starting item 10 (Target: user.communication_style)...
+  Completed item 10: user_memory_071
+  Completed item 3: user_technical_805
+  Completed item 2: user_memory_758
+  Completed item 1: user_marketing_strategy_779
+  Completed item 6: user.communication_style_012
+  Completed item 9: user.communication_style_user.strategic_approach_user.role_context_214
+  Completed item 8: user_memory_064
+  Completed item 5: user.strategic_approach_103
+  Completed item 7: user.workflow_patterns_143
+  Completed item 4: user.communication_style_user.strategic_approach_user.role_context_027
+Batch 79 complete: 10/10 items generated
+Saved batch to synthetic_data/batch_79.jsonl
+Validating batch...
+{
+  "total_examples": 10,
+  "category_distribution": {
+    "user.strategic_approach": 8,
+    "user.communication_style": 6,
+    "user.role_context": 3,
+    "user.workflow_patterns": 1
+  },
+  "multi_label_frequency": 0.6,
+  "avg_turns_per_conversation": 7.5,
+  "persistence_distribution": {
+    "long": 9,
+    "medium": 1
+  },
+  "scope_distribution": {
+    "user": 10
+  },
+  "warnings": []
+}
+Waiting 5 seconds before next batch...
+
+=== Processing Batch 80 (Concurrent) ===
+  Launch 10 concurrent tasks...
+  Starting item 1 (Target: user.session_history)...
+  Starting item 2 (Target: company.performance_context)...
+  Starting item 3 (Target: company.knowledge_artifacts)...
+  Starting item 4 (Target: none)...
+  Starting item 5 (Target: company.strategic_signatures)...
+  Starting item 6 (Target: company.strategic_signatures)...
+  Starting item 7 (Target: company.brand_core)...
+  Starting item 8 (Target: user.workflow_patterns)...
+  Starting item 9 (Target: user.workflow_patterns)...
+  Starting item 10 (Target: none)...
+  Completed item 8: user_dialogue_842
+  Completed item 4: none_transactional_359
+Conversation generation failed (attempt 1/6): headers: {'content-type': 'text/html; charset=UTF-8', 'referrer-policy': 'no-referrer', 'content-length': '332', 'date': 'Mon, 24 Nov 2025 19:41:49 GMT', 'alt-svc': 'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000'}, status_code: 502, body: 
+<html><head>
+<meta http-equiv="content-type" content="text/html;charset=utf-8">
+<title>502 Server Error</title>
+</head>
+<body text=#000000 bgcolor=#ffffff>
+<h1>Error: Server Error</h1>
+<h2>The server encountered a temporary error and could not complete your request.<p>Please try again in 30 seconds.</h2>
+<h2></h2>
+</body></html>
+
+Retrying in 10s...
+Conversation generation failed (attempt 1/6): headers: {'content-type': 'text/html; charset=UTF-8', 'referrer-policy': 'no-referrer', 'content-length': '332', 'date': 'Mon, 24 Nov 2025 19:41:49 GMT', 'alt-svc': 'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000'}, status_code: 502, body: 
+<html><head>
+<meta http-equiv="content-type" content="text/html;charset=utf-8">
+<title>502 Server Error</title>
+</head>
+<body text=#000000 bgcolor=#ffffff>
+<h1>Error: Server Error</h1>
+<h2>The server encountered a temporary error and could not complete your request.<p>Please try again in 30 seconds.</h2>
+<h2></h2>
+</body></html>
+
+Retrying in 10s...
+Conversation generation failed (attempt 1/6): headers: {'content-type': 'text/html; charset=UTF-8', 'referrer-policy': 'no-referrer', 'content-length': '332', 'date': 'Mon, 24 Nov 2025 19:41:49 GMT', 'alt-svc': 'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000'}, status_code: 502, body: 
+<html><head>
+<meta http-equiv="content-type" content="text/html;charset=utf-8">
+<title>502 Server Error</title>
+</head>
+<body text=#000000 bgcolor=#ffffff>
+<h1>Error: Server Error</h1>
+<h2>The server encountered a temporary error and could not complete your request.<p>Please try again in 30 seconds.</h2>
+<h2></h2>
+</body></html>
+
+Retrying in 10s...
+  Completed item 2: user_strategic_approach_025
+  Completed item 5: user_marketing_conversation_456
+  Completed item 3: user.session_history_101_874
+  Completed item 1: user_marketing_378
+  Completed item 7: user_dialogue_278
+  Completed item 10: none_transactional_564
+  Completed item 6: user_memory_123
+  Completed item 9: user_marketing_conversation_012
+Batch 80 complete: 10/10 items generated
+Saved batch to synthetic_data/batch_80.jsonl
+Validating batch...
+{
+  "total_examples": 10,
+  "category_distribution": {
+    "user.strategic_approach": 7,
+    "user.communication_style": 3,
+    "user.session_history": 1,
+    "none": 2,
+    "user.role_context": 4
+  },
+  "multi_label_frequency": 0.6,
+  "avg_turns_per_conversation": 6.8,
+  "persistence_distribution": {
+    "long": 7,
+    "short": 3
+  },
+  "scope_distribution": {
+    "user": 8,
+    "none": 2
+  },
+  "warnings": []
+}
+Waiting 5 seconds before next batch...
+
+=== Processing Batch 81 (Concurrent) ===
+  Launch 10 concurrent tasks...
+  Starting item 1 (Target: user.interaction_preferences)...
+  Starting item 2 (Target: user.workflow_patterns)...
+  Starting item 3 (Target: user.interaction_preferences)...
+  Starting item 4 (Target: user.strategic_approach)...
+  Starting item 5 (Target: company.knowledge_artifacts)...
+  Starting item 6 (Target: company.performance_context)...
+  Starting item 7 (Target: user.interaction_preferences)...
+  Starting item 8 (Target: company.brand_core)...
+  Starting item 9 (Target: company.strategic_signatures)...
+  Starting item 10 (Target: user.interaction_preferences)...
+Scenario generation failed (attempt 1/6): headers: {'content-type': 'text/html; charset=UTF-8', 'referrer-policy': 'no-referrer', 'content-length': '332', 'date': 'Mon, 24 Nov 2025 19:43:05 GMT', 'alt-svc': 'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000'}, status_code: 502, body: 
+<html><head>
+<meta http-equiv="content-type" content="text/html;charset=utf-8">
+<title>502 Server Error</title>
+</head>
+<body text=#000000 bgcolor=#ffffff>
+<h1>Error: Server Error</h1>
+<h2>The server encountered a temporary error and could not complete your request.<p>Please try again in 30 seconds.</h2>
+<h2></h2>
+</body></html>
+
+Retrying in 10s...
+Scenario generation failed (attempt 1/6): headers: {'content-type': 'text/html; charset=UTF-8', 'referrer-policy': 'no-referrer', 'content-length': '332', 'date': 'Mon, 24 Nov 2025 19:43:05 GMT', 'alt-svc': 'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000'}, status_code: 502, body: 
+<html><head>
+<meta http-equiv="content-type" content="text/html;charset=utf-8">
+<title>502 Server Error</title>
+</head>
+<body text=#000000 bgcolor=#ffffff>
+<h1>Error: Server Error</h1>
+<h2>The server encountered a temporary error and could not complete your request.<p>Please try again in 30 seconds.</h2>
+<h2></h2>
+</body></html>
+
+Retrying in 10s...
+  Completed item 4: user.strategic_approach_246
+  Completed item 8: user.communication_style_110
+  Completed item 3: user_marketing_conversation_856
+  Completed item 1: user_realistic_019
+  Completed item 10: user.interaction_preferences_user.workflow_patterns_056
+  Completed item 7: user_training_conversation_049
+  Completed item 6: user.strategic_approach_027
+  Completed item 5: user_special_715
+Conversation generation failed (attempt 1/6): headers: {'date': 'Mon, 24 Nov 2025 19:45:58 GMT', 'content-length': '0', 'x-envoy-upstream-service-time': '176047', 'server': 'envoy', 'via': '1.1 google', 'alt-svc': 'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000'}, status_code: 500, body: 
+Retrying in 10s...
+  Completed item 2: user_dialogue_834
+  Completed item 9: user_strategic_approach_778
+Batch 81 complete: 10/10 items generated
+Saved batch to synthetic_data/batch_81.jsonl
+Validating batch...
+{
+  "total_examples": 10,
+  "category_distribution": {
+    "user.strategic_approach": 8,
+    "user.interaction_preferences": 2,
+    "user.session_history": 1,
+    "user.role_context": 2,
+    "user.communication_style": 3,
+    "user.workflow_patterns": 1
+  },
+  "multi_label_frequency": 0.7,
+  "avg_turns_per_conversation": 7.3,
+  "persistence_distribution": {
+    "long": 8,
+    "medium": 2
+  },
+  "scope_distribution": {
+    "user": 10
+  },
+  "warnings": []
+}
+Waiting 5 seconds before next batch...
+
+=== Processing Batch 82 (Concurrent) ===
+  Launch 10 concurrent tasks...
+  Starting item 1 (Target: user.communication_style)...
+  Starting item 2 (Target: company.strategic_signatures)...
+  Starting item 3 (Target: company.business_priorities)...
+  Starting item 4 (Target: company.knowledge_artifacts)...
+  Starting item 5 (Target: user.session_history)...
+  Starting item 6 (Target: user.communication_style)...
+  Starting item 7 (Target: company.brand_core)...
+  Starting item 8 (Target: user.interaction_preferences)...
+  Starting item 9 (Target: user.role_context)...
+  Starting item 10 (Target: user.strategic_approach)...
+  Completed item 10: user_marketing_strategist_011
+  Completed item 8: user_marketing_director_012
+  Completed item 3: user_project_management_630
+  Completed item 5: user_marketing_assistant_856
+  Completed item 6: user_marketing_initiative_010
+  Completed item 7: company_marketing_conversation_023
+  Completed item 4: user_special_795
+  Completed item 9: user.strategic_approach_042
+  Completed item 1: user_memory_assistant_643
+  Completed item 2: user.strategic_approach_342
+Batch 82 complete: 10/10 items generated
+Saved batch to synthetic_data/batch_82.jsonl
+Validating batch...
+{
+  "total_examples": 10,
+  "category_distribution": {
+    "user.strategic_approach": 9,
+    "user.role_context": 4,
+    "user.communication_style": 2,
+    "company.performance_context": 1,
+    "company.brand_core": 1
+  },
+  "multi_label_frequency": 0.7,
+  "avg_turns_per_conversation": 6.9,
+  "persistence_distribution": {
+    "medium": 2,
+    "long": 8
+  },
+  "scope_distribution": {
+    "user": 9,
+    "company": 1
+  },
+  "warnings": []
+}
+Waiting 5 seconds before next batch...
+
+=== Processing Batch 83 (Concurrent) ===
+  Launch 10 concurrent tasks...
+  Starting item 1 (Target: none)...
+  Starting item 2 (Target: user.interaction_preferences)...
+  Starting item 3 (Target: none)...
+  Starting item 4 (Target: company.performance_context)...
+  Starting item 5 (Target: user.session_history)...
+  Starting item 6 (Target: none)...
+  Starting item 7 (Target: user.strategic_approach)...
+  Starting item 8 (Target: user.session_history)...
+  Starting item 9 (Target: user.workflow_patterns)...
+  Starting item 10 (Target: user.interaction_preferences)...
+Conversation generation failed (attempt 1/6): headers: {'date': 'Mon, 24 Nov 2025 19:49:31 GMT', 'content-length': '0', 'x-envoy-upstream-service-time': '11337', 'server': 'envoy', 'via': '1.1 google', 'alt-svc': 'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000'}, status_code: 500, body: 
+Scenario generation failed (attempt 1/6): headers: {'date': 'Mon, 24 Nov 2025 19:49:31 GMT', 'content-length': '0', 'x-envoy-upstream-service-time': '23618', 'server': 'envoy', 'via': '1.1 google', 'alt-svc': 'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000'}, status_code: 500, body: 
+Retrying in 10s...
+Retrying in 10s...
+  Completed item 9: user_healthcare_654
+Conversation generation failed (attempt 2/6): headers: {'date': 'Mon, 24 Nov 2025 19:49:48 GMT', 'content-length': '0', 'x-envoy-upstream-service-time': '6879', 'server': 'envoy', 'via': '1.1 google', 'alt-svc': 'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000'}, status_code: 500, body: 
+Retrying in 20s...
+  Completed item 4: user_scenario_456
+  Completed item 1: none_transactional_093
+  Completed item 10: user_special_021
+  Completed item 3: none_transactional_397
+  Completed item 8: user_marketing_conversation_012
+  Completed item 5: user_marketing_conversation_001
+  Completed item 2: user_marketing_452
+  Completed item 6: none_transactional_068
+  Completed item 7: user_mixed_729
+Batch 83 complete: 10/10 items generated
+Saved batch to synthetic_data/batch_83.jsonl
+Validating batch...
+{
+  "total_examples": 10,
+  "category_distribution": {
+    "none": 3,
+    "user.strategic_approach": 7,
+    "user.workflow_patterns": 1,
+    "user.role_context": 2,
+    "user.communication_style": 3,
+    "user.session_history": 1
+  },
+  "multi_label_frequency": 0.7,
+  "avg_turns_per_conversation": 7.1,
+  "persistence_distribution": {
+    "short": 4,
+    "long": 6
+  },
+  "scope_distribution": {
+    "none": 3,
+    "user": 7
+  },
+  "warnings": []
+}
+Waiting 5 seconds before next batch...
+
+=== Processing Batch 84 (Concurrent) ===
+  Launch 10 concurrent tasks...
+  Starting item 1 (Target: user.interaction_preferences)...
+  Starting item 2 (Target: user.strategic_approach)...
+  Starting item 3 (Target: company.tools_config)...
+  Starting item 4 (Target: user.strategic_approach)...
+  Starting item 5 (Target: company.strategic_signatures)...
+  Starting item 6 (Target: none)...
+  Starting item 7 (Target: user.session_history)...
+  Starting item 8 (Target: user.interaction_preferences)...
+  Starting item 9 (Target: user.interaction_preferences)...
+  Starting item 10 (Target: user.communication_style)...
+  Completed item 3: user_none_072
+  Completed item 1: user_marketing_strategist_856
+  Completed item 2: user_workflow_441
+  Completed item 6: none_transactional_398
+  Completed item 9: user_communication_style_735
+  Completed item 10: user_special_762
+  Completed item 5: company_marketing_strategy_024
+  Completed item 4: user.strategic_approach_100
+  Completed item 7: user_marketing_assistant_043
+  Completed item 8: user_marketing_specialist_642
+Batch 84 complete: 10/10 items generated
+Saved batch to synthetic_data/batch_84.jsonl
+Validating batch...
+{
+  "total_examples": 10,
+  "category_distribution": {
+    "user.strategic_approach": 6,
+    "user.interaction_preferences": 1,
+    "user.workflow_patterns": 1,
+    "none": 2,
+    "company.business_priorities": 1,
+    "company.strategic_signatures": 1,
+    "company.brand_core": 1,
+    "user.communication_style": 3,
+    "user.role_context": 1
+  },
+  "multi_label_frequency": 0.6,
+  "avg_turns_per_conversation": 6.0,
+  "persistence_distribution": {
+    "long": 7,
+    "medium": 1,
+    "none": 1,
+    "short": 1
+  },
+  "scope_distribution": {
+    "user": 7,
+    "none": 2,
+    "company": 1
+  },
+  "warnings": []
+}
+Waiting 5 seconds before next batch...
+
+=== Processing Batch 85 (Concurrent) ===
+  Launch 10 concurrent tasks...
+  Starting item 1 (Target: company.knowledge_artifacts)...
+  Starting item 2 (Target: none)...
+  Starting item 3 (Target: company.business_priorities)...
+  Starting item 4 (Target: company.brand_core)...
+  Starting item 5 (Target: company.tools_config)...
+  Starting item 6 (Target: company.brand_core)...
+  Starting item 7 (Target: user.session_history)...
+  Starting item 8 (Target: company.performance_context)...
+  Starting item 9 (Target: user.communication_style)...
+  Starting item 10 (Target: company.performance_context)...
+  Completed item 2: none_transactional_061
+  Completed item 3: user.workflow_patterns_user.communication_style_935
+  Completed item 6: user_marketing_assistant_016
+  Completed item 5: company.tools_config_user.communication_style_045
+  Completed item 7: user_strategic_approach_726
+  Completed item 4: user_descriptive_label_716
+  Completed item 8: user.session_history_user.workflow_patterns_user.interaction_preferences_043
+  Completed item 10: user.strategic_approach_marketing_assistant_048
+  Completed item 1: user_special_648
+  Completed item 9: user_marketing_strategy_021
+Batch 85 complete: 10/10 items generated
+Saved batch to synthetic_data/batch_85.jsonl
+Validating batch...
+{
+  "total_examples": 10,
+  "category_distribution": {
+    "user.strategic_approach": 6,
+    "user.role_context": 3,
+    "none": 1,
+    "user.workflow_patterns": 2,
+    "user.communication_style": 3,
+    "company.tools_config": 1,
+    "user.session_history": 1,
+    "user.interaction_preferences": 1
+  },
+  "multi_label_frequency": 0.7,
+  "avg_turns_per_conversation": 7.4,
+  "persistence_distribution": {
+    "long": 6,
+    "short": 2,
+    "medium": 2
+  },
+  "scope_distribution": {
+    "user": 8,
+    "none": 1,
+    "mixed": 1
+  },
+  "warnings": []
+}
+Waiting 5 seconds before next batch...
+
+=== Processing Batch 86 (Concurrent) ===
+  Launch 10 concurrent tasks...
+  Starting item 1 (Target: company.brand_core)...
+  Starting item 2 (Target: company.knowledge_artifacts)...
+  Starting item 3 (Target: user.strategic_approach)...
+  Starting item 4 (Target: none)...
+  Starting item 5 (Target: user.interaction_preferences)...
+  Starting item 6 (Target: company.strategic_signatures)...
+  Starting item 7 (Target: user.interaction_preferences)...
+  Starting item 8 (Target: company.brand_core)...
+  Starting item 9 (Target: company.strategic_signatures)...
+  Starting item 10 (Target: company.performance_context)...
+  Completed item 4: none_transactional_045
+  Completed item 3: user_marketing_assistant_038
+  Completed item 5: user_memory_special_013
+  Completed item 6: user.communication_style_proposal_development_102
+  Completed item 8: company_memory_marketing_573
+  Completed item 9: company_performance_context_724
+  Completed item 2: user_marketing_348
+  Completed item 10: user_marketing_549
+  Completed item 1: user_special_001
+  Completed item 7: user_professional_services_firm_567
+Batch 86 complete: 10/10 items generated
+Saved batch to synthetic_data/batch_86.jsonl
+Validating batch...
+{
+  "total_examples": 10,
+  "category_distribution": {
+    "user.strategic_approach": 6,
+    "user.communication_style": 3,
+    "user.workflow_patterns": 3,
+    "none": 1,
+    "user.session_history": 1,
+    "company.knowledge_artifacts": 1,
+    "company.brand_core": 1,
+    "company.performance_context": 1,
+    "user.role_context": 1
+  },
+  "multi_label_frequency": 0.8,
+  "avg_turns_per_conversation": 8.1,
+  "persistence_distribution": {
+    "long": 6,
+    "medium": 1,
+    "short": 2,
+    "rolling": 1
+  },
+  "scope_distribution": {
+    "user": 7,
+    "none": 1,
+    "company": 2
+  },
+  "warnings": []
+}
+Waiting 5 seconds before next batch...
+
+=== Processing Batch 87 (Concurrent) ===
+  Launch 10 concurrent tasks...
+  Starting item 1 (Target: none)...
+  Starting item 2 (Target: company.knowledge_artifacts)...
+  Starting item 3 (Target: user.workflow_patterns)...
+  Starting item 4 (Target: company.strategic_signatures)...
+  Starting item 5 (Target: none)...
+  Starting item 6 (Target: company.brand_core)...
+  Starting item 7 (Target: none)...
+  Starting item 8 (Target: user.workflow_patterns)...
+  Starting item 9 (Target: none)...
+  Starting item 10 (Target: company.performance_context)...
+  Completed item 8: user_tutor_development_336
+  Completed item 7: none_transactional_093
+  Completed item 4: user_marketing_strategy_021
+  Completed item 9: none_transactional_406
+  Completed item 6: user_marketing_conversation_837
+  Completed item 1: none_transactional_348
+  Completed item 2: user.communication_style_descriptive_label_695
+  Completed item 5: none_transactional_698
+  Completed item 10: user_marketing_assistant_049
+  Completed item 3: user_strategic_approach_082
+Batch 87 complete: 10/10 items generated
+Saved batch to synthetic_data/batch_87.jsonl
+Validating batch...
+{
+  "total_examples": 10,
+  "category_distribution": {
+    "none": 4,
+    "user.communication_style": 3,
+    "user.strategic_approach": 5,
+    "user.role_context": 3,
+    "user.workflow_patterns": 1
+  },
+  "multi_label_frequency": 0.5,
+  "avg_turns_per_conversation": 6.8,
+  "persistence_distribution": {
+    "short": 4,
+    "long": 6
+  },
+  "scope_distribution": {
+    "none": 4,
+    "user": 6
+  },
+  "warnings": []
+}
+Waiting 5 seconds before next batch...
+
+=== Processing Batch 88 (Concurrent) ===
+  Launch 10 concurrent tasks...
+  Starting item 1 (Target: company.strategic_signatures)...
+  Starting item 2 (Target: user.communication_style)...
+  Starting item 3 (Target: user.session_history)...
+  Starting item 4 (Target: user.session_history)...
+  Starting item 5 (Target: user.strategic_approach)...
+  Starting item 6 (Target: company.knowledge_artifacts)...
+  Starting item 7 (Target: company.strategic_signatures)...
+  Starting item 8 (Target: user.workflow_patterns)...
+  Starting item 9 (Target: user.communication_style)...
+  Starting item 10 (Target: company.tools_config)...
+  Completed item 5: user_marketing_conversation_028
+  Completed item 1: company_marketing_discussion_746
+  Completed item 8: user_marketing_strategy_821
+  Completed item 6: user_mixed_723
+  Completed item 9: user_mixed_081
+  Completed item 3: user.communication_style_user.strategic_approach_user.role_context_135
+  Completed item 4: company_marketing_strategy_029
+  Completed item 7: company_marketing_872
+  Completed item 2: user_long_form_384
+  Completed item 10: user_descriptive_label_783
+Batch 88 complete: 10/10 items generated
+Saved batch to synthetic_data/batch_88.jsonl
+Validating batch...
+{
+  "total_examples": 10,
+  "category_distribution": {
+    "company.business_priorities": 1,
+    "company.knowledge_artifacts": 1,
+    "user.strategic_approach": 7,
+    "user.communication_style": 5,
+    "user.role_context": 4,
+    "company.strategic_signatures": 2,
+    "company.performance_context": 2,
+    "company.brand_core": 2
+  },
+  "multi_label_frequency": 1.0,
+  "avg_turns_per_conversation": 7.1,
+  "persistence_distribution": {
+    "short": 1,
+    "long": 9
+  },
+  "scope_distribution": {
+    "company": 3,
+    "user": 7
+  },
+  "warnings": []
+}
+Waiting 5 seconds before next batch...
+
+=== Processing Batch 89 (Concurrent) ===
+  Launch 10 concurrent tasks...
+  Starting item 1 (Target: company.business_priorities)...
+  Starting item 2 (Target: user.strategic_approach)...
+  Starting item 3 (Target: none)...
+  Starting item 4 (Target: company.tools_config)...
+  Starting item 5 (Target: company.knowledge_artifacts)...
+  Starting item 6 (Target: user.strategic_approach)...
+  Starting item 7 (Target: user.session_history)...
+  Starting item 8 (Target: user.session_history)...
+  Starting item 9 (Target: none)...
+  Starting item 10 (Target: user.session_history)...
+  Completed item 9: none_transactional_053
+  Completed item 3: none_transactional_693
+  Completed item 8: company_recall_638
+  Completed item 4: user.communication_style_user.role_context_user.workflow_patterns_152
+  Completed item 7: user_strategic_approach_023
+  Completed item 6: user_marketing_assistant_032
+  Completed item 2: user_marketing_conversation_719
+  Completed item 5: user.communication_style_user.strategic_approach_user.role_context_142
+  Completed item 10: user.communication_style_026
+  Completed item 1: user_memory_257
+Batch 89 complete: 10/10 items generated
+Saved batch to synthetic_data/batch_89.jsonl
+Validating batch...
+{
+  "total_examples": 10,
+  "category_distribution": {
+    "user.strategic_approach": 6,
+    "user.communication_style": 5,
+    "user.role_context": 3,
+    "none": 2,
+    "user.workflow_patterns": 2,
+    "company.performance_context": 1
+  },
+  "multi_label_frequency": 0.6,
+  "avg_turns_per_conversation": 6.2,
+  "persistence_distribution": {
+    "long": 6,
+    "short": 2,
+    "medium": 1,
+    "rolling": 1
+  },
+  "scope_distribution": {
+    "user": 7,
+    "none": 2,
+    "company": 1
+  },
+  "warnings": []
+}
+Waiting 5 seconds before next batch...
+
+=== Processing Batch 90 (Concurrent) ===
+  Launch 10 concurrent tasks...
+  Starting item 1 (Target: company.brand_core)...
+  Starting item 2 (Target: user.strategic_approach)...
+  Starting item 3 (Target: company.tools_config)...
+  Starting item 4 (Target: user.strategic_approach)...
+  Starting item 5 (Target: company.tools_config)...
+  Starting item 6 (Target: user.role_context)...
+  Starting item 7 (Target: user.workflow_patterns)...
+  Starting item 8 (Target: none)...
+  Starting item 9 (Target: company.tools_config)...
+  Starting item 10 (Target: none)...
+  Completed item 2: user_marketing_532
+  Completed item 10: none_transactional_453
+  Completed item 8: none_transactional_838
+  Completed item 7: user.strategic_approach_user_135
+  Completed item 9: user.communication_style_scenario_784
+  Completed item 1: company_marketing_assistant_032
+  Completed item 6: user_marketing_conversation_049
+  Completed item 4: user_marketing_strategy_456
+  Completed item 3: user_scenario_011
+  Completed item 5: user.workflow_patterns_113
+Batch 90 complete: 10/10 items generated
+Saved batch to synthetic_data/batch_90.jsonl
+Validating batch...
+{
+  "total_examples": 10,
+  "category_distribution": {
+    "company.strategic_signatures": 1,
+    "company.brand_core": 1,
+    "user.workflow_patterns": 2,
+    "user.role_context": 3,
+    "user.strategic_approach": 5,
+    "user.communication_style": 2,
+    "none": 2
+  },
+  "multi_label_frequency": 0.6,
+  "avg_turns_per_conversation": 7.7,
+  "persistence_distribution": {
+    "long": 6,
+    "medium": 2,
+    "short": 2
+  },
+  "scope_distribution": {
+    "company": 1,
+    "user": 7,
+    "none": 2
+  },
+  "warnings": []
+}
+Waiting 5 seconds before next batch...
+
+=== Processing Batch 91 (Concurrent) ===
+  Launch 10 concurrent tasks...
+  Starting item 1 (Target: user.session_history)...
+  Starting item 2 (Target: user.strategic_approach)...
+  Starting item 3 (Target: user.interaction_preferences)...
+  Starting item 4 (Target: company.performance_context)...
+  Starting item 5 (Target: user.strategic_approach)...
+  Starting item 6 (Target: user.workflow_patterns)...
+  Starting item 7 (Target: company.knowledge_artifacts)...
+  Starting item 8 (Target: company.brand_core)...
+  Starting item 9 (Target: company.performance_context)...
+  Starting item 10 (Target: company.knowledge_artifacts)...
+  Completed item 3: user_training_592
+  Completed item 9: user_strategic_approach_872
+  Completed item 1: user_user_481
+  Completed item 5: user.communication_style_143
+  Completed item 10: user_marketing_assistant_938
+  Completed item 7: user_strategic_approach_556
+  Completed item 8: company_brand_core_123
+  Completed item 4: user_special_872
+  Completed item 6: user_marketing_conversation_456
+  Completed item 2: user_marketing_348
+Batch 91 complete: 10/10 items generated
+Saved batch to synthetic_data/batch_91.jsonl
+Validating batch...
+{
+  "total_examples": 10,
+  "category_distribution": {
+    "user.strategic_approach": 9,
+    "user.role_context": 4,
+    "user.communication_style": 5,
+    "company.brand_core": 1
+  },
+  "multi_label_frequency": 0.7,
+  "avg_turns_per_conversation": 7.2,
+  "persistence_distribution": {
+    "long": 7,
+    "medium": 3
+  },
+  "scope_distribution": {
+    "user": 9,
+    "company": 1
+  },
+  "warnings": []
+}
+Waiting 5 seconds before next batch...
+
+=== Processing Batch 92 (Concurrent) ===
+  Launch 10 concurrent tasks...
+  Starting item 1 (Target: user.strategic_approach)...
+  Starting item 2 (Target: user.session_history)...
+  Starting item 3 (Target: company.knowledge_artifacts)...
+  Starting item 4 (Target: none)...
+  Starting item 5 (Target: company.business_priorities)...
+  Starting item 6 (Target: user.interaction_preferences)...
+  Starting item 7 (Target: company.knowledge_artifacts)...
+  Starting item 8 (Target: company.performance_context)...
+  Starting item 9 (Target: company.strategic_signatures)...
+  Starting item 10 (Target: user.strategic_approach)...
+  Completed item 8: user_special_953
+  Completed item 4: none_transactional_092
+  Completed item 3: user_memory_123
+  Completed item 9: user_marketing_conversation_754
+  Completed item 7: user_mixed_010
+  Completed item 5: user_marketing_assistant_045
+  Completed item 2: user_memory_only_074
+  Completed item 1: user.role_context_335
+  Completed item 10: user_special_036
+  Completed item 6: user_interactive_681
+Batch 92 complete: 10/10 items generated
+Saved batch to synthetic_data/batch_92.jsonl
+Validating batch...
+{
+  "total_examples": 10,
+  "category_distribution": {
+    "user.role_context": 8,
+    "user.strategic_approach": 8,
+    "user.communication_style": 2,
+    "none": 1
+  },
+  "multi_label_frequency": 0.8,
+  "avg_turns_per_conversation": 8.1,
+  "persistence_distribution": {
+    "medium": 2,
+    "long": 7,
+    "short": 1
+  },
+  "scope_distribution": {
+    "user": 9,
+    "none": 1
+  },
+  "warnings": []
+}
+Waiting 5 seconds before next batch...
+
+=== Processing Batch 93 (Concurrent) ===
+  Launch 10 concurrent tasks...
+  Starting item 1 (Target: company.knowledge_artifacts)...
+  Starting item 2 (Target: user.communication_style)...
+  Starting item 3 (Target: user.session_history)...
+  Starting item 4 (Target: company.tools_config)...
+  Starting item 5 (Target: user.interaction_preferences)...
+  Starting item 6 (Target: company.knowledge_artifacts)...
+  Starting item 7 (Target: none)...
+  Starting item 8 (Target: company.performance_context)...
+  Starting item 9 (Target: none)...
+  Starting item 10 (Target: user.workflow_patterns)...
+Scenario generation failed (attempt 1/6): headers: {'content-type': 'text/html; charset=UTF-8', 'referrer-policy': 'no-referrer', 'content-length': '332', 'date': 'Mon, 24 Nov 2025 20:01:08 GMT', 'alt-svc': 'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000'}, status_code: 502, body: 
+<html><head>
+<meta http-equiv="content-type" content="text/html;charset=utf-8">
+<title>502 Server Error</title>
+</head>
+<body text=#000000 bgcolor=#ffffff>
+<h1>Error: Server Error</h1>
+<h2>The server encountered a temporary error and could not complete your request.<p>Please try again in 30 seconds.</h2>
+<h2></h2>
+</body></html>
+
+Retrying in 10s...
+Scenario generation failed (attempt 1/6): headers: {'content-type': 'text/html; charset=UTF-8', 'referrer-policy': 'no-referrer', 'content-length': '332', 'date': 'Mon, 24 Nov 2025 20:01:08 GMT', 'alt-svc': 'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000'}, status_code: 502, body: 
+<html><head>
+<meta http-equiv="content-type" content="text/html;charset=utf-8">
+<title>502 Server Error</title>
+</head>
+<body text=#000000 bgcolor=#ffffff>
+<h1>Error: Server Error</h1>
+<h2>The server encountered a temporary error and could not complete your request.<p>Please try again in 30 seconds.</h2>
+<h2></h2>
+</body></html>
+
+Retrying in 10s...
+  Completed item 9: none_transactional_413
+  Completed item 7: none_transactional_033
+  Completed item 2: user_marketing_assistant_836
+  Completed item 4: user_marketing_conversation_037
+  Completed item 5: user_marketing_conversation_014
+  Completed item 10: user_standard_974
+  Completed item 3: user_marketing_assistant_456
+  Completed item 1: company_marketing_372
+  Completed item 6: user_marketing_conversation_043
+  Completed item 8: user_mixed_001
+Batch 93 complete: 10/10 items generated
+Saved batch to synthetic_data/batch_93.jsonl
+Validating batch...
+{
+  "total_examples": 10,
+  "category_distribution": {
+    "company.business_priorities": 1,
+    "company.performance_context": 2,
+    "user.strategic_approach": 7,
+    "user.communication_style": 2,
+    "user.role_context": 4,
+    "user.workflow_patterns": 1,
+    "none": 2,
+    "user.session_history": 1
+  },
+  "multi_label_frequency": 0.8,
+  "avg_turns_per_conversation": 8.0,
+  "persistence_distribution": {
+    "short": 3,
+    "long": 6,
+    "mixed": 1
+  },
+  "scope_distribution": {
+    "company": 1,
+    "user": 6,
+    "none": 2,
+    "mixed": 1
+  },
+  "warnings": []
+}
+Waiting 5 seconds before next batch...
+
+=== Processing Batch 94 (Concurrent) ===
+  Launch 10 concurrent tasks...
+  Starting item 1 (Target: company.tools_config)...
+  Starting item 2 (Target: company.knowledge_artifacts)...
+  Starting item 3 (Target: user.session_history)...
+  Starting item 4 (Target: user.interaction_preferences)...
+  Starting item 5 (Target: none)...
+  Starting item 6 (Target: user.strategic_approach)...
+  Starting item 7 (Target: user.strategic_approach)...
+  Starting item 8 (Target: user.strategic_approach)...
+  Starting item 9 (Target: company.brand_core)...
+  Starting item 10 (Target: user.strategic_approach)...
+  Completed item 5: none_transactional_382
+  Completed item 7: user_special_915
+  Completed item 9: company_marketing_planning_036
+  Completed item 6: user_marketing_assistant_648
+  Completed item 2: user_special_045
+  Completed item 3: user.communication_style_marketing_assistant_342
+  Completed item 8: user_marketing_assistant_014
+  Completed item 10: user.strategic_approach_082
+  Completed item 1: user_descriptive_175
+  Completed item 4: user_marketing_549
+Batch 94 complete: 10/10 items generated
+Saved batch to synthetic_data/batch_94.jsonl
+Validating batch...
+{
+  "total_examples": 10,
+  "category_distribution": {
+    "user.strategic_approach": 7,
+    "user.workflow_patterns": 1,
+    "user.role_context": 3,
+    "user.communication_style": 5,
+    "none": 1,
+    "company.business_priorities": 1,
+    "company.performance_context": 1,
+    "company.brand_core": 1
+  },
+  "multi_label_frequency": 0.7,
+  "avg_turns_per_conversation": 6.7,
+  "persistence_distribution": {
+    "medium": 1,
+    "long": 8,
+    "short": 1
+  },
+  "scope_distribution": {
+    "user": 8,
+    "none": 1,
+    "company": 1
+  },
+  "warnings": []
+}
+Waiting 5 seconds before next batch...
+
+=== Processing Batch 95 (Concurrent) ===
+  Launch 10 concurrent tasks...
+  Starting item 1 (Target: company.tools_config)...
+  Starting item 2 (Target: company.tools_config)...
+  Starting item 3 (Target: company.brand_core)...
+  Starting item 4 (Target: user.interaction_preferences)...
+  Starting item 5 (Target: company.knowledge_artifacts)...
+  Starting item 6 (Target: company.knowledge_artifacts)...
+  Starting item 7 (Target: user.interaction_preferences)...
+  Starting item 8 (Target: user.communication_style)...
+  Starting item 9 (Target: company.strategic_signatures)...
+  Starting item 10 (Target: company.business_priorities)...
+  Completed item 3: user_marketing_conversation_012
+  Completed item 1: user_memory_user_role_context_060
+  Completed item 5: user_descriptive_label_636
+  Completed item 2: company.knowledge_artifacts_user.workflow_patterns_123
+  Completed item 7: user_mixed_016
+  Completed item 10: user_marketing_assistant_019
+  Completed item 9: user_marketing_conversation_010
+  Completed item 6: user.workflow_patterns_user.communication_style_user.strategic_approach_902
+  Completed item 8: user_marketing_765
+  Completed item 4: user.communication_style_user.strategic_approach_123
+Batch 95 complete: 10/10 items generated
+Saved batch to synthetic_data/batch_95.jsonl
+Validating batch...
+{
+  "total_examples": 10,
+  "category_distribution": {
+    "user.role_context": 4,
+    "user.workflow_patterns": 4,
+    "company.knowledge_artifacts": 1,
+    "user.strategic_approach": 6,
+    "company.brand_core": 1,
+    "user.communication_style": 4
+  },
+  "multi_label_frequency": 0.9,
+  "avg_turns_per_conversation": 6.0,
+  "persistence_distribution": {
+    "medium": 3,
+    "long": 7
+  },
+  "scope_distribution": {
+    "user": 8,
+    "mixed": 2
+  },
+  "warnings": []
+}
+Waiting 5 seconds before next batch...
+
+=== Processing Batch 96 (Concurrent) ===
+  Launch 10 concurrent tasks...
+  Starting item 1 (Target: user.session_history)...
+  Starting item 2 (Target: user.communication_style)...
+  Starting item 3 (Target: company.strategic_signatures)...
+  Starting item 4 (Target: user.interaction_preferences)...
+  Starting item 5 (Target: user.communication_style)...
+  Starting item 6 (Target: user.strategic_approach)...
+  Starting item 7 (Target: user.strategic_approach)...
+  Starting item 8 (Target: user.strategic_approach)...
+  Starting item 9 (Target: user.workflow_patterns)...
+  Starting item 10 (Target: user.role_context)...
+  Completed item 9: user_scenario_456
+  Completed item 5: user_communication_style_456
+  Completed item 10: user_memory_user_preferences_597
+  Completed item 2: user_dialogue_035
+  Completed item 7: user_incident_review_456
+  Completed item 6: user_experience_design_followup_843
+  Completed item 8: user.strategic_approach_101_452
+  Completed item 1: user_marketing_specialist_678
+  Completed item 3: company_marketing_assistant_864
+  Completed item 4: user_marketing_372
+Batch 96 complete: 10/10 items generated
+Saved batch to synthetic_data/batch_96.jsonl
+Validating batch...
+{
+  "total_examples": 10,
+  "category_distribution": {
+    "user.strategic_approach": 8,
+    "user.workflow_patterns": 2,
+    "company.strategic_signatures": 2,
+    "company.brand_core": 1,
+    "user.interaction_preferences": 2,
+    "user.communication_style": 2,
+    "company.business_priorities": 1,
+    "user.role_context": 2
+  },
+  "multi_label_frequency": 0.8,
+  "avg_turns_per_conversation": 5.9,
+  "persistence_distribution": {
+    "long": 10
+  },
+  "scope_distribution": {
+    "user": 8,
+    "company": 1,
+    "mixed": 1
+  },
+  "warnings": []
+}
+Waiting 5 seconds before next batch...
+
+=== Processing Batch 97 (Concurrent) ===
+  Launch 10 concurrent tasks...
+  Starting item 1 (Target: company.brand_core)...
+  Starting item 2 (Target: user.workflow_patterns)...
+  Starting item 3 (Target: none)...
+  Starting item 4 (Target: user.strategic_approach)...
+  Starting item 5 (Target: user.workflow_patterns)...
+  Starting item 6 (Target: none)...
+  Starting item 7 (Target: company.knowledge_artifacts)...
+  Starting item 8 (Target: company.brand_core)...
+  Starting item 9 (Target: company.knowledge_artifacts)...
+  Starting item 10 (Target: user.session_history)...
+  Completed item 3: none_transactional_347
+  Completed item 7: user_mixed_402
+  Completed item 2: company_memory_marketing_023
+  Completed item 5: user_example_030
+  Completed item 6: none_transactional_045
+  Completed item 8: company_marketing_381
+  Completed item 1: company.brand_core_proposal_playbook_782
+  Completed item 10: user_marketing_assistant_024
+  Completed item 4: user_mentorship_438
+  Completed item 9: user_marketing_742
+Batch 97 complete: 10/10 items generated
+Saved batch to synthetic_data/batch_97.jsonl
+Validating batch...
+{
+  "total_examples": 10,
+  "category_distribution": {
+    "company.brand_core": 2,
+    "company.business_priorities": 1,
+    "company.performance_context": 1,
+    "none": 2,
+    "user.strategic_approach": 4,
+    "user.role_context": 4,
+    "user.communication_style": 2,
+    "user.workflow_patterns": 2,
+    "company.knowledge_artifacts": 1
+  },
+  "multi_label_frequency": 0.7,
+  "avg_turns_per_conversation": 7.1,
+  "persistence_distribution": {
+    "long": 6,
+    "rolling, short": 1,
+    "short": 2,
+    "medium": 1
+  },
+  "scope_distribution": {
+    "company": 3,
+    "none": 2,
+    "user": 5
+  },
+  "warnings": []
+}
+Waiting 5 seconds before next batch...
+
+=== Processing Batch 98 (Concurrent) ===
+  Launch 10 concurrent tasks...
+  Starting item 1 (Target: none)...
+  Starting item 2 (Target: user.interaction_preferences)...
+  Starting item 3 (Target: user.strategic_approach)...
+  Starting item 4 (Target: user.session_history)...
+  Starting item 5 (Target: user.communication_style)...
+  Starting item 6 (Target: none)...
+  Starting item 7 (Target: none)...
+  Starting item 8 (Target: company.brand_core)...
+  Starting item 9 (Target: user.workflow_patterns)...
+  Starting item 10 (Target: company.tools_config)...
+  Completed item 1: none_transactional_415
+  Completed item 2: user_user.interaction_preferences_823
+  Completed item 5: user_marketing_assistant_015
+  Completed item 3: user.strategic_approach_046
+  Completed item 10: user.strategic_approach_018
+  Completed item 6: none_transactional_328
+  Completed item 8: user_gaming_studio_launch_834
+Conversation generation failed (attempt 1/6): headers: {'content-type': 'text/html; charset=UTF-8', 'referrer-policy': 'no-referrer', 'content-length': '332', 'date': 'Mon, 24 Nov 2025 20:08:42 GMT', 'alt-svc': 'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000'}, status_code: 502, body: 
+<html><head>
+<meta http-equiv="content-type" content="text/html;charset=utf-8">
+<title>502 Server Error</title>
+</head>
+<body text=#000000 bgcolor=#ffffff>
+<h1>Error: Server Error</h1>
+<h2>The server encountered a temporary error and could not complete your request.<p>Please try again in 30 seconds.</h2>
+<h2></h2>
+</body></html>
+
+Retrying in 10s...
+  Completed item 9: user.strategic_approach_082
+  Completed item 7: none_transactional_231
+  Completed item 4: user_marketing_conversation_048
+Batch 98 complete: 10/10 items generated
+Saved batch to synthetic_data/batch_98.jsonl
+Validating batch...
+{
+  "total_examples": 10,
+  "category_distribution": {
+    "none": 3,
+    "user.interaction_preferences": 1,
+    "user.strategic_approach": 6,
+    "user.communication_style": 3,
+    "user.role_context": 1
+  },
+  "multi_label_frequency": 0.3,
+  "avg_turns_per_conversation": 6.7,
+  "persistence_distribution": {
+    "short": 3,
+    "evolving": 1,
+    "long": 6
+  },
+  "scope_distribution": {
+    "none": 3,
+    "user": 7
+  },
+  "warnings": []
+}
+Waiting 5 seconds before next batch...
+
+=== Processing Batch 99 (Concurrent) ===
+  Launch 10 concurrent tasks...
+  Starting item 1 (Target: company.brand_core)...
+  Starting item 2 (Target: user.communication_style)...
+  Starting item 3 (Target: user.session_history)...
+  Starting item 4 (Target: user.workflow_patterns)...
+  Starting item 5 (Target: company.business_priorities)...
+  Starting item 6 (Target: company.knowledge_artifacts)...
+  Starting item 7 (Target: user.interaction_preferences)...
+  Starting item 8 (Target: user.session_history)...
+  Starting item 9 (Target: company.performance_context)...
+  Starting item 10 (Target: company.strategic_signatures)...
+  Completed item 1: company_performance_context_147
+  Completed item 2: user.communication_style_math_tutor_863
+  Completed item 5: user_marketing_789
+  Completed item 8: user.strategic_approach_123
+  Completed item 4: user_workflow_patterns_456
+  Completed item 7: user_strategic_approach_594
+  Completed item 3: user.strategic_approach_191
+  Completed item 6: user_marketing_conversation_042
+  Completed item 9: user_marketing_assistant_034
+  Completed item 10: user_marketing_manager_673
+Batch 99 complete: 10/10 items generated
+Saved batch to synthetic_data/batch_99.jsonl
+Validating batch...
+{
+  "total_examples": 10,
+  "category_distribution": {
+    "company.performance_context": 1,
+    "user.interaction_preferences": 1,
+    "user.communication_style": 3,
+    "user.strategic_approach": 7,
+    "user.workflow_patterns": 1,
+    "user.session_history": 1,
+    "company.brand_core": 1,
+    "user.role_context": 1
+  },
+  "multi_label_frequency": 0.6,
+  "avg_turns_per_conversation": 6.6,
+  "persistence_distribution": {
+    "rolling": 1,
+    "long": 8,
+    "medium": 1
+  },
+  "scope_distribution": {
+    "company": 1,
+    "user": 8,
+    "mixed": 1
+  },
+  "warnings": []
+}
+Waiting 5 seconds before next batch...
+
+=== Processing Batch 100 (Concurrent) ===
+  Launch 10 concurrent tasks...
+  Starting item 1 (Target: company.brand_core)...
+  Starting item 2 (Target: company.business_priorities)...
+  Starting item 3 (Target: none)...
+  Starting item 4 (Target: user.interaction_preferences)...
+  Starting item 5 (Target: company.brand_core)...
+  Starting item 6 (Target: company.performance_context)...
+  Starting item 7 (Target: user.strategic_approach)...
+  Starting item 8 (Target: company.brand_core)...
+  Starting item 9 (Target: user.communication_style)...
+  Starting item 10 (Target: company.strategic_signatures)...
+  Completed item 3: none_transactional_082
+  Completed item 4: user_marketing_assistant_033
+  Completed item 10: user_dialogue_001
+  Completed item 1: user.communication_style_user.strategic_approach_334
+  Completed item 9: user_special_052
+  Completed item 8: user_marketing_378
+  Completed item 5: user_special_456
+  Completed item 6: user_marketing_specialist_046
+  Completed item 7: company_marketing_campaign_456
+  Completed item 2: user_long_form_conversation_639
+Batch 100 complete: 10/10 items generated
+Saved batch to synthetic_data/batch_100.jsonl
+Validating batch...
+{
+  "total_examples": 10,
+  "category_distribution": {
+    "user.strategic_approach": 8,
+    "user.communication_style": 3,
+    "user.workflow_patterns": 2,
+    "none": 1,
+    "user.role_context": 2,
+    "company.business_priorities": 1,
+    "company.performance_context": 1,
+    "company.brand_core": 1
+  },
+  "multi_label_frequency": 0.9,
+  "avg_turns_per_conversation": 6.0,
+  "persistence_distribution": {
+    "long": 8,
+    "short": 2
+  },
+  "scope_distribution": {
+    "user": 7,
+    "none": 1,
+    "company": 1,
+    "mixed": 1
+  },
+  "warnings": []
+}
+
+============================================================
+COMPLETED: 1000 items generated
+Full dataset saved to synthetic_data/all_generated_data_1000.jsonl
+============================================================

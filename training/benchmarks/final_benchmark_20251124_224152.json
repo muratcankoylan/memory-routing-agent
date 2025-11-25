@@ -1,0 +1,1442 @@
+{
+  "benchmark_date": "2025-11-24T22:41:52.898322",
+  "num_scenarios": 50,
+  "summaries": {
+    "rl_model": {
+      "name": "Llama-8B + LoRA + RL (Ours)",
+      "total": 50,
+      "avg_f1": 0.68,
+      "any_match": 0.72,
+      "exact_match": 0.6,
+      "by_difficulty": {
+        "easy": {
+          "count": 14,
+          "f1": 0.8571428571428571,
+          "any_match": 0.8571428571428571,
+          "exact_match": 0.8571428571428571
+        },
+        "medium": {
+          "count": 26,
+          "f1": 0.6538461538461539,
+          "any_match": 0.6538461538461539,
+          "exact_match": 0.6538461538461539
+        },
+        "hard": {
+          "count": 10,
+          "f1": 0.5,
+          "any_match": 0.7,
+          "exact_match": 0.1
+        }
+      }
+    },
+    "cohere": {
+      "name": "Cohere Command-R-Plus (104B)",
+      "total": 50,
+      "avg_f1": 0.6120000000000002,
+      "any_match": 0.82,
+      "exact_match": 0.26,
+      "by_difficulty": {
+        "easy": {
+          "count": 14,
+          "f1": 0.480952380952381,
+          "any_match": 0.6428571428571429,
+          "exact_match": 0.21428571428571427
+        },
+        "medium": {
+          "count": 26,
+          "f1": 0.641025641025641,
+          "any_match": 0.8846153846153846,
+          "exact_match": 0.2692307692307692
+        },
+        "hard": {
+          "count": 10,
+          "f1": 0.72,
+          "any_match": 0.9,
+          "exact_match": 0.3
+        }
+      }
+    }
+  },
+  "detailed_results": {
+    "rl_model": [
+      {
+        "id": "brand_1",
+        "predicted": [
+          "company.brand_core"
+        ],
+        "gold": [
+          "company.brand_core"
+        ],
+        "f1": 1.0,
+        "any_match": true,
+        "exact_match": true,
+        "difficulty": "medium"
+      },
+      {
+        "id": "brand_2",
+        "predicted": [
+          "company.brand_core"
+        ],
+        "gold": [
+          "company.brand_core"
+        ],
+        "f1": 1.0,
+        "any_match": true,
+        "exact_match": true,
+        "difficulty": "easy"
+      },
+      {
+        "id": "brand_3",
+        "predicted": [
+          "company.brand_core"
+        ],
+        "gold": [
+          "company.brand_core"
+        ],
+        "f1": 1.0,
+        "any_match": true,
+        "exact_match": true,
+        "difficulty": "medium"
+      },
+      {
+        "id": "brand_4",
+        "predicted": [
+          "company.brand_core"
+        ],
+        "gold": [
+          "company.brand_core",
+          "company.strategic_signatures"
+        ],
+        "f1": 0.6666666666666666,
+        "any_match": true,
+        "exact_match": false,
+        "difficulty": "hard"
+      },
+      {
+        "id": "brand_5",
+        "predicted": [
+          "company.brand_core"
+        ],
+        "gold": [
+          "none"
+        ],
+        "f1": 0,
+        "any_match": false,
+        "exact_match": false,
+        "difficulty": "easy"
+      },
+      {
+        "id": "brand_6",
+        "predicted": [
+          "company.brand_core"
+        ],
+        "gold": [
+          "company.brand_core"
+        ],
+        "f1": 1.0,
+        "any_match": true,
+        "exact_match": true,
+        "difficulty": "medium"
+      },
+      {
+        "id": "brand_7",
+        "predicted": [
+          "company.brand_core"
+        ],
+        "gold": [
+          "company.brand_core",
+          "company.strategic_signatures"
+        ],
+        "f1": 0.6666666666666666,
+        "any_match": true,
+        "exact_match": false,
+        "difficulty": "hard"
+      },
+      {
+        "id": "brand_8",
+        "predicted": [
+          "none"
+        ],
+        "gold": [
+          "none"
+        ],
+        "f1": 1.0,
+        "any_match": true,
+        "exact_match": true,
+        "difficulty": "medium"
+      },
+      {
+        "id": "strategy_1",
+        "predicted": [
+          "user.workflow_patterns"
+        ],
+        "gold": [
+          "company.strategic_signatures"
+        ],
+        "f1": 0,
+        "any_match": false,
+        "exact_match": false,
+        "difficulty": "easy"
+      },
+      {
+        "id": "strategy_2",
+        "predicted": [
+          "company.brand_core"
+        ],
+        "gold": [
+          "company.strategic_signatures"
+        ],
+        "f1": 0,
+        "any_match": false,
+        "exact_match": false,
+        "difficulty": "medium"
+      },
+      {
+        "id": "strategy_3",
+        "predicted": [
+          "user.strategic_approach"
+        ],
+        "gold": [
+          "company.strategic_signatures"
+        ],
+        "f1": 0,
+        "any_match": false,
+        "exact_match": false,
+        "difficulty": "medium"
+      },
+      {
+        "id": "strategy_4",
+        "predicted": [
+          "user.strategic_approach"
+        ],
+        "gold": [
+          "user.strategic_approach"
+        ],
+        "f1": 1.0,
+        "any_match": true,
+        "exact_match": true,
+        "difficulty": "medium"
+      },
+      {
+        "id": "strategy_5",
+        "predicted": [
+          "none"
+        ],
+        "gold": [
+          "user.strategic_approach",
+          "company.strategic_signatures"
+        ],
+        "f1": 0,
+        "any_match": false,
+        "exact_match": false,
+        "difficulty": "hard"
+      },
+      {
+        "id": "strategy_6",
+        "predicted": [
+          "company.brand_core"
+        ],
+        "gold": [
+          "company.strategic_signatures"
+        ],
+        "f1": 0,
+        "any_match": false,
+        "exact_match": false,
+        "difficulty": "medium"
+      },
+      {
+        "id": "strategy_7",
+        "predicted": [
+          "none"
+        ],
+        "gold": [
+          "none"
+        ],
+        "f1": 1.0,
+        "any_match": true,
+        "exact_match": true,
+        "difficulty": "easy"
+      },
+      {
+        "id": "strategy_8",
+        "predicted": [
+          "user.strategic_approach",
+          "user.communication_style"
+        ],
+        "gold": [
+          "company.brand_core",
+          "company.strategic_signatures"
+        ],
+        "f1": 0,
+        "any_match": false,
+        "exact_match": false,
+        "difficulty": "hard"
+      },
+      {
+        "id": "perf_1",
+        "predicted": [
+          "company.performance_context"
+        ],
+        "gold": [
+          "company.performance_context"
+        ],
+        "f1": 1.0,
+        "any_match": true,
+        "exact_match": true,
+        "difficulty": "easy"
+      },
+      {
+        "id": "perf_2",
+        "predicted": [
+          "company.performance_context"
+        ],
+        "gold": [
+          "company.performance_context"
+        ],
+        "f1": 1.0,
+        "any_match": true,
+        "exact_match": true,
+        "difficulty": "medium"
+      },
+      {
+        "id": "perf_3",
+        "predicted": [
+          "none"
+        ],
+        "gold": [
+          "company.performance_context"
+        ],
+        "f1": 0,
+        "any_match": false,
+        "exact_match": false,
+        "difficulty": "medium"
+      },
+      {
+        "id": "perf_4",
+        "predicted": [
+          "company.business_priorities"
+        ],
+        "gold": [
+          "company.business_priorities",
+          "company.performance_context"
+        ],
+        "f1": 0.6666666666666666,
+        "any_match": true,
+        "exact_match": false,
+        "difficulty": "hard"
+      },
+      {
+        "id": "perf_5",
+        "predicted": [
+          "none"
+        ],
+        "gold": [
+          "none"
+        ],
+        "f1": 1.0,
+        "any_match": true,
+        "exact_match": true,
+        "difficulty": "easy"
+      },
+      {
+        "id": "perf_6",
+        "predicted": [
+          "none"
+        ],
+        "gold": [
+          "company.performance_context"
+        ],
+        "f1": 0,
+        "any_match": false,
+        "exact_match": false,
+        "difficulty": "medium"
+      },
+      {
+        "id": "perf_7",
+        "predicted": [
+          "company.performance_context"
+        ],
+        "gold": [
+          "company.performance_context"
+        ],
+        "f1": 1.0,
+        "any_match": true,
+        "exact_match": true,
+        "difficulty": "medium"
+      },
+      {
+        "id": "perf_8",
+        "predicted": [
+          "company.performance_context"
+        ],
+        "gold": [
+          "company.knowledge_artifacts",
+          "company.performance_context"
+        ],
+        "f1": 0.6666666666666666,
+        "any_match": true,
+        "exact_match": false,
+        "difficulty": "hard"
+      },
+      {
+        "id": "tools_1",
+        "predicted": [
+          "company.tools_config"
+        ],
+        "gold": [
+          "company.tools_config"
+        ],
+        "f1": 1.0,
+        "any_match": true,
+        "exact_match": true,
+        "difficulty": "easy"
+      },
+      {
+        "id": "tools_2",
+        "predicted": [
+          "company.tools_config"
+        ],
+        "gold": [
+          "company.tools_config"
+        ],
+        "f1": 1.0,
+        "any_match": true,
+        "exact_match": true,
+        "difficulty": "medium"
+      },
+      {
+        "id": "tools_3",
+        "predicted": [
+          "user.strategic_approach",
+          "user.communication_style"
+        ],
+        "gold": [
+          "company.tools_config"
+        ],
+        "f1": 0,
+        "any_match": false,
+        "exact_match": false,
+        "difficulty": "medium"
+      },
+      {
+        "id": "tools_4",
+        "predicted": [
+          "none"
+        ],
+        "gold": [
+          "none"
+        ],
+        "f1": 1.0,
+        "any_match": true,
+        "exact_match": true,
+        "difficulty": "easy"
+      },
+      {
+        "id": "tools_5",
+        "predicted": [
+          "company.tools_config"
+        ],
+        "gold": [
+          "company.tools_config"
+        ],
+        "f1": 1.0,
+        "any_match": true,
+        "exact_match": true,
+        "difficulty": "medium"
+      },
+      {
+        "id": "tools_6",
+        "predicted": [
+          "none"
+        ],
+        "gold": [
+          "none"
+        ],
+        "f1": 1.0,
+        "any_match": true,
+        "exact_match": true,
+        "difficulty": "medium"
+      },
+      {
+        "id": "user_1",
+        "predicted": [
+          "user.role_context"
+        ],
+        "gold": [
+          "user.role_context"
+        ],
+        "f1": 1.0,
+        "any_match": true,
+        "exact_match": true,
+        "difficulty": "easy"
+      },
+      {
+        "id": "user_2",
+        "predicted": [
+          "user.communication_style"
+        ],
+        "gold": [
+          "user.communication_style"
+        ],
+        "f1": 1.0,
+        "any_match": true,
+        "exact_match": true,
+        "difficulty": "easy"
+      },
+      {
+        "id": "user_3",
+        "predicted": [
+          "user.communication_style"
+        ],
+        "gold": [
+          "user.interaction_preferences"
+        ],
+        "f1": 0,
+        "any_match": false,
+        "exact_match": false,
+        "difficulty": "medium"
+      },
+      {
+        "id": "user_4",
+        "predicted": [
+          "user.workflow_patterns"
+        ],
+        "gold": [
+          "user.workflow_patterns"
+        ],
+        "f1": 1.0,
+        "any_match": true,
+        "exact_match": true,
+        "difficulty": "medium"
+      },
+      {
+        "id": "user_5",
+        "predicted": [
+          "user.session_history"
+        ],
+        "gold": [
+          "user.session_history"
+        ],
+        "f1": 1.0,
+        "any_match": true,
+        "exact_match": true,
+        "difficulty": "easy"
+      },
+      {
+        "id": "user_6",
+        "predicted": [
+          "user.strategic_approach"
+        ],
+        "gold": [
+          "user.strategic_approach",
+          "user.interaction_preferences"
+        ],
+        "f1": 0.6666666666666666,
+        "any_match": true,
+        "exact_match": false,
+        "difficulty": "hard"
+      },
+      {
+        "id": "user_7",
+        "predicted": [
+          "none"
+        ],
+        "gold": [
+          "none"
+        ],
+        "f1": 1.0,
+        "any_match": true,
+        "exact_match": true,
+        "difficulty": "easy"
+      },
+      {
+        "id": "user_8",
+        "predicted": [
+          "user.communication_style"
+        ],
+        "gold": [
+          "user.communication_style"
+        ],
+        "f1": 1.0,
+        "any_match": true,
+        "exact_match": true,
+        "difficulty": "medium"
+      },
+      {
+        "id": "user_9",
+        "predicted": [
+          "none"
+        ],
+        "gold": [
+          "user.role_context",
+          "user.interaction_preferences"
+        ],
+        "f1": 0,
+        "any_match": false,
+        "exact_match": false,
+        "difficulty": "hard"
+      },
+      {
+        "id": "user_10",
+        "predicted": [
+          "user.strategic_approach"
+        ],
+        "gold": [
+          "user.strategic_approach"
+        ],
+        "f1": 1.0,
+        "any_match": true,
+        "exact_match": true,
+        "difficulty": "medium"
+      },
+      {
+        "id": "priority_1",
+        "predicted": [
+          "company.business_priorities"
+        ],
+        "gold": [
+          "company.business_priorities"
+        ],
+        "f1": 1.0,
+        "any_match": true,
+        "exact_match": true,
+        "difficulty": "easy"
+      },
+      {
+        "id": "priority_2",
+        "predicted": [
+          "company.business_priorities"
+        ],
+        "gold": [
+          "company.business_priorities"
+        ],
+        "f1": 1.0,
+        "any_match": true,
+        "exact_match": true,
+        "difficulty": "medium"
+      },
+      {
+        "id": "priority_3",
+        "predicted": [
+          "company.business_priorities"
+        ],
+        "gold": [
+          "company.business_priorities",
+          "company.strategic_signatures"
+        ],
+        "f1": 0.6666666666666666,
+        "any_match": true,
+        "exact_match": false,
+        "difficulty": "hard"
+      },
+      {
+        "id": "priority_4",
+        "predicted": [
+          "company.business_priorities"
+        ],
+        "gold": [
+          "company.business_priorities"
+        ],
+        "f1": 1.0,
+        "any_match": true,
+        "exact_match": true,
+        "difficulty": "medium"
+      },
+      {
+        "id": "priority_5",
+        "predicted": [
+          "company.business_priorities"
+        ],
+        "gold": [
+          "company.business_priorities"
+        ],
+        "f1": 1.0,
+        "any_match": true,
+        "exact_match": true,
+        "difficulty": "medium"
+      },
+      {
+        "id": "priority_6",
+        "predicted": [
+          "none"
+        ],
+        "gold": [
+          "none"
+        ],
+        "f1": 1.0,
+        "any_match": true,
+        "exact_match": true,
+        "difficulty": "medium"
+      },
+      {
+        "id": "knowledge_1",
+        "predicted": [
+          "company.knowledge_artifacts"
+        ],
+        "gold": [
+          "company.knowledge_artifacts"
+        ],
+        "f1": 1.0,
+        "any_match": true,
+        "exact_match": true,
+        "difficulty": "easy"
+      },
+      {
+        "id": "knowledge_2",
+        "predicted": [
+          "user.workflow_patterns"
+        ],
+        "gold": [
+          "company.knowledge_artifacts"
+        ],
+        "f1": 0,
+        "any_match": false,
+        "exact_match": false,
+        "difficulty": "medium"
+      },
+      {
+        "id": "knowledge_3",
+        "predicted": [
+          "user.strategic_approach",
+          "user.communication_style"
+        ],
+        "gold": [
+          "company.knowledge_artifacts"
+        ],
+        "f1": 0,
+        "any_match": false,
+        "exact_match": false,
+        "difficulty": "medium"
+      },
+      {
+        "id": "knowledge_4",
+        "predicted": [
+          "company.knowledge_artifacts",
+          "company.brand_core"
+        ],
+        "gold": [
+          "company.knowledge_artifacts",
+          "company.brand_core"
+        ],
+        "f1": 1.0,
+        "any_match": true,
+        "exact_match": true,
+        "difficulty": "hard"
+      }
+    ],
+    "cohere": [
+      {
+        "id": "brand_1",
+        "predicted": [
+          "company.brand_core"
+        ],
+        "gold": [
+          "company.brand_core"
+        ],
+        "f1": 1.0,
+        "any_match": true,
+        "exact_match": true,
+        "difficulty": "medium"
+      },
+      {
+        "id": "brand_2",
+        "predicted": [
+          "company.brand_core",
+          "company.knowledge_artifacts"
+        ],
+        "gold": [
+          "company.brand_core"
+        ],
+        "f1": 0.6666666666666666,
+        "any_match": true,
+        "exact_match": false,
+        "difficulty": "easy"
+      },
+      {
+        "id": "brand_3",
+        "predicted": [
+          "company.brand_core"
+        ],
+        "gold": [
+          "company.brand_core"
+        ],
+        "f1": 1.0,
+        "any_match": true,
+        "exact_match": true,
+        "difficulty": "medium"
+      },
+      {
+        "id": "brand_4",
+        "predicted": [
+          "company.brand_core",
+          "user.communication_style",
+          "company.strategic_signatures"
+        ],
+        "gold": [
+          "company.brand_core",
+          "company.strategic_signatures"
+        ],
+        "f1": 0.8,
+        "any_match": true,
+        "exact_match": false,
+        "difficulty": "hard"
+      },
+      {
+        "id": "brand_5",
+        "predicted": [
+          "company.knowledge_artifacts",
+          "user.communication_style"
+        ],
+        "gold": [
+          "none"
+        ],
+        "f1": 0,
+        "any_match": false,
+        "exact_match": false,
+        "difficulty": "easy"
+      },
+      {
+        "id": "brand_6",
+        "predicted": [
+          "company.brand_core",
+          "company.strategic_signatures"
+        ],
+        "gold": [
+          "company.brand_core"
+        ],
+        "f1": 0.6666666666666666,
+        "any_match": true,
+        "exact_match": false,
+        "difficulty": "medium"
+      },
+      {
+        "id": "brand_7",
+        "predicted": [
+          "company.brand_core",
+          "company.strategic_signatures"
+        ],
+        "gold": [
+          "company.brand_core",
+          "company.strategic_signatures"
+        ],
+        "f1": 1.0,
+        "any_match": true,
+        "exact_match": true,
+        "difficulty": "hard"
+      },
+      {
+        "id": "brand_8",
+        "predicted": [
+          "company.business_priorities",
+          "user.communication_style"
+        ],
+        "gold": [
+          "none"
+        ],
+        "f1": 0,
+        "any_match": false,
+        "exact_match": false,
+        "difficulty": "medium"
+      },
+      {
+        "id": "strategy_1",
+        "predicted": [
+          "company.knowledge_artifacts",
+          "company.business_priorities",
+          "company.strategic_signatures",
+          "user.strategic_approach"
+        ],
+        "gold": [
+          "company.strategic_signatures"
+        ],
+        "f1": 0.4,
+        "any_match": true,
+        "exact_match": false,
+        "difficulty": "easy"
+      },
+      {
+        "id": "strategy_2",
+        "predicted": [
+          "company.brand_core",
+          "user.strategic_approach",
+          "company.strategic_signatures"
+        ],
+        "gold": [
+          "company.strategic_signatures"
+        ],
+        "f1": 0.5,
+        "any_match": true,
+        "exact_match": false,
+        "difficulty": "medium"
+      },
+      {
+        "id": "strategy_3",
+        "predicted": [
+          "company.brand_core",
+          "user.strategic_approach",
+          "company.strategic_signatures"
+        ],
+        "gold": [
+          "company.strategic_signatures"
+        ],
+        "f1": 0.5,
+        "any_match": true,
+        "exact_match": false,
+        "difficulty": "medium"
+      },
+      {
+        "id": "strategy_4",
+        "predicted": [
+          "user.strategic_approach"
+        ],
+        "gold": [
+          "user.strategic_approach"
+        ],
+        "f1": 1.0,
+        "any_match": true,
+        "exact_match": true,
+        "difficulty": "medium"
+      },
+      {
+        "id": "strategy_5",
+        "predicted": [
+          "user.workflow_patterns",
+          "user.strategic_approach"
+        ],
+        "gold": [
+          "user.strategic_approach",
+          "company.strategic_signatures"
+        ],
+        "f1": 0.5,
+        "any_match": true,
+        "exact_match": false,
+        "difficulty": "hard"
+      },
+      {
+        "id": "strategy_6",
+        "predicted": [
+          "company.brand_core",
+          "user.strategic_approach",
+          "company.strategic_signatures"
+        ],
+        "gold": [
+          "company.strategic_signatures"
+        ],
+        "f1": 0.5,
+        "any_match": true,
+        "exact_match": false,
+        "difficulty": "medium"
+      },
+      {
+        "id": "strategy_7",
+        "predicted": [
+          "user.workflow_patterns",
+          "user.strategic_approach"
+        ],
+        "gold": [
+          "none"
+        ],
+        "f1": 0,
+        "any_match": false,
+        "exact_match": false,
+        "difficulty": "easy"
+      },
+      {
+        "id": "strategy_8",
+        "predicted": [
+          "company.brand_core",
+          "user.communication_style",
+          "company.strategic_signatures"
+        ],
+        "gold": [
+          "company.brand_core",
+          "company.strategic_signatures"
+        ],
+        "f1": 0.8,
+        "any_match": true,
+        "exact_match": false,
+        "difficulty": "hard"
+      },
+      {
+        "id": "perf_1",
+        "predicted": [
+          "user.communication_style",
+          "company.performance_context"
+        ],
+        "gold": [
+          "company.performance_context"
+        ],
+        "f1": 0.6666666666666666,
+        "any_match": true,
+        "exact_match": false,
+        "difficulty": "easy"
+      },
+      {
+        "id": "perf_2",
+        "predicted": [
+          "user.strategic_approach",
+          "company.performance_context"
+        ],
+        "gold": [
+          "company.performance_context"
+        ],
+        "f1": 0.6666666666666666,
+        "any_match": true,
+        "exact_match": false,
+        "difficulty": "medium"
+      },
+      {
+        "id": "perf_3",
+        "predicted": [
+          "user.strategic_approach",
+          "company.performance_context"
+        ],
+        "gold": [
+          "company.performance_context"
+        ],
+        "f1": 0.6666666666666666,
+        "any_match": true,
+        "exact_match": false,
+        "difficulty": "medium"
+      },
+      {
+        "id": "perf_4",
+        "predicted": [
+          "company.business_priorities",
+          "company.performance_context",
+          "user.strategic_approach"
+        ],
+        "gold": [
+          "company.business_priorities",
+          "company.performance_context"
+        ],
+        "f1": 0.8,
+        "any_match": true,
+        "exact_match": false,
+        "difficulty": "hard"
+      },
+      {
+        "id": "perf_5",
+        "predicted": [
+          "user.communication_style",
+          "company.performance_context"
+        ],
+        "gold": [
+          "none"
+        ],
+        "f1": 0,
+        "any_match": false,
+        "exact_match": false,
+        "difficulty": "easy"
+      },
+      {
+        "id": "perf_6",
+        "predicted": [
+          "user.strategic_approach",
+          "company.performance_context",
+          "user.session_history"
+        ],
+        "gold": [
+          "company.performance_context"
+        ],
+        "f1": 0.5,
+        "any_match": true,
+        "exact_match": false,
+        "difficulty": "medium"
+      },
+      {
+        "id": "perf_7",
+        "predicted": [
+          "company.performance_context"
+        ],
+        "gold": [
+          "company.performance_context"
+        ],
+        "f1": 1.0,
+        "any_match": true,
+        "exact_match": true,
+        "difficulty": "medium"
+      },
+      {
+        "id": "perf_8",
+        "predicted": [
+          "user.strategic_approach",
+          "company.performance_context"
+        ],
+        "gold": [
+          "company.knowledge_artifacts",
+          "company.performance_context"
+        ],
+        "f1": 0.5,
+        "any_match": true,
+        "exact_match": false,
+        "difficulty": "hard"
+      },
+      {
+        "id": "tools_1",
+        "predicted": [
+          "company.tools_config"
+        ],
+        "gold": [
+          "company.tools_config"
+        ],
+        "f1": 1.0,
+        "any_match": true,
+        "exact_match": true,
+        "difficulty": "easy"
+      },
+      {
+        "id": "tools_2",
+        "predicted": [
+          "company.tools_config"
+        ],
+        "gold": [
+          "company.tools_config"
+        ],
+        "f1": 1.0,
+        "any_match": true,
+        "exact_match": true,
+        "difficulty": "medium"
+      },
+      {
+        "id": "tools_3",
+        "predicted": [
+          "company.tools_config",
+          "user.workflow_patterns"
+        ],
+        "gold": [
+          "company.tools_config"
+        ],
+        "f1": 0.6666666666666666,
+        "any_match": true,
+        "exact_match": false,
+        "difficulty": "medium"
+      },
+      {
+        "id": "tools_4",
+        "predicted": [
+          "company.tools_config"
+        ],
+        "gold": [
+          "none"
+        ],
+        "f1": 0,
+        "any_match": false,
+        "exact_match": false,
+        "difficulty": "easy"
+      },
+      {
+        "id": "tools_5",
+        "predicted": [
+          "company.tools_config"
+        ],
+        "gold": [
+          "company.tools_config"
+        ],
+        "f1": 1.0,
+        "any_match": true,
+        "exact_match": true,
+        "difficulty": "medium"
+      },
+      {
+        "id": "tools_6",
+        "predicted": [
+          "company.knowledge_artifacts",
+          "company.tools_config",
+          "user.communication_style"
+        ],
+        "gold": [
+          "none"
+        ],
+        "f1": 0,
+        "any_match": false,
+        "exact_match": false,
+        "difficulty": "medium"
+      },
+      {
+        "id": "user_1",
+        "predicted": [
+          "user.role_context"
+        ],
+        "gold": [
+          "user.role_context"
+        ],
+        "f1": 1.0,
+        "any_match": true,
+        "exact_match": true,
+        "difficulty": "easy"
+      },
+      {
+        "id": "user_2",
+        "predicted": [
+          "user.communication_style",
+          "user.interaction_preferences"
+        ],
+        "gold": [
+          "user.communication_style"
+        ],
+        "f1": 0.6666666666666666,
+        "any_match": true,
+        "exact_match": false,
+        "difficulty": "easy"
+      },
+      {
+        "id": "user_3",
+        "predicted": [
+          "user.communication_style",
+          "user.interaction_preferences"
+        ],
+        "gold": [
+          "user.interaction_preferences"
+        ],
+        "f1": 0.6666666666666666,
+        "any_match": true,
+        "exact_match": false,
+        "difficulty": "medium"
+      },
+      {
+        "id": "user_4",
+        "predicted": [
+          "user.workflow_patterns",
+          "user.interaction_preferences"
+        ],
+        "gold": [
+          "user.workflow_patterns"
+        ],
+        "f1": 0.6666666666666666,
+        "any_match": true,
+        "exact_match": false,
+        "difficulty": "medium"
+      },
+      {
+        "id": "user_5",
+        "predicted": [
+          "user.session_history"
+        ],
+        "gold": [
+          "user.session_history"
+        ],
+        "f1": 1.0,
+        "any_match": true,
+        "exact_match": true,
+        "difficulty": "easy"
+      },
+      {
+        "id": "user_6",
+        "predicted": [
+          "user.strategic_approach",
+          "user.interaction_preferences"
+        ],
+        "gold": [
+          "user.strategic_approach",
+          "user.interaction_preferences"
+        ],
+        "f1": 1.0,
+        "any_match": true,
+        "exact_match": true,
+        "difficulty": "hard"
+      },
+      {
+        "id": "user_7",
+        "predicted": [
+          "user.communication_style",
+          "user.session_history"
+        ],
+        "gold": [
+          "none"
+        ],
+        "f1": 0,
+        "any_match": false,
+        "exact_match": false,
+        "difficulty": "easy"
+      },
+      {
+        "id": "user_8",
+        "predicted": [
+          "user.communication_style",
+          "user.interaction_preferences"
+        ],
+        "gold": [
+          "user.communication_style"
+        ],
+        "f1": 0.6666666666666666,
+        "any_match": true,
+        "exact_match": false,
+        "difficulty": "medium"
+      },
+      {
+        "id": "user_9",
+        "predicted": [
+          "user.communication_style",
+          "user.strategic_approach"
+        ],
+        "gold": [
+          "user.role_context",
+          "user.interaction_preferences"
+        ],
+        "f1": 0,
+        "any_match": false,
+        "exact_match": false,
+        "difficulty": "hard"
+      },
+      {
+        "id": "user_10",
+        "predicted": [
+          "user.strategic_approach"
+        ],
+        "gold": [
+          "user.strategic_approach"
+        ],
+        "f1": 1.0,
+        "any_match": true,
+        "exact_match": true,
+        "difficulty": "medium"
+      },
+      {
+        "id": "priority_1",
+        "predicted": [
+          "company.business_priorities",
+          "company.performance_context"
+        ],
+        "gold": [
+          "company.business_priorities"
+        ],
+        "f1": 0.6666666666666666,
+        "any_match": true,
+        "exact_match": false,
+        "difficulty": "easy"
+      },
+      {
+        "id": "priority_2",
+        "predicted": [
+          "company.business_priorities",
+          "company.performance_context"
+        ],
+        "gold": [
+          "company.business_priorities"
+        ],
+        "f1": 0.6666666666666666,
+        "any_match": true,
+        "exact_match": false,
+        "difficulty": "medium"
+      },
+      {
+        "id": "priority_3",
+        "predicted": [
+          "company.business_priorities",
+          "company.strategic_signatures"
+        ],
+        "gold": [
+          "company.business_priorities",
+          "company.strategic_signatures"
+        ],
+        "f1": 1.0,
+        "any_match": true,
+        "exact_match": true,
+        "difficulty": "hard"
+      },
+      {
+        "id": "priority_4",
+        "predicted": [
+          "company.business_priorities",
+          "user.strategic_approach"
+        ],
+        "gold": [
+          "company.business_priorities"
+        ],
+        "f1": 0.6666666666666666,
+        "any_match": true,
+        "exact_match": false,
+        "difficulty": "medium"
+      },
+      {
+        "id": "priority_5",
+        "predicted": [
+          "company.business_priorities",
+          "company.strategic_signatures"
+        ],
+        "gold": [
+          "company.business_priorities"
+        ],
+        "f1": 0.6666666666666666,
+        "any_match": true,
+        "exact_match": false,
+        "difficulty": "medium"
+      },
+      {
+        "id": "priority_6",
+        "predicted": [
+          "company.business_priorities",
+          "user.strategic_approach"
+        ],
+        "gold": [
+          "none"
+        ],
+        "f1": 0,
+        "any_match": false,
+        "exact_match": false,
+        "difficulty": "medium"
+      },
+      {
+        "id": "knowledge_1",
+        "predicted": [
+          "company.knowledge_artifacts",
+          "company.brand_core"
+        ],
+        "gold": [
+          "company.knowledge_artifacts"
+        ],
+        "f1": 0.6666666666666666,
+        "any_match": true,
+        "exact_match": false,
+        "difficulty": "easy"
+      },
+      {
+        "id": "knowledge_2",
+        "predicted": [
+          "company.knowledge_artifacts",
+          "company.tools_config",
+          "user.workflow_patterns"
+        ],
+        "gold": [
+          "company.knowledge_artifacts"
+        ],
+        "f1": 0.5,
+        "any_match": true,
+        "exact_match": false,
+        "difficulty": "medium"
+      },
+      {
+        "id": "knowledge_3",
+        "predicted": [
+          "company.knowledge_artifacts",
+          "user.workflow_patterns",
+          "company.performance_context"
+        ],
+        "gold": [
+          "company.knowledge_artifacts"
+        ],
+        "f1": 0.5,
+        "any_match": true,
+        "exact_match": false,
+        "difficulty": "medium"
+      },
+      {
+        "id": "knowledge_4",
+        "predicted": [
+          "company.brand_core",
+          "company.knowledge_artifacts",
+          "user.communication_style"
+        ],
+        "gold": [
+          "company.knowledge_artifacts",
+          "company.brand_core"
+        ],
+        "f1": 0.8,
+        "any_match": true,
+        "exact_match": false,
+        "difficulty": "hard"
+      }
+    ]
+  }
+}

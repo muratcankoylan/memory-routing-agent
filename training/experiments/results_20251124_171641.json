@@ -1,0 +1,94 @@
+{
+  "sft_checkpoint": "tinker://398393e1-7182-555d-aa1b-7ddf23892338:train:0/sampler_weights/sft_final_sampler",
+  "rl_checkpoint": "tinker://a4ce5c47-f124-5cac-b700-d6071da84f98:train:0/sampler_weights/rl_final",
+  "sft_metrics": {
+    "any_match": 0.87,
+    "exact_match": 0.47,
+    "precision": 0.7266666666666667,
+    "recall": 0.75,
+    "mean_reward": 0.8087999999999999,
+    "format_valid": 1.0,
+    "f1": 0.7381489841986457
+  },
+  "rl_metrics": {
+    "any_match": 0.88,
+    "exact_match": 0.48,
+    "precision": 0.7383333333333334,
+    "recall": 0.77,
+    "mean_reward": 0.8179999999999998,
+    "format_valid": 1.0,
+    "f1": 0.7538342541436466
+  },
+  "rl_training_log": [
+    {
+      "iteration": 0,
+      "mean_reward": 0.81125,
+      "accuracy": 1.0,
+      "num_rollouts": 64,
+      "time": 72.97691488265991
+    },
+    {
+      "iteration": 1,
+      "mean_reward": 0.8003125,
+      "accuracy": 1.0,
+      "num_rollouts": 64,
+      "time": 198.50843501091003
+    },
+    {
+      "iteration": 2,
+      "mean_reward": 0.81375,
+      "accuracy": 1.0,
+      "num_rollouts": 64,
+      "time": 31.24391794204712
+    },
+    {
+      "iteration": 3,
+      "mean_reward": 0.91375,
+      "accuracy": 1.0,
+      "num_rollouts": 64,
+      "time": 54.815149784088135
+    },
+    {
+      "iteration": 4,
+      "mean_reward": 0.8765624999999999,
+      "accuracy": 1.0,
+      "num_rollouts": 64,
+      "time": 46.36493897438049
+    },
+    {
+      "iteration": 5,
+      "mean_reward": 0.7537499999999999,
+      "accuracy": 1.0,
+      "num_rollouts": 64,
+      "time": 41.113487005233765
+    },
+    {
+      "iteration": 6,
+      "mean_reward": 0.714375,
+      "accuracy": 1.0,
+      "num_rollouts": 64,
+      "time": 59.793246030807495
+    },
+    {
+      "iteration": 7,
+      "mean_reward": 0.721875,
+      "accuracy": 0.984375,
+      "num_rollouts": 64,
+      "time": 25.620058059692383
+    },
+    {
+      "iteration": 8,
+      "mean_reward": 0.72,
+      "accuracy": 1.0,
+      "num_rollouts": 64,
+      "time": 32.78582692146301
+    },
+    {
+      "iteration": 9,
+      "mean_reward": 0.7989062499999999,
+      "accuracy": 1.0,
+      "num_rollouts": 64,
+      "time": 21.66036295890808
+    }
+  ]
+}

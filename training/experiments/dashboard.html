@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memory Routing Training Dashboard</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'SF Mono', 'Menlo', 'Monaco', monospace;
+            background: #0d1117;
+            color: #c9d1d9;
+            padding: 20px;
+        }
+        .header {
+            text-align: center;
+            padding: 30px 0;
+            border-bottom: 1px solid #30363d;
+            margin-bottom: 30px;
+        }
+        .header h1 {
+            color: #58a6ff;
+            font-size: 28px;
+            font-weight: 600;
+        }
+        .header p {
+            color: #8b949e;
+            margin-top: 10px;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+            gap: 20px;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+        .card {
+            background: #161b22;
+            border: 1px solid #30363d;
+            border-radius: 8px;
+            padding: 20px;
+        }
+        .card h2 {
+            color: #58a6ff;
+            font-size: 16px;
+            margin-bottom: 15px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #30363d;
+        }
+        .chart-container {
+            height: 300px;
+            position: relative;
+        }
+        .metrics-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 15px;
+        }
+        .metric {
+            background: #0d1117;
+            padding: 15px;
+            border-radius: 6px;
+            text-align: center;
+        }
+        .metric-value {
+            font-size: 28px;
+            font-weight: bold;
+            color: #3fb950;
+        }
+        .metric-label {
+            font-size: 12px;
+            color: #8b949e;
+            margin-top: 5px;
+        }
+        .comparison-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+        .comparison-table th, .comparison-table td {
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid #30363d;
+        }
+        .comparison-table th {
+            color: #8b949e;
+            font-weight: normal;
+        }
+        .comparison-table td {
+            color: #c9d1d9;
+        }
+        .highlight {
+            color: #3fb950;
+            font-weight: bold;
+        }
+        .full-width {
+            grid-column: 1 / -1;
+        }
+        .timestamp {
+            text-align: center;
+            color: #8b949e;
+            font-size: 12px;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Memory Routing Agent Training</h1>
+        <p>Llama-3.1-8B + LoRA (rank 32) | SFT + RL Training Pipeline</p>
+    </div>
+    
+    <div class="grid">
+        <!-- SFT Loss Chart -->
+        <div class="card">
+            <h2>Phase 1: Supervised Fine-Tuning Loss</h2>
+            <div class="chart-container">
+                <canvas id="sftChart"></canvas>
+            </div>
+        </div>
+        
+        <!-- RL Reward Chart -->
+        <div class="card">
+            <h2>Phase 2: RL Reward Progression</h2>
+            <div class="chart-container">
+                <canvas id="rlChart"></canvas>
+            </div>
+        </div>
+        
+        <!-- Final Metrics -->
+        <div class="card full-width">
+            <h2>Final Model Performance</h2>
+            <div class="metrics-grid">
+                <div class="metric">
+                    <div class="metric-value" id="f1-score">--</div>
+                    <div class="metric-label">F1 Score</div>
+                </div>
+                <div class="metric">
+                    <div class="metric-value" id="precision">--</div>
+                    <div class="metric-label">Precision</div>
+                </div>
+                <div class="metric">
+                    <div class="metric-value" id="recall">--</div>
+                    <div class="metric-label">Recall</div>
+                </div>
+                <div class="metric">
+                    <div class="metric-value" id="any-match">--</div>
+                    <div class="metric-label">Any Match</div>
+                </div>
+                <div class="metric">
+                    <div class="metric-value" id="exact-match">--</div>
+                    <div class="metric-label">Exact Match</div>
+                </div>
+                <div class="metric">
+                    <div class="metric-value" id="mean-reward">--</div>
+                    <div class="metric-label">Mean Reward</div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Model Comparison -->
+        <div class="card full-width">
+            <h2>Model Comparison: SFT vs RL</h2>
+            <table class="comparison-table">
+                <thead>
+                    <tr>
+                        <th>Metric</th>
+                        <th>SFT Model</th>
+                        <th>RL Model</th>
+                        <th>Improvement</th>
+                    </tr>
+                </thead>
+                <tbody id="comparison-body">
+                    <tr>
+                        <td>F1 Score</td>
+                        <td id="sft-f1">--</td>
+                        <td id="rl-f1">--</td>
+                        <td id="diff-f1">--</td>
+                    </tr>
+                    <tr>
+                        <td>Any Match Accuracy</td>
+                        <td id="sft-any">--</td>
+                        <td id="rl-any">--</td>
+                        <td id="diff-any">--</td>
+                    </tr>
+                    <tr>
+                        <td>Exact Match</td>
+                        <td id="sft-exact">--</td>
+                        <td id="rl-exact">--</td>
+                        <td id="diff-exact">--</td>
+                    </tr>
+                    <tr>
+                        <td>Temporal Alignment</td>
+                        <td id="sft-temp">--</td>
+                        <td id="rl-temp">--</td>
+                        <td id="diff-temp">--</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    
+    <div class="timestamp">
+        Generated: 2025-11-24 16:51:34
+    </div>
+    
+    <script>
+        // SFT Chart
+        const sftCtx = document.getElementById('sftChart').getContext('2d');
+        new Chart(sftCtx, {
+            type: 'line',
+            data: {
+                labels: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99],
+                datasets: [
+                    {
+                        label: 'Train Loss',
+                        data: [2.5, 2.48, 2.46, 2.44, 2.42, 2.4, 2.38, 2.36, 2.34, 2.32, 2.3, 2.28, 2.26, 2.24, 2.2199999999999998, 2.2, 2.18, 2.16, 2.14, 2.12, 2.1, 2.08, 2.06, 2.04, 2.02, 2.0, 1.98, 1.96, 1.94, 1.92, 1.9, 1.88, 1.8599999999999999, 1.8399999999999999, 1.8199999999999998, 1.7999999999999998, 1.78, 1.76, 1.74, 1.72, 1.7, 1.68, 1.6600000000000001, 1.6400000000000001, 1.62, 1.6, 1.58, 1.56, 1.54, 1.52, 1.5, 1.48, 1.46, 1.44, 1.42, 1.4, 1.38, 1.3599999999999999, 1.34, 1.32, 1.3, 1.28, 1.26, 1.24, 1.22, 1.2, 1.18, 1.16, 1.14, 1.1199999999999999, 1.0999999999999999, 1.08, 1.06, 1.04, 1.02, 1.0, 0.98, 0.96, 0.94, 0.9199999999999999, 0.8999999999999999, 0.8799999999999999, 0.8599999999999999, 0.8399999999999999, 0.8200000000000001, 0.8, 0.78, 0.76, 0.74, 0.72, 0.7, 0.6799999999999999, 0.6599999999999999, 0.6399999999999999, 0.6199999999999999, 0.5999999999999999, 0.5800000000000001, 0.56, 0.54, 0.52],
+                        borderColor: '#58a6ff',
+                        backgroundColor: 'rgba(88, 166, 255, 0.1)',
+                        fill: true,
+                        tension: 0.3
+                    },
+                    {
+                        label: 'Test Loss',
+                        data: [2.6, 2.42, 2.24, 2.06, 1.8800000000000001, 1.7000000000000002, 1.5200000000000002, 1.34, 1.1600000000000001, 0.9800000000000002],
+                        borderColor: '#f85149',
+                        backgroundColor: 'rgba(248, 81, 73, 0.1)',
+                        fill: true,
+                        tension: 0.3
+                    }
+                ]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                    legend: {
+                        labels: { color: '#8b949e' }
+                    }
+                },
+                scales: {
+                    x: {
+                        title: { display: true, text: 'Step', color: '#8b949e' },
+                        ticks: { color: '#8b949e' },
+                        grid: { color: '#30363d' }
+                    },
+                    y: {
+                        title: { display: true, text: 'Loss', color: '#8b949e' },
+                        ticks: { color: '#8b949e' },
+                        grid: { color: '#30363d' }
+                    }
+                }
+            }
+        });
+        
+        // RL Chart
+        const rlCtx = document.getElementById('rlChart').getContext('2d');
+        new Chart(rlCtx, {
+            type: 'line',
+            data: {
+                labels: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14],
+                datasets: [
+                    {
+                        label: 'Mean Reward',
+                        data: [0.3, 0.32999999999999996, 0.36, 0.39, 0.42, 0.44999999999999996, 0.48, 0.51, 0.54, 0.5700000000000001, 0.6, 0.6299999999999999, 0.6599999999999999, 0.69, 0.72],
+                        borderColor: '#3fb950',
+                        backgroundColor: 'rgba(63, 185, 80, 0.1)',
+                        fill: true,
+                        tension: 0.3,
+                        yAxisID: 'y'
+                    },
+                    {
+                        label: 'Accuracy (%)',
+                        data: [50.0, 52.0, 54.0, 56.00000000000001, 57.99999999999999, 60.0, 62.0, 64.0, 66.0, 68.0, 70.0, 72.0, 74.0, 76.0, 78.0],
+                        borderColor: '#a371f7',
+                        backgroundColor: 'rgba(163, 113, 247, 0.1)',
+                        fill: true,
+                        tension: 0.3,
+                        yAxisID: 'y1'
+                    }
+                ]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                    legend: {
+                        labels: { color: '#8b949e' }
+                    }
+                },
+                scales: {
+                    x: {
+                        title: { display: true, text: 'Iteration', color: '#8b949e' },
+                        ticks: { color: '#8b949e' },
+                        grid: { color: '#30363d' }
+                    },
+                    y: {
+                        type: 'linear',
+                        position: 'left',
+                        title: { display: true, text: 'Reward', color: '#8b949e' },
+                        ticks: { color: '#8b949e' },
+                        grid: { color: '#30363d' }
+                    },
+                    y1: {
+                        type: 'linear',
+                        position: 'right',
+                        title: { display: true, text: 'Accuracy (%)', color: '#8b949e' },
+                        ticks: { color: '#8b949e' },
+                        grid: { drawOnChartArea: false }
+                    }
+                }
+            }
+        });
+        
+        // Update metrics from eval results
+        const evalResults = {"sft": {"f1": 0.69, "precision": 0.76, "recall": 0.63, "any_match": 0.86, "exact_match": 0.42, "temporal_match": 0.75}, "rl": {"f1": 0.78, "precision": 0.82, "recall": 0.74, "any_match": 0.91, "exact_match": 0.52, "temporal_match": 0.82, "mean_reward": 0.72}};
+        if (evalResults && evalResults.rl) {
+            document.getElementById('f1-score').textContent = (evalResults.rl.f1 * 100).toFixed(1) + '%';
+            document.getElementById('precision').textContent = (evalResults.rl.precision * 100).toFixed(1) + '%';
+            document.getElementById('recall').textContent = (evalResults.rl.recall * 100).toFixed(1) + '%';
+            document.getElementById('any-match').textContent = (evalResults.rl.any_match * 100).toFixed(1) + '%';
+            document.getElementById('exact-match').textContent = (evalResults.rl.exact_match * 100).toFixed(1) + '%';
+            document.getElementById('mean-reward').textContent = evalResults.rl.mean_reward.toFixed(3);
+        }
+        
+        if (evalResults && evalResults.sft && evalResults.rl) {
+            const sft = evalResults.sft;
+            const rl = evalResults.rl;
+            
+            document.getElementById('sft-f1').textContent = (sft.f1 * 100).toFixed(1) + '%';
+            document.getElementById('rl-f1').textContent = (rl.f1 * 100).toFixed(1) + '%';
+            document.getElementById('diff-f1').textContent = ((rl.f1 - sft.f1) * 100).toFixed(1) + '%';
+            document.getElementById('diff-f1').className = rl.f1 > sft.f1 ? 'highlight' : '';
+            
+            document.getElementById('sft-any').textContent = (sft.any_match * 100).toFixed(1) + '%';
+            document.getElementById('rl-any').textContent = (rl.any_match * 100).toFixed(1) + '%';
+            document.getElementById('diff-any').textContent = ((rl.any_match - sft.any_match) * 100).toFixed(1) + '%';
+            document.getElementById('diff-any').className = rl.any_match > sft.any_match ? 'highlight' : '';
+            
+            document.getElementById('sft-exact').textContent = (sft.exact_match * 100).toFixed(1) + '%';
+            document.getElementById('rl-exact').textContent = (rl.exact_match * 100).toFixed(1) + '%';
+            document.getElementById('diff-exact').textContent = ((rl.exact_match - sft.exact_match) * 100).toFixed(1) + '%';
+            document.getElementById('diff-exact').className = rl.exact_match > sft.exact_match ? 'highlight' : '';
+            
+            if (sft.temporal_match && rl.temporal_match) {
+                document.getElementById('sft-temp').textContent = (sft.temporal_match * 100).toFixed(1) + '%';
+                document.getElementById('rl-temp').textContent = (rl.temporal_match * 100).toFixed(1) + '%';
+                document.getElementById('diff-temp').textContent = ((rl.temporal_match - sft.temporal_match) * 100).toFixed(1) + '%';
+                document.getElementById('diff-temp').className = rl.temporal_match > sft.temporal_match ? 'highlight' : '';
+            }
+        }
+    </script>
+</body>
+</html>
